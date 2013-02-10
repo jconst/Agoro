@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5F051E4B16156BB20033EEC9 /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F051E4A16156BB20033EEC9 /* Winner.png */; };
+		5F13476F16C83D93005F56E6 /* NextRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F13476E16C83B1A005F56E6 /* NextRoundViewController.m */; };
 		5F1811721648735000976C9C /* StitchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811711648735000976C9C /* StitchBox.png */; };
 		5F1811751649ECF700976C9C /* TournamentScoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811741649ECF700976C9C /* TournamentScoreBoard.png */; };
 		5F27ED77161B508D008DE18B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F27ED76161B508D008DE18B /* Default-568h@2x.png */; };
@@ -116,7 +117,6 @@
 		5FA2308B15B780B400E2620E /* Round1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308815B780B400E2620E /* Round1.png */; };
 		5FA2308C15B780B400E2620E /* Round2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308915B780B400E2620E /* Round2.png */; };
 		5FA2308D15B780B400E2620E /* Round3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308A15B780B400E2620E /* Round3.png */; };
-		5FA2309615B7A31000E2620E /* NextRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2309415B7A30F00E2620E /* NextRoundViewController.m */; };
 		5FA2309C15B7C36100E2620E /* Round1Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309915B7C36100E2620E /* Round1Btn.png */; };
 		5FA2309D15B7C36100E2620E /* Round2Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309A15B7C36100E2620E /* Round2Btn.png */; };
 		5FA2309E15B7C36100E2620E /* Round3Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309B15B7C36100E2620E /* Round3Btn.png */; };
@@ -150,6 +150,8 @@
 
 /* Begin PBXFileReference section */
 		5F051E4A16156BB20033EEC9 /* Winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Winner.png; sourceTree = "<group>"; };
+		5F13476D16C83B1A005F56E6 /* NextRoundViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NextRoundViewController.h; sourceTree = "<group>"; };
+		5F13476E16C83B1A005F56E6 /* NextRoundViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NextRoundViewController.m; sourceTree = "<group>"; };
 		5F1811711648735000976C9C /* StitchBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StitchBox.png; sourceTree = "<group>"; };
 		5F1811741649ECF700976C9C /* TournamentScoreBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TournamentScoreBoard.png; sourceTree = "<group>"; };
 		5F27ED76161B508D008DE18B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -295,8 +297,6 @@
 		5FA2308815B780B400E2620E /* Round1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round1.png; sourceTree = "<group>"; };
 		5FA2308915B780B400E2620E /* Round2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round2.png; sourceTree = "<group>"; };
 		5FA2308A15B780B400E2620E /* Round3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round3.png; sourceTree = "<group>"; };
-		5FA2309315B7A30F00E2620E /* NextRoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NextRoundViewController.h; path = ../NextRoundViewController.h; sourceTree = "<group>"; };
-		5FA2309415B7A30F00E2620E /* NextRoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NextRoundViewController.m; path = ../NextRoundViewController.m; sourceTree = "<group>"; };
 		5FA2309915B7C36100E2620E /* Round1Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round1Btn.png; sourceTree = "<group>"; };
 		5FA2309A15B7C36100E2620E /* Round2Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round2Btn.png; sourceTree = "<group>"; };
 		5FA2309B15B7C36100E2620E /* Round3Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round3Btn.png; sourceTree = "<group>"; };
@@ -552,8 +552,8 @@
 			children = (
 				5F92F9FB14463046002966C7 /* MasterViewController.h */,
 				5F92F9FC14463046002966C7 /* MasterViewController.m */,
-				5FA2309315B7A30F00E2620E /* NextRoundViewController.h */,
-				5FA2309415B7A30F00E2620E /* NextRoundViewController.m */,
+				5F13476D16C83B1A005F56E6 /* NextRoundViewController.h */,
+				5F13476E16C83B1A005F56E6 /* NextRoundViewController.m */,
 				5F609F2F146AD982004EA083 /* ChooseLeaderboardViewController.h */,
 				5F609F30146AD982004EA083 /* ChooseLeaderboardViewController.m */,
 				5F609F28146ACF41004EA083 /* ChooseModeViewController.h */,
@@ -952,13 +952,13 @@
 				5F85DA31149EEBE8007CBD92 /* GameOverViewController.m in Sources */,
 				5F9EBD9A14F89DE2005B0686 /* HintView.m in Sources */,
 				5FAEC21D1578438B00B86C06 /* TournamentManager.m in Sources */,
-				5FA2309615B7A31000E2620E /* NextRoundViewController.m in Sources */,
 				5FA230A115B7C8A200E2620E /* GameTimer.m in Sources */,
 				5FA230A415B7D5F200E2620E /* BaseGameViewController.m in Sources */,
 				5F2B579D15BF56B8006E9DF7 /* TileButton.m in Sources */,
 				5F2B57D515BF783D006E9DF7 /* TileLabel.m in Sources */,
 				5F2B57D815BF80B4006E9DF7 /* CustomTextField.m in Sources */,
 				5F8C942215C4B35700C92DB1 /* WordList.m in Sources */,
+				5F13476F16C83D93005F56E6 /* NextRoundViewController.m in Sources */,
 				5FB08FA21600FF26005981A0 /* TournamentOverViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
