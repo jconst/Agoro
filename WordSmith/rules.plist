@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>In Letter2Word, you compete against your opponent(s) in a turn-based game where the goal is to spell out a word, letter-by-letter, with your opponent. When it&apos;s your turn, you choose a letter, then your opponent chooses a letter, and so on as long as the series of letters is part of any dictionary word. (For example, &quot;TEL&quot;, &quot;TELEPHO&quot;, and &quot;TELEPHONE&quot; are all valid, while &quot;TELEPHONEG&quot; is not.) Once a player picks a letter that doesn&apos;t work, points are given to the previous player, and the space is cleared. The game runs on a 3-minute timer, and the player with the most points at the end of the game is the winner.</string>
+	<string>The object of WordSmith is to come up with as many anagrams or partial anagrams as you can from the word or phrase given at the start. (An anagram is a word formed by rearranging the letters of another word or phrase.) For example, if you are given the word &quot;existential&quot;, you might enter the words &quot;exist&quot;, &quot;ten&quot;, &quot;stint&quot;, &quot;lane&quot;, or many others. Longer words are worth more points, so try to edge out your opponent(s) by finding as many longer anagrams as you can in the 2-minute time limit.</string>
+	<string>In Reveal the Word, you and your opponent(s) are given a set of words with their letters shuffled, and a few hints for each word (definition, synonyms, etc.). The goal is to unscramble as many words as you can in te 2-minute time limit. If you&apos;re stuck on a word, you can skip it for a 10-point deduction from your score. Keep in mind that longer, more complicated words are worth more points than shorter, simpler ones.</string>
+</array>
+</plist>

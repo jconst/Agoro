@@ -1,0 +1,1100 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F051E4B16156BB20033EEC9 /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F051E4A16156BB20033EEC9 /* Winner.png */; };
+		5F1811721648735000976C9C /* StitchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811711648735000976C9C /* StitchBox.png */; };
+		5F1811751649ECF700976C9C /* TournamentScoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811741649ECF700976C9C /* TournamentScoreBoard.png */; };
+		5F27ED77161B508D008DE18B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F27ED76161B508D008DE18B /* Default-568h@2x.png */; };
+		5F2B579915BDF13D006E9DF7 /* RevealTheWordBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */; };
+		5F2B579D15BF56B8006E9DF7 /* TileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B579C15BF56B8006E9DF7 /* TileButton.m */; };
+		5F2B57B915BF5A11006E9DF7 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B579F15BF5A11006E9DF7 /* A.png */; };
+		5F2B57BA15BF5A11006E9DF7 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A015BF5A11006E9DF7 /* B.png */; };
+		5F2B57BB15BF5A11006E9DF7 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A115BF5A11006E9DF7 /* C.png */; };
+		5F2B57BC15BF5A11006E9DF7 /* D.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A215BF5A11006E9DF7 /* D.png */; };
+		5F2B57BD15BF5A11006E9DF7 /* E.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A315BF5A11006E9DF7 /* E.png */; };
+		5F2B57BE15BF5A11006E9DF7 /* F.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A415BF5A11006E9DF7 /* F.png */; };
+		5F2B57BF15BF5A11006E9DF7 /* G.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A515BF5A11006E9DF7 /* G.png */; };
+		5F2B57C015BF5A11006E9DF7 /* H.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A615BF5A11006E9DF7 /* H.png */; };
+		5F2B57C115BF5A11006E9DF7 /* I.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A715BF5A11006E9DF7 /* I.png */; };
+		5F2B57C215BF5A11006E9DF7 /* J.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A815BF5A11006E9DF7 /* J.png */; };
+		5F2B57C315BF5A11006E9DF7 /* K.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A915BF5A11006E9DF7 /* K.png */; };
+		5F2B57C415BF5A11006E9DF7 /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AA15BF5A11006E9DF7 /* L.png */; };
+		5F2B57C515BF5A11006E9DF7 /* M.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AB15BF5A11006E9DF7 /* M.png */; };
+		5F2B57C615BF5A11006E9DF7 /* N.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AC15BF5A11006E9DF7 /* N.png */; };
+		5F2B57C715BF5A11006E9DF7 /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AD15BF5A11006E9DF7 /* O.png */; };
+		5F2B57C815BF5A11006E9DF7 /* P.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AE15BF5A11006E9DF7 /* P.png */; };
+		5F2B57C915BF5A11006E9DF7 /* Q.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AF15BF5A11006E9DF7 /* Q.png */; };
+		5F2B57CA15BF5A11006E9DF7 /* R.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B015BF5A11006E9DF7 /* R.png */; };
+		5F2B57CB15BF5A11006E9DF7 /* S.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B115BF5A11006E9DF7 /* S.png */; };
+		5F2B57CC15BF5A11006E9DF7 /* T.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B215BF5A11006E9DF7 /* T.png */; };
+		5F2B57CD15BF5A11006E9DF7 /* U.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B315BF5A11006E9DF7 /* U.png */; };
+		5F2B57CE15BF5A11006E9DF7 /* V.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B415BF5A11006E9DF7 /* V.png */; };
+		5F2B57CF15BF5A11006E9DF7 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B515BF5A11006E9DF7 /* W.png */; };
+		5F2B57D015BF5A11006E9DF7 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B615BF5A11006E9DF7 /* X.png */; };
+		5F2B57D115BF5A11006E9DF7 /* Y.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B715BF5A11006E9DF7 /* Y.png */; };
+		5F2B57D215BF5A11006E9DF7 /* Z.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B815BF5A11006E9DF7 /* Z.png */; };
+		5F2B57D515BF783D006E9DF7 /* TileLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B57D415BF783D006E9DF7 /* TileLabel.m */; };
+		5F2B57D815BF80B4006E9DF7 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B57D715BF80B3006E9DF7 /* CustomTextField.m */; };
+		5F2B57DA15BF8683006E9DF7 /* RevealTheWordBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57D915BF8683006E9DF7 /* RevealTheWordBottom.png */; };
+		5F2B57DD15BF87BA006E9DF7 /* SkipButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57DB15BF87BA006E9DF7 /* SkipButton.png */; };
+		5F2B57DE15BF87BA006E9DF7 /* SubmitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57DC15BF87BA006E9DF7 /* SubmitButton.png */; };
+		5F5D76581610C3AE00BEAD2C /* ViewWords.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D76571610C3AE00BEAD2C /* ViewWords.png */; };
+		5F5EA00215A8A65A00FFED22 /* GameInformation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00115A8A65A00FFED22 /* GameInformation.png */; };
+		5F5EA00415A8A66200FFED22 /* Leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00315A8A66200FFED22 /* Leaderboard.png */; };
+		5F5EA00715A8A68000FFED22 /* WordsPlayed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00615A8A68000FFED22 /* WordsPlayed.png */; };
+		5F5EA00915A8A68900FFED22 /* L2W.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00815A8A68900FFED22 /* L2W.png */; };
+		5F5EA00B15A8A69200FFED22 /* RtW.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00A15A8A69200FFED22 /* RtW.png */; };
+		5F5EA00D15A8A69800FFED22 /* WS.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00C15A8A69800FFED22 /* WS.png */; };
+		5F5EA01115A8A6BE00FFED22 /* Multiplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00E15A8A6BE00FFED22 /* Multiplayer.png */; };
+		5F5EA01215A8A6BE00FFED22 /* SinglePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00F15A8A6BE00FFED22 /* SinglePlayer.png */; };
+		5F5EA01315A8A6BE00FFED22 /* Tournament.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01015A8A6BE00FFED22 /* Tournament.png */; };
+		5F5EA01515A8A6CE00FFED22 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01415A8A6CE00FFED22 /* button.png */; };
+		5F5EA01C15A8A91400FFED22 /* ChooseModeBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01B15A8A91400FFED22 /* ChooseModeBottom.png */; };
+		5F5EA01E15A8AA5A00FFED22 /* ChooseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01D15A8AA5A00FFED22 /* ChooseMode.png */; };
+		5F5EA02015A8B05400FFED22 /* Letter2WordBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01F15A8B05400FFED22 /* Letter2WordBG.png */; };
+		5F5EA02115AB693000FFED22 /* MainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01615A8A6FA00FFED22 /* MainBackground.png */; };
+		5F5EA02215AB693A00FFED22 /* bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01715A8A6FA00FFED22 /* bottom.png */; };
+		5F5EA02615ABA58F00FFED22 /* ZipperMax.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02415ABA58F00FFED22 /* ZipperMax.png */; };
+		5F5EA02715ABA58F00FFED22 /* ZipperMin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02515ABA58F00FFED22 /* ZipperMin.png */; };
+		5F5EA02915ABC7BC00FFED22 /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02815ABC7BC00FFED22 /* Slider.png */; };
+		5F5EA03B15AD010F00FFED22 /* AmericanTypewriter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02B15AD010F00FFED22 /* AmericanTypewriter.ttc */; };
+		5F5EA03C15AD010F00FFED22 /* BelloPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02C15AD010F00FFED22 /* BelloPro.otf */; };
+		5F5EA03D15AD010F00FFED22 /* KlavikaRegular-TF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02D15AD010F00FFED22 /* KlavikaRegular-TF.otf */; };
+		5F5EA04515AD010F00FFED22 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA03615AD010F00FFED22 /* MyriadPro-Regular.otf */; };
+		5F609F01144F12FB004EA083 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F00144F12FB004EA083 /* GameCenterManager.m */; };
+		5F609F05144F1CF4004EA083 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F609F03144F1CD1004EA083 /* GameKit.framework */; };
+		5F609F2A146ACF41004EA083 /* ChooseModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F29146ACF41004EA083 /* ChooseModeViewController.m */; };
+		5F609F31146AD982004EA083 /* ChooseLeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F30146AD982004EA083 /* ChooseLeaderboardViewController.m */; };
+		5F609F38146C78F9004EA083 /* LexicontextAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F609F36146C78F9004EA083 /* LexicontextAssets.bundle */; };
+		5F609F39146C78F9004EA083 /* libLexicontext.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F609F37146C78F9004EA083 /* libLexicontext.a */; };
+		5F609F5E14716A73004EA083 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4314716A73004EA083 /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F5F14716A73004EA083 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F609F4614716A73004EA083 /* FBDialog.bundle */; };
+		5F609F6014716A73004EA083 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4814716A73004EA083 /* FBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6114716A73004EA083 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4A14716A73004EA083 /* FBLoginDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6214716A73004EA083 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4C14716A73004EA083 /* FBRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6314716A73004EA083 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5014716A73004EA083 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6414716A73004EA083 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5214716A73004EA083 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6514716A73004EA083 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5414716A73004EA083 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6614716A73004EA083 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5614716A73004EA083 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6714716A73004EA083 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5814716A73004EA083 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F6814716A73004EA083 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5A14716A73004EA083 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F609F7114717FD8004EA083 /* GuessWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F7014717FD8004EA083 /* GuessWordViewController.m */; };
+		5F609F741471801B004EA083 /* WordSmithViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F731471801B004EA083 /* WordSmithViewController.m */; };
+		5F609F771473077F004EA083 /* RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F761473077F004EA083 /* RulesViewController.m */; };
+		5F82CC2F148FF188003B6F24 /* PopularWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F82CC2E148FF188003B6F24 /* PopularWordsViewController.m */; };
+		5F84CFF0148D49EF00CDFDE0 /* PlayerScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84CFEF148D49EF00CDFDE0 /* PlayerScoreView.m */; };
+		5F85DA25149D5527007CBD92 /* L2WDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DA24149D5527007CBD92 /* L2WDisplayView.m */; };
+		5F85DA2C149D94B3007CBD92 /* letterscores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F85DA2B149D94B3007CBD92 /* letterscores.plist */; };
+		5F85DA31149EEBE8007CBD92 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DA2F149EEBE8007CBD92 /* GameOverViewController.m */; };
+		5F85DA32149EEBE8007CBD92 /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F85DA30149EEBE8007CBD92 /* GameOverViewController.xib */; };
+		5F8C941B15C47DE100C92DB1 /* rules.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C941A15C47DE100C92DB1 /* rules.plist */; };
+		5F8C941D15C47FEC00C92DB1 /* RulesPatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C941C15C47FEC00C92DB1 /* RulesPatch.png */; };
+		5F8C941F15C4A59D00C92DB1 /* SubmitButtonRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C941E15C4A59D00C92DB1 /* SubmitButtonRed.png */; };
+		5F8C942215C4B35700C92DB1 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C942115C4B35700C92DB1 /* WordList.m */; };
+		5F8C942415C4B46700C92DB1 /* FindWordsWithLettersIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C942315C4B46700C92DB1 /* FindWordsWithLettersIn.png */; };
+		5F8C942615C4C24F00C92DB1 /* WordBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C942515C4C24F00C92DB1 /* WordBackground.png */; };
+		5F8C942815C6387400C92DB1 /* FacebookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C942715C6387400C92DB1 /* FacebookButton.png */; };
+		5F92F9E714463046002966C7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92F9E614463046002966C7 /* UIKit.framework */; };
+		5F92F9E914463046002966C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92F9E814463046002966C7 /* Foundation.framework */; };
+		5F92F9EB14463046002966C7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92F9EA14463046002966C7 /* CoreGraphics.framework */; };
+		5F92F9F114463046002966C7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F92F9EF14463046002966C7 /* InfoPlist.strings */; };
+		5F92F9F314463046002966C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F214463046002966C7 /* main.m */; };
+		5F92F9F714463046002966C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F614463046002966C7 /* AppDelegate.m */; };
+		5F92F9FA14463046002966C7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F92F9F814463046002966C7 /* MainStoryboard.storyboard */; };
+		5F92F9FD14463046002966C7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9FC14463046002966C7 /* MasterViewController.m */; };
+		5F92FA0814463397002966C7 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92FA0714463397002966C7 /* GameViewController.m */; };
+		5F9EBD9A14F89DE2005B0686 /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EBD9914F89DE2005B0686 /* HintView.m */; };
+		5FA2308115B0E74100E2620E /* WordsPlayedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308015B0E74100E2620E /* WordsPlayedBG.png */; };
+		5FA2308515B746D000E2620E /* PopularWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308315B746D000E2620E /* PopularWordsBtn.png */; };
+		5FA2308615B746D000E2620E /* RecentWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308415B746D000E2620E /* RecentWordsBtn.png */; };
+		5FA2308B15B780B400E2620E /* Round1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308815B780B400E2620E /* Round1.png */; };
+		5FA2308C15B780B400E2620E /* Round2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308915B780B400E2620E /* Round2.png */; };
+		5FA2308D15B780B400E2620E /* Round3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308A15B780B400E2620E /* Round3.png */; };
+		5FA2309615B7A31000E2620E /* NextRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA2309415B7A30F00E2620E /* NextRoundViewController.m */; };
+		5FA2309C15B7C36100E2620E /* Round1Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309915B7C36100E2620E /* Round1Btn.png */; };
+		5FA2309D15B7C36100E2620E /* Round2Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309A15B7C36100E2620E /* Round2Btn.png */; };
+		5FA2309E15B7C36100E2620E /* Round3Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309B15B7C36100E2620E /* Round3Btn.png */; };
+		5FA230A115B7C8A200E2620E /* GameTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA230A015B7C8A100E2620E /* GameTimer.m */; };
+		5FA230A415B7D5F200E2620E /* BaseGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA230A315B7D5F200E2620E /* BaseGameViewController.m */; };
+		5FAEC21315712C5700B86C06 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEC21215712C5700B86C06 /* Reachability.m */; };
+		5FAEC2161571371000B86C06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAEC2151571371000B86C06 /* SystemConfiguration.framework */; };
+		5FAEC21D1578438B00B86C06 /* TournamentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEC21C1578438B00B86C06 /* TournamentManager.m */; };
+		5FB08F9D15F82979005981A0 /* ShareSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08F9C15F82979005981A0 /* ShareSmall.png */; };
+		5FB08FA21600FF26005981A0 /* TournamentOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB08FA01600FF26005981A0 /* TournamentOverViewController.m */; };
+		5FB08FA31600FF26005981A0 /* TournamentOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA11600FF26005981A0 /* TournamentOverViewController.xib */; };
+		5FB08FA516012114005981A0 /* TournamentOverBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA416012114005981A0 /* TournamentOverBG.png */; };
+		5FB08FA7160125F7005981A0 /* FBButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA6160125F7005981A0 /* FBButtonSmall.png */; };
+		5FB7868615AD03440054A780 /* ComputerDifficulty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868515AD03440054A780 /* ComputerDifficulty.png */; };
+		5FB7868A15AD05370054A780 /* Letter2WordBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868715AD05370054A780 /* Letter2WordBtn.png */; };
+		5FB7868B15AD05370054A780 /* RevealTheWordBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868815AD05370054A780 /* RevealTheWordBtn.png */; };
+		5FB7868C15AD05370054A780 /* WordSmithBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868915AD05370054A780 /* WordSmithBtn.png */; };
+		5FB7868E15AD106B0054A780 /* WordSmithBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868D15AD106B0054A780 /* WordSmithBG.png */; };
+		5FD0A6F915C8A69B00B83E89 /* AgoroButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6F815C8A69B00B83E89 /* AgoroButton.png */; };
+		5FD0A6FC15C8AAB700B83E89 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FB15C8AAB700B83E89 /* GreenButton.png */; };
+		5FD0A6FE15C9EC8900B83E89 /* ResultBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FD15C9EC8900B83E89 /* ResultBG.png */; };
+		5FD0A70015C9F34C00B83E89 /* SettingsTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FF15C9F34C00B83E89 /* SettingsTopBar.png */; };
+		5FEB448915D1E853003AF774 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB448815D1E853003AF774 /* Default.png */; };
+		5FEB448D15D1EEE3003AF774 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB448C15D1EEE3003AF774 /* Default@2x.png */; };
+		5FEB449615D1F0AC003AF774 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449515D1F0AC003AF774 /* Icon.png */; };
+		5FEB449815D1F0EF003AF774 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449715D1F0EF003AF774 /* Icon@2x.png */; };
+		5FEE3771162CBD0200A194EB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE3770162CBD0200A194EB /* iAd.framework */; };
+		5FF82FC81497F377003A2DDC /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82FC71497F377003A2DDC /* AIPlayer.m */; };
+		5FF82FCC1499229B003A2DDC /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82FCB1499229B003A2DDC /* SettingsViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5F051E4A16156BB20033EEC9 /* Winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Winner.png; sourceTree = "<group>"; };
+		5F1811711648735000976C9C /* StitchBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StitchBox.png; sourceTree = "<group>"; };
+		5F1811741649ECF700976C9C /* TournamentScoreBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TournamentScoreBoard.png; sourceTree = "<group>"; };
+		5F27ED76161B508D008DE18B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RevealTheWordBG.png; path = Images/Backgrounds/RevealTheWordBG.png; sourceTree = "<group>"; };
+		5F2B579B15BF56B8006E9DF7 /* TileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileButton.h; sourceTree = "<group>"; };
+		5F2B579C15BF56B8006E9DF7 /* TileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileButton.m; sourceTree = "<group>"; };
+		5F2B579F15BF5A11006E9DF7 /* A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = A.png; sourceTree = "<group>"; };
+		5F2B57A015BF5A11006E9DF7 /* B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = B.png; sourceTree = "<group>"; };
+		5F2B57A115BF5A11006E9DF7 /* C.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = C.png; sourceTree = "<group>"; };
+		5F2B57A215BF5A11006E9DF7 /* D.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = D.png; sourceTree = "<group>"; };
+		5F2B57A315BF5A11006E9DF7 /* E.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E.png; sourceTree = "<group>"; };
+		5F2B57A415BF5A11006E9DF7 /* F.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = F.png; sourceTree = "<group>"; };
+		5F2B57A515BF5A11006E9DF7 /* G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = G.png; sourceTree = "<group>"; };
+		5F2B57A615BF5A11006E9DF7 /* H.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = H.png; sourceTree = "<group>"; };
+		5F2B57A715BF5A11006E9DF7 /* I.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = I.png; sourceTree = "<group>"; };
+		5F2B57A815BF5A11006E9DF7 /* J.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = J.png; sourceTree = "<group>"; };
+		5F2B57A915BF5A11006E9DF7 /* K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = K.png; sourceTree = "<group>"; };
+		5F2B57AA15BF5A11006E9DF7 /* L.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = L.png; sourceTree = "<group>"; };
+		5F2B57AB15BF5A11006E9DF7 /* M.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = M.png; sourceTree = "<group>"; };
+		5F2B57AC15BF5A11006E9DF7 /* N.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = N.png; sourceTree = "<group>"; };
+		5F2B57AD15BF5A11006E9DF7 /* O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = O.png; sourceTree = "<group>"; };
+		5F2B57AE15BF5A11006E9DF7 /* P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = P.png; sourceTree = "<group>"; };
+		5F2B57AF15BF5A11006E9DF7 /* Q.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Q.png; sourceTree = "<group>"; };
+		5F2B57B015BF5A11006E9DF7 /* R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = R.png; sourceTree = "<group>"; };
+		5F2B57B115BF5A11006E9DF7 /* S.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = S.png; sourceTree = "<group>"; };
+		5F2B57B215BF5A11006E9DF7 /* T.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = T.png; sourceTree = "<group>"; };
+		5F2B57B315BF5A11006E9DF7 /* U.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = U.png; sourceTree = "<group>"; };
+		5F2B57B415BF5A11006E9DF7 /* V.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = V.png; sourceTree = "<group>"; };
+		5F2B57B515BF5A11006E9DF7 /* W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = W.png; sourceTree = "<group>"; };
+		5F2B57B615BF5A11006E9DF7 /* X.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = X.png; sourceTree = "<group>"; };
+		5F2B57B715BF5A11006E9DF7 /* Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Y.png; sourceTree = "<group>"; };
+		5F2B57B815BF5A11006E9DF7 /* Z.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Z.png; sourceTree = "<group>"; };
+		5F2B57D315BF783D006E9DF7 /* TileLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileLabel.h; sourceTree = "<group>"; };
+		5F2B57D415BF783D006E9DF7 /* TileLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileLabel.m; sourceTree = "<group>"; };
+		5F2B57D615BF80B3006E9DF7 /* CustomTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTextField.h; sourceTree = "<group>"; };
+		5F2B57D715BF80B3006E9DF7 /* CustomTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTextField.m; sourceTree = "<group>"; };
+		5F2B57D915BF8683006E9DF7 /* RevealTheWordBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RevealTheWordBottom.png; path = Images/Backgrounds/RevealTheWordBottom.png; sourceTree = "<group>"; };
+		5F2B57DB15BF87BA006E9DF7 /* SkipButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SkipButton.png; path = Images/Buttons/SkipButton.png; sourceTree = "<group>"; };
+		5F2B57DC15BF87BA006E9DF7 /* SubmitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SubmitButton.png; path = Images/Buttons/SubmitButton.png; sourceTree = "<group>"; };
+		5F5AF403161E8D950012FB7C /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		5F5D76571610C3AE00BEAD2C /* ViewWords.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ViewWords.png; path = Images/Buttons/ViewWords.png; sourceTree = "<group>"; };
+		5F5EA00115A8A65A00FFED22 /* GameInformation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GameInformation.png; path = Images/Buttons/GameInformation.png; sourceTree = "<group>"; };
+		5F5EA00315A8A66200FFED22 /* Leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Leaderboard.png; path = Images/Buttons/Leaderboard.png; sourceTree = "<group>"; };
+		5F5EA00615A8A68000FFED22 /* WordsPlayed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordsPlayed.png; path = Images/Buttons/WordsPlayed.png; sourceTree = "<group>"; };
+		5F5EA00815A8A68900FFED22 /* L2W.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = L2W.png; path = Images/Buttons/L2W.png; sourceTree = "<group>"; };
+		5F5EA00A15A8A69200FFED22 /* RtW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RtW.png; path = Images/Buttons/RtW.png; sourceTree = "<group>"; };
+		5F5EA00C15A8A69800FFED22 /* WS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WS.png; path = Images/Buttons/WS.png; sourceTree = "<group>"; };
+		5F5EA00E15A8A6BE00FFED22 /* Multiplayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Multiplayer.png; path = Images/Buttons/Multiplayer.png; sourceTree = "<group>"; };
+		5F5EA00F15A8A6BE00FFED22 /* SinglePlayer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SinglePlayer.png; path = Images/Buttons/SinglePlayer.png; sourceTree = "<group>"; };
+		5F5EA01015A8A6BE00FFED22 /* Tournament.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tournament.png; path = Images/Buttons/Tournament.png; sourceTree = "<group>"; };
+		5F5EA01415A8A6CE00FFED22 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Images/Buttons/button.png; sourceTree = "<group>"; };
+		5F5EA01615A8A6FA00FFED22 /* MainBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = MainBackground.png; path = Images/Backgrounds/MainBackground.png; sourceTree = "<group>"; };
+		5F5EA01715A8A6FA00FFED22 /* bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bottom.png; path = Images/Backgrounds/bottom.png; sourceTree = "<group>"; };
+		5F5EA01B15A8A91400FFED22 /* ChooseModeBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChooseModeBottom.png; path = Images/Backgrounds/ChooseModeBottom.png; sourceTree = "<group>"; };
+		5F5EA01D15A8AA5A00FFED22 /* ChooseMode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ChooseMode.png; path = Images/Backgrounds/ChooseMode.png; sourceTree = "<group>"; };
+		5F5EA01F15A8B05400FFED22 /* Letter2WordBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Letter2WordBG.png; path = Images/Backgrounds/Letter2WordBG.png; sourceTree = "<group>"; };
+		5F5EA02415ABA58F00FFED22 /* ZipperMax.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZipperMax.png; sourceTree = "<group>"; };
+		5F5EA02515ABA58F00FFED22 /* ZipperMin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ZipperMin.png; sourceTree = "<group>"; };
+		5F5EA02815ABC7BC00FFED22 /* Slider.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slider.png; sourceTree = "<group>"; };
+		5F5EA02B15AD010F00FFED22 /* AmericanTypewriter.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = AmericanTypewriter.ttc; sourceTree = "<group>"; };
+		5F5EA02C15AD010F00FFED22 /* BelloPro.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BelloPro.otf; sourceTree = "<group>"; };
+		5F5EA02D15AD010F00FFED22 /* KlavikaRegular-TF.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KlavikaRegular-TF.otf"; sourceTree = "<group>"; };
+		5F5EA03615AD010F00FFED22 /* MyriadPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MyriadPro-Regular.otf"; sourceTree = "<group>"; };
+		5F609EFF144F12FB004EA083 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		5F609F00144F12FB004EA083 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		5F609F03144F1CD1004EA083 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		5F609F28146ACF41004EA083 /* ChooseModeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseModeViewController.h; sourceTree = "<group>"; };
+		5F609F29146ACF41004EA083 /* ChooseModeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseModeViewController.m; sourceTree = "<group>"; };
+		5F609F2F146AD982004EA083 /* ChooseLeaderboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseLeaderboardViewController.h; sourceTree = "<group>"; };
+		5F609F30146AD982004EA083 /* ChooseLeaderboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseLeaderboardViewController.m; sourceTree = "<group>"; };
+		5F609F35146C78F9004EA083 /* Lexicontext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Lexicontext.h; path = WordSmith/Lexicontext/Lexicontext.h; sourceTree = "<group>"; };
+		5F609F36146C78F9004EA083 /* LexicontextAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = LexicontextAssets.bundle; path = WordSmith/Lexicontext/LexicontextAssets.bundle; sourceTree = "<group>"; };
+		5F609F37146C78F9004EA083 /* libLexicontext.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLexicontext.a; path = WordSmith/Lexicontext/libLexicontext.a; sourceTree = "<group>"; };
+		5F609F4214716A73004EA083 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		5F609F4314716A73004EA083 /* Facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		5F609F4414716A73004EA083 /* facebook_ios_sdk_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = facebook_ios_sdk_Prefix.pch; sourceTree = "<group>"; };
+		5F609F4514716A73004EA083 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		5F609F4614716A73004EA083 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		5F609F4714716A73004EA083 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		5F609F4814716A73004EA083 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDialog.m; sourceTree = "<group>"; };
+		5F609F4914716A73004EA083 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		5F609F4A14716A73004EA083 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBLoginDialog.m; sourceTree = "<group>"; };
+		5F609F4B14716A73004EA083 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		5F609F4C14716A73004EA083 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequest.m; sourceTree = "<group>"; };
+		5F609F4E14716A73004EA083 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		5F609F4F14716A73004EA083 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		5F609F5014716A73004EA083 /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		5F609F5114716A73004EA083 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		5F609F5214716A73004EA083 /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		5F609F5314716A73004EA083 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		5F609F5414716A73004EA083 /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		5F609F5514716A73004EA083 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		5F609F5614716A73004EA083 /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		5F609F5714716A73004EA083 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		5F609F5814716A73004EA083 /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		5F609F5914716A73004EA083 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		5F609F5A14716A73004EA083 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		5F609F6F14717FD8004EA083 /* GuessWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuessWordViewController.h; sourceTree = "<group>"; };
+		5F609F7014717FD8004EA083 /* GuessWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuessWordViewController.m; sourceTree = "<group>"; };
+		5F609F721471801B004EA083 /* WordSmithViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordSmithViewController.h; sourceTree = "<group>"; };
+		5F609F731471801B004EA083 /* WordSmithViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordSmithViewController.m; sourceTree = "<group>"; };
+		5F609F751473077F004EA083 /* RulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RulesViewController.h; sourceTree = "<group>"; };
+		5F609F761473077F004EA083 /* RulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RulesViewController.m; sourceTree = "<group>"; };
+		5F82CC2D148FF188003B6F24 /* PopularWordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopularWordsViewController.h; sourceTree = "<group>"; };
+		5F82CC2E148FF188003B6F24 /* PopularWordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopularWordsViewController.m; sourceTree = "<group>"; };
+		5F84CFEE148D49EF00CDFDE0 /* PlayerScoreView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerScoreView.h; sourceTree = "<group>"; };
+		5F84CFEF148D49EF00CDFDE0 /* PlayerScoreView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerScoreView.m; sourceTree = "<group>"; };
+		5F85DA23149D5527007CBD92 /* L2WDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2WDisplayView.h; sourceTree = "<group>"; };
+		5F85DA24149D5527007CBD92 /* L2WDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L2WDisplayView.m; sourceTree = "<group>"; };
+		5F85DA2B149D94B3007CBD92 /* letterscores.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = letterscores.plist; sourceTree = "<group>"; };
+		5F85DA2D149D9842007CBD92 /* MessageDefs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDefs.h; sourceTree = "<group>"; };
+		5F85DA2E149EEBE8007CBD92 /* GameOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOverViewController.h; sourceTree = "<group>"; };
+		5F85DA2F149EEBE8007CBD92 /* GameOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOverViewController.m; sourceTree = "<group>"; };
+		5F85DA30149EEBE8007CBD92 /* GameOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameOverViewController.xib; sourceTree = "<group>"; };
+		5F8C941A15C47DE100C92DB1 /* rules.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = rules.plist; sourceTree = "<group>"; };
+		5F8C941C15C47FEC00C92DB1 /* RulesPatch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RulesPatch.png; path = Images/Backgrounds/RulesPatch.png; sourceTree = "<group>"; };
+		5F8C941E15C4A59D00C92DB1 /* SubmitButtonRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SubmitButtonRed.png; path = Images/Buttons/SubmitButtonRed.png; sourceTree = "<group>"; };
+		5F8C942015C4B35600C92DB1 /* WordList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordList.h; sourceTree = "<group>"; };
+		5F8C942115C4B35700C92DB1 /* WordList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordList.m; sourceTree = "<group>"; };
+		5F8C942315C4B46700C92DB1 /* FindWordsWithLettersIn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FindWordsWithLettersIn.png; sourceTree = "<group>"; };
+		5F8C942515C4C24F00C92DB1 /* WordBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WordBackground.png; sourceTree = "<group>"; };
+		5F8C942715C6387400C92DB1 /* FacebookButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FacebookButton.png; path = Images/Buttons/FacebookButton.png; sourceTree = "<group>"; };
+		5F92F9E214463046002966C7 /* Agoro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agoro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F92F9E614463046002966C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5F92F9E814463046002966C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5F92F9EA14463046002966C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5F92F9EE14463046002966C7 /* WordSmith-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordSmith-Info.plist"; sourceTree = "<group>"; };
+		5F92F9F014463046002966C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5F92F9F214463046002966C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F92F9F414463046002966C7 /* WordSmith-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordSmith-Prefix.pch"; sourceTree = "<group>"; };
+		5F92F9F514463046002966C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F92F9F614463046002966C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F92F9F914463046002966C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		5F92F9FB14463046002966C7 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		5F92F9FC14463046002966C7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		5F92FA0614463397002966C7 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		5F92FA0714463397002966C7 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5F9EBD9814F89DE2005B0686 /* HintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HintView.h; sourceTree = "<group>"; };
+		5F9EBD9914F89DE2005B0686 /* HintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HintView.m; sourceTree = "<group>"; };
+		5FA2308015B0E74100E2620E /* WordsPlayedBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordsPlayedBG.png; path = Images/Backgrounds/WordsPlayedBG.png; sourceTree = "<group>"; };
+		5FA2308315B746D000E2620E /* PopularWordsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PopularWordsBtn.png; path = ../Buttons/PopularWordsBtn.png; sourceTree = "<group>"; };
+		5FA2308415B746D000E2620E /* RecentWordsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RecentWordsBtn.png; path = ../Buttons/RecentWordsBtn.png; sourceTree = "<group>"; };
+		5FA2308815B780B400E2620E /* Round1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round1.png; sourceTree = "<group>"; };
+		5FA2308915B780B400E2620E /* Round2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round2.png; sourceTree = "<group>"; };
+		5FA2308A15B780B400E2620E /* Round3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round3.png; sourceTree = "<group>"; };
+		5FA2309315B7A30F00E2620E /* NextRoundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NextRoundViewController.h; path = ../NextRoundViewController.h; sourceTree = "<group>"; };
+		5FA2309415B7A30F00E2620E /* NextRoundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NextRoundViewController.m; path = ../NextRoundViewController.m; sourceTree = "<group>"; };
+		5FA2309915B7C36100E2620E /* Round1Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round1Btn.png; sourceTree = "<group>"; };
+		5FA2309A15B7C36100E2620E /* Round2Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round2Btn.png; sourceTree = "<group>"; };
+		5FA2309B15B7C36100E2620E /* Round3Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round3Btn.png; sourceTree = "<group>"; };
+		5FA2309F15B7C8A100E2620E /* GameTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTimer.h; sourceTree = "<group>"; };
+		5FA230A015B7C8A100E2620E /* GameTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTimer.m; sourceTree = "<group>"; };
+		5FA230A215B7D5F200E2620E /* BaseGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGameViewController.h; sourceTree = "<group>"; };
+		5FA230A315B7D5F200E2620E /* BaseGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGameViewController.m; sourceTree = "<group>"; };
+		5FAEC21115712C5700B86C06 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		5FAEC21215712C5700B86C06 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		5FAEC2151571371000B86C06 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5FAEC21B1578438B00B86C06 /* TournamentManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TournamentManager.h; sourceTree = "<group>"; };
+		5FAEC21C1578438B00B86C06 /* TournamentManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TournamentManager.m; sourceTree = "<group>"; };
+		5FB08F9C15F82979005981A0 /* ShareSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareSmall.png; path = Images/Buttons/ShareSmall.png; sourceTree = "<group>"; };
+		5FB08F9F1600FF26005981A0 /* TournamentOverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TournamentOverViewController.h; sourceTree = "<group>"; };
+		5FB08FA01600FF26005981A0 /* TournamentOverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TournamentOverViewController.m; sourceTree = "<group>"; };
+		5FB08FA11600FF26005981A0 /* TournamentOverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TournamentOverViewController.xib; sourceTree = "<group>"; };
+		5FB08FA416012114005981A0 /* TournamentOverBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TournamentOverBG.png; path = Images/Backgrounds/TournamentOverBG.png; sourceTree = "<group>"; };
+		5FB08FA6160125F7005981A0 /* FBButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FBButtonSmall.png; path = Images/Buttons/FBButtonSmall.png; sourceTree = "<group>"; };
+		5FB7868515AD03440054A780 /* ComputerDifficulty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComputerDifficulty.png; sourceTree = "<group>"; };
+		5FB7868715AD05370054A780 /* Letter2WordBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Letter2WordBtn.png; path = Images/Buttons/Letter2WordBtn.png; sourceTree = "<group>"; };
+		5FB7868815AD05370054A780 /* RevealTheWordBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RevealTheWordBtn.png; path = Images/Buttons/RevealTheWordBtn.png; sourceTree = "<group>"; };
+		5FB7868915AD05370054A780 /* WordSmithBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordSmithBtn.png; path = Images/Buttons/WordSmithBtn.png; sourceTree = "<group>"; };
+		5FB7868D15AD106B0054A780 /* WordSmithBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordSmithBG.png; path = Images/Backgrounds/WordSmithBG.png; sourceTree = "<group>"; };
+		5FD0A6F815C8A69B00B83E89 /* AgoroButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AgoroButton.png; path = Images/Buttons/AgoroButton.png; sourceTree = "<group>"; };
+		5FD0A6FB15C8AAB700B83E89 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenButton.png; path = Images/Buttons/GreenButton.png; sourceTree = "<group>"; };
+		5FD0A6FD15C9EC8900B83E89 /* ResultBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ResultBG.png; path = Images/Backgrounds/ResultBG.png; sourceTree = "<group>"; };
+		5FD0A6FF15C9F34C00B83E89 /* SettingsTopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SettingsTopBar.png; sourceTree = "<group>"; };
+		5FEB448815D1E853003AF774 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Images/Backgrounds/Default.png; sourceTree = "<group>"; };
+		5FEB448C15D1EEE3003AF774 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Backgrounds/Default@2x.png"; sourceTree = "<group>"; };
+		5FEB449515D1F0AC003AF774 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
+		5FEB449715D1F0EF003AF774 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
+		5FEE3770162CBD0200A194EB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		5FF82FC61497F377003A2DDC /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
+		5FF82FC71497F377003A2DDC /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
+		5FF82FCA1499229B003A2DDC /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5FF82FCB1499229B003A2DDC /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F92F9DF14463046002966C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FEE3771162CBD0200A194EB /* iAd.framework in Frameworks */,
+				5FAEC2161571371000B86C06 /* SystemConfiguration.framework in Frameworks */,
+				5F609F05144F1CF4004EA083 /* GameKit.framework in Frameworks */,
+				5F92F9E714463046002966C7 /* UIKit.framework in Frameworks */,
+				5F92F9E914463046002966C7 /* Foundation.framework in Frameworks */,
+				5F92F9EB14463046002966C7 /* CoreGraphics.framework in Frameworks */,
+				5F609F39146C78F9004EA083 /* libLexicontext.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F2B579E15BF5A11006E9DF7 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				5F2B579F15BF5A11006E9DF7 /* A.png */,
+				5F2B57A015BF5A11006E9DF7 /* B.png */,
+				5F2B57A115BF5A11006E9DF7 /* C.png */,
+				5F2B57A215BF5A11006E9DF7 /* D.png */,
+				5F2B57A315BF5A11006E9DF7 /* E.png */,
+				5F2B57A415BF5A11006E9DF7 /* F.png */,
+				5F2B57A515BF5A11006E9DF7 /* G.png */,
+				5F2B57A615BF5A11006E9DF7 /* H.png */,
+				5F2B57A715BF5A11006E9DF7 /* I.png */,
+				5F2B57A815BF5A11006E9DF7 /* J.png */,
+				5F2B57A915BF5A11006E9DF7 /* K.png */,
+				5F2B57AA15BF5A11006E9DF7 /* L.png */,
+				5F2B57AB15BF5A11006E9DF7 /* M.png */,
+				5F2B57AC15BF5A11006E9DF7 /* N.png */,
+				5F2B57AD15BF5A11006E9DF7 /* O.png */,
+				5F2B57AE15BF5A11006E9DF7 /* P.png */,
+				5F2B57AF15BF5A11006E9DF7 /* Q.png */,
+				5F2B57B015BF5A11006E9DF7 /* R.png */,
+				5F2B57B115BF5A11006E9DF7 /* S.png */,
+				5F2B57B215BF5A11006E9DF7 /* T.png */,
+				5F2B57B315BF5A11006E9DF7 /* U.png */,
+				5F2B57B415BF5A11006E9DF7 /* V.png */,
+				5F2B57B515BF5A11006E9DF7 /* W.png */,
+				5F2B57B615BF5A11006E9DF7 /* X.png */,
+				5F2B57B715BF5A11006E9DF7 /* Y.png */,
+				5F2B57B815BF5A11006E9DF7 /* Z.png */,
+			);
+			name = Tiles;
+			path = Images/Tiles;
+			sourceTree = "<group>";
+		};
+		5F5EA00515A8A66F00FFED22 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				5FA2309815B7C36100E2620E /* Tournament */,
+				5F2B57DB15BF87BA006E9DF7 /* SkipButton.png */,
+				5FD0A6F815C8A69B00B83E89 /* AgoroButton.png */,
+				5F5D76571610C3AE00BEAD2C /* ViewWords.png */,
+				5FD0A6FB15C8AAB700B83E89 /* GreenButton.png */,
+				5F8C942715C6387400C92DB1 /* FacebookButton.png */,
+				5FB08FA6160125F7005981A0 /* FBButtonSmall.png */,
+				5FB08F9C15F82979005981A0 /* ShareSmall.png */,
+				5F2B57DC15BF87BA006E9DF7 /* SubmitButton.png */,
+				5F8C941E15C4A59D00C92DB1 /* SubmitButtonRed.png */,
+				5FB7868715AD05370054A780 /* Letter2WordBtn.png */,
+				5FB7868815AD05370054A780 /* RevealTheWordBtn.png */,
+				5FB7868915AD05370054A780 /* WordSmithBtn.png */,
+				5F5EA01415A8A6CE00FFED22 /* button.png */,
+				5F5EA00815A8A68900FFED22 /* L2W.png */,
+				5F5EA00A15A8A69200FFED22 /* RtW.png */,
+				5F5EA00C15A8A69800FFED22 /* WS.png */,
+				5F5EA00115A8A65A00FFED22 /* GameInformation.png */,
+				5F5EA00315A8A66200FFED22 /* Leaderboard.png */,
+				5F5EA00615A8A68000FFED22 /* WordsPlayed.png */,
+				5F5EA00E15A8A6BE00FFED22 /* Multiplayer.png */,
+				5F5EA00F15A8A6BE00FFED22 /* SinglePlayer.png */,
+				5F5EA01015A8A6BE00FFED22 /* Tournament.png */,
+			);
+			name = Buttons;
+			sourceTree = "<group>";
+		};
+		5F5EA01A15A8A70600FFED22 /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				5FA2308715B780B400E2620E /* Tournament */,
+				5F5EA01615A8A6FA00FFED22 /* MainBackground.png */,
+				5FEB448815D1E853003AF774 /* Default.png */,
+				5FEB448C15D1EEE3003AF774 /* Default@2x.png */,
+				5FA2308015B0E74100E2620E /* WordsPlayedBG.png */,
+				5FD0A6FD15C9EC8900B83E89 /* ResultBG.png */,
+				5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */,
+				5F2B57D915BF8683006E9DF7 /* RevealTheWordBottom.png */,
+				5F8C941C15C47FEC00C92DB1 /* RulesPatch.png */,
+				5FB7868D15AD106B0054A780 /* WordSmithBG.png */,
+				5F5EA01715A8A6FA00FFED22 /* bottom.png */,
+				5F5EA01F15A8B05400FFED22 /* Letter2WordBG.png */,
+				5FB08FA416012114005981A0 /* TournamentOverBG.png */,
+				5F5EA01D15A8AA5A00FFED22 /* ChooseMode.png */,
+				5F5EA01B15A8A91400FFED22 /* ChooseModeBottom.png */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
+		5F5EA02315ABA58E00FFED22 /* Slider */ = {
+			isa = PBXGroup;
+			children = (
+				5F5EA02815ABC7BC00FFED22 /* Slider.png */,
+				5F5EA02415ABA58F00FFED22 /* ZipperMax.png */,
+				5F5EA02515ABA58F00FFED22 /* ZipperMin.png */,
+			);
+			name = Slider;
+			path = Images/Slider;
+			sourceTree = "<group>";
+		};
+		5F5EA02A15AD010F00FFED22 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5F5EA02B15AD010F00FFED22 /* AmericanTypewriter.ttc */,
+				5F5EA02C15AD010F00FFED22 /* BelloPro.otf */,
+				5F5EA02D15AD010F00FFED22 /* KlavikaRegular-TF.otf */,
+				5F5EA02E15AD010F00FFED22 /* MyriadPro */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		5F5EA02E15AD010F00FFED22 /* MyriadPro */ = {
+			isa = PBXGroup;
+			children = (
+				5F5EA03615AD010F00FFED22 /* MyriadPro-Regular.otf */,
+			);
+			path = MyriadPro;
+			sourceTree = "<group>";
+		};
+		5F609F3A146C790B004EA083 /* Lexicontext */ = {
+			isa = PBXGroup;
+			children = (
+				5F609F35146C78F9004EA083 /* Lexicontext.h */,
+				5F609F36146C78F9004EA083 /* LexicontextAssets.bundle */,
+				5F609F37146C78F9004EA083 /* libLexicontext.a */,
+			);
+			name = Lexicontext;
+			sourceTree = "<group>";
+		};
+		5F609F3D146D815D004EA083 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5FEB449015D1EF58003AF774 /* Icons */,
+				5F2B579E15BF5A11006E9DF7 /* Tiles */,
+				5F5EA02315ABA58E00FFED22 /* Slider */,
+				5F5EA00515A8A66F00FFED22 /* Buttons */,
+				5F5EA01A15A8A70600FFED22 /* Backgrounds */,
+				5FB7868115AD03150054A780 /* Misc */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		5F609F3E14716A72004EA083 /* facebook */ = {
+			isa = PBXGroup;
+			children = (
+				5F609F4214716A73004EA083 /* Facebook.h */,
+				5F609F4314716A73004EA083 /* Facebook.m */,
+				5F609F4414716A73004EA083 /* facebook_ios_sdk_Prefix.pch */,
+				5F609F4514716A73004EA083 /* FBConnect.h */,
+				5F609F4714716A73004EA083 /* FBDialog.h */,
+				5F609F4814716A73004EA083 /* FBDialog.m */,
+				5F609F4914716A73004EA083 /* FBLoginDialog.h */,
+				5F609F4A14716A73004EA083 /* FBLoginDialog.m */,
+				5F609F4B14716A73004EA083 /* FBRequest.h */,
+				5F609F4C14716A73004EA083 /* FBRequest.m */,
+				5F609F4614716A73004EA083 /* FBDialog.bundle */,
+				5F609F4D14716A73004EA083 /* JSON */,
+			);
+			name = facebook;
+			path = WordSmith/facebook;
+			sourceTree = "<group>";
+		};
+		5F609F4D14716A73004EA083 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				5F609F4E14716A73004EA083 /* JSON.h */,
+				5F609F4F14716A73004EA083 /* NSObject+SBJSON.h */,
+				5F609F5014716A73004EA083 /* NSObject+SBJSON.m */,
+				5F609F5114716A73004EA083 /* NSString+SBJSON.h */,
+				5F609F5214716A73004EA083 /* NSString+SBJSON.m */,
+				5F609F5314716A73004EA083 /* SBJSON.h */,
+				5F609F5414716A73004EA083 /* SBJSON.m */,
+				5F609F5514716A73004EA083 /* SBJsonBase.h */,
+				5F609F5614716A73004EA083 /* SBJsonBase.m */,
+				5F609F5714716A73004EA083 /* SBJsonParser.h */,
+				5F609F5814716A73004EA083 /* SBJsonParser.m */,
+				5F609F5914716A73004EA083 /* SBJsonWriter.h */,
+				5F609F5A14716A73004EA083 /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		5F8B86CD14DB3FEA004AA30B /* Game Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FA230A215B7D5F200E2620E /* BaseGameViewController.h */,
+				5FA230A315B7D5F200E2620E /* BaseGameViewController.m */,
+				5F92FA0614463397002966C7 /* GameViewController.h */,
+				5F92FA0714463397002966C7 /* GameViewController.m */,
+				5F609F721471801B004EA083 /* WordSmithViewController.h */,
+				5F609F731471801B004EA083 /* WordSmithViewController.m */,
+				5F609F6F14717FD8004EA083 /* GuessWordViewController.h */,
+				5F609F7014717FD8004EA083 /* GuessWordViewController.m */,
+			);
+			name = "Game Views";
+			sourceTree = "<group>";
+		};
+		5F8B86CF14DB4024004AA30B /* Navigation Views */ = {
+			isa = PBXGroup;
+			children = (
+				5F92F9FB14463046002966C7 /* MasterViewController.h */,
+				5F92F9FC14463046002966C7 /* MasterViewController.m */,
+				5FA2309315B7A30F00E2620E /* NextRoundViewController.h */,
+				5FA2309415B7A30F00E2620E /* NextRoundViewController.m */,
+				5F609F2F146AD982004EA083 /* ChooseLeaderboardViewController.h */,
+				5F609F30146AD982004EA083 /* ChooseLeaderboardViewController.m */,
+				5F609F28146ACF41004EA083 /* ChooseModeViewController.h */,
+				5F609F29146ACF41004EA083 /* ChooseModeViewController.m */,
+			);
+			name = "Navigation Views";
+			sourceTree = "<group>";
+		};
+		5F8B86D014DB405C004AA30B /* Supplementary Views */ = {
+			isa = PBXGroup;
+			children = (
+				5FF82FCA1499229B003A2DDC /* SettingsViewController.h */,
+				5FF82FCB1499229B003A2DDC /* SettingsViewController.m */,
+				5F609F751473077F004EA083 /* RulesViewController.h */,
+				5F609F761473077F004EA083 /* RulesViewController.m */,
+				5F82CC2D148FF188003B6F24 /* PopularWordsViewController.h */,
+				5F82CC2E148FF188003B6F24 /* PopularWordsViewController.m */,
+				5F85DA2E149EEBE8007CBD92 /* GameOverViewController.h */,
+				5F85DA2F149EEBE8007CBD92 /* GameOverViewController.m */,
+				5FB08F9F1600FF26005981A0 /* TournamentOverViewController.h */,
+				5FB08FA01600FF26005981A0 /* TournamentOverViewController.m */,
+			);
+			name = "Supplementary Views";
+			sourceTree = "<group>";
+		};
+		5F8B86D114DB4098004AA30B /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				5F85DA23149D5527007CBD92 /* L2WDisplayView.h */,
+				5F85DA24149D5527007CBD92 /* L2WDisplayView.m */,
+				5F84CFEE148D49EF00CDFDE0 /* PlayerScoreView.h */,
+				5F84CFEF148D49EF00CDFDE0 /* PlayerScoreView.m */,
+				5F9EBD9814F89DE2005B0686 /* HintView.h */,
+				5F9EBD9914F89DE2005B0686 /* HintView.m */,
+				5F8C942015C4B35600C92DB1 /* WordList.h */,
+				5F8C942115C4B35700C92DB1 /* WordList.m */,
+				5F2B57D615BF80B3006E9DF7 /* CustomTextField.h */,
+				5F2B57D715BF80B3006E9DF7 /* CustomTextField.m */,
+				5F2B57D315BF783D006E9DF7 /* TileLabel.h */,
+				5F2B57D415BF783D006E9DF7 /* TileLabel.m */,
+				5F2B579B15BF56B8006E9DF7 /* TileButton.h */,
+				5F2B579C15BF56B8006E9DF7 /* TileButton.m */,
+			);
+			name = Subviews;
+			sourceTree = "<group>";
+		};
+		5F8B86D214DB4120004AA30B /* Other Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5FF82FC61497F377003A2DDC /* AIPlayer.h */,
+				5FF82FC71497F377003A2DDC /* AIPlayer.m */,
+				5FA2309F15B7C8A100E2620E /* GameTimer.h */,
+				5FA230A015B7C8A100E2620E /* GameTimer.m */,
+			);
+			name = "Other Classes";
+			sourceTree = "<group>";
+		};
+		5F8B86D314DB41C7004AA30B /* Management */ = {
+			isa = PBXGroup;
+			children = (
+				5F85DA2D149D9842007CBD92 /* MessageDefs.h */,
+				5F5AF403161E8D950012FB7C /* Definitions.h */,
+				5F92F9F514463046002966C7 /* AppDelegate.h */,
+				5F92F9F614463046002966C7 /* AppDelegate.m */,
+				5FAEC21B1578438B00B86C06 /* TournamentManager.h */,
+				5FAEC21C1578438B00B86C06 /* TournamentManager.m */,
+				5F609EFF144F12FB004EA083 /* GameCenterManager.h */,
+				5F609F00144F12FB004EA083 /* GameCenterManager.m */,
+			);
+			name = Management;
+			sourceTree = "<group>";
+		};
+		5F8B86D414DB4203004AA30B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B86D514DB4231004AA30B /* IB Files */,
+				5F5EA02A15AD010F00FFED22 /* fonts */,
+				5F609F3D146D815D004EA083 /* Images */,
+				5F85DA2B149D94B3007CBD92 /* letterscores.plist */,
+				5F8C941A15C47DE100C92DB1 /* rules.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5F8B86D514DB4231004AA30B /* IB Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F92F9F814463046002966C7 /* MainStoryboard.storyboard */,
+				5F85DA30149EEBE8007CBD92 /* GameOverViewController.xib */,
+				5FB08FA11600FF26005981A0 /* TournamentOverViewController.xib */,
+			);
+			name = "IB Files";
+			sourceTree = "<group>";
+		};
+		5F92F9D714463046002966C7 = {
+			isa = PBXGroup;
+			children = (
+				5F92F9EC14463046002966C7 /* WordSmith */,
+				5F609F3A146C790B004EA083 /* Lexicontext */,
+				5FAEC21015712C5700B86C06 /* Reachability */,
+				5F609F3E14716A72004EA083 /* facebook */,
+				5F92F9ED14463046002966C7 /* Supporting Files */,
+				5F92F9E514463046002966C7 /* Frameworks */,
+				5F92F9E314463046002966C7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5F92F9E314463046002966C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F92F9E214463046002966C7 /* Agoro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F92F9E514463046002966C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FEE3770162CBD0200A194EB /* iAd.framework */,
+				5FAEC2151571371000B86C06 /* SystemConfiguration.framework */,
+				5F609F03144F1CD1004EA083 /* GameKit.framework */,
+				5F92F9E614463046002966C7 /* UIKit.framework */,
+				5F92F9E814463046002966C7 /* Foundation.framework */,
+				5F92F9EA14463046002966C7 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5F92F9EC14463046002966C7 /* WordSmith */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B86D314DB41C7004AA30B /* Management */,
+				5F8B86CD14DB3FEA004AA30B /* Game Views */,
+				5F8B86CF14DB4024004AA30B /* Navigation Views */,
+				5F8B86D014DB405C004AA30B /* Supplementary Views */,
+				5F8B86D114DB4098004AA30B /* Subviews */,
+				5F8B86D214DB4120004AA30B /* Other Classes */,
+				5F8B86D414DB4203004AA30B /* Resources */,
+			);
+			path = WordSmith;
+			sourceTree = "<group>";
+		};
+		5F92F9ED14463046002966C7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F92F9EE14463046002966C7 /* WordSmith-Info.plist */,
+				5F92F9EF14463046002966C7 /* InfoPlist.strings */,
+				5F92F9F214463046002966C7 /* main.m */,
+				5F92F9F414463046002966C7 /* WordSmith-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = WordSmith;
+			sourceTree = "<group>";
+		};
+		5FA2308715B780B400E2620E /* Tournament */ = {
+			isa = PBXGroup;
+			children = (
+				5FA2308815B780B400E2620E /* Round1.png */,
+				5FA2308915B780B400E2620E /* Round2.png */,
+				5FA2308A15B780B400E2620E /* Round3.png */,
+			);
+			name = Tournament;
+			path = Images/Backgrounds/Tournament;
+			sourceTree = "<group>";
+		};
+		5FA2309815B7C36100E2620E /* Tournament */ = {
+			isa = PBXGroup;
+			children = (
+				5FA2309915B7C36100E2620E /* Round1Btn.png */,
+				5FA2309A15B7C36100E2620E /* Round2Btn.png */,
+				5FA2309B15B7C36100E2620E /* Round3Btn.png */,
+			);
+			name = Tournament;
+			path = Images/Buttons/Tournament;
+			sourceTree = "<group>";
+		};
+		5FAEC21015712C5700B86C06 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				5FAEC21115712C5700B86C06 /* Reachability.h */,
+				5FAEC21215712C5700B86C06 /* Reachability.m */,
+			);
+			name = Reachability;
+			path = WordSmith/Reachability;
+			sourceTree = "<group>";
+		};
+		5FB7868115AD03150054A780 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				5F1811741649ECF700976C9C /* TournamentScoreBoard.png */,
+				5F1811711648735000976C9C /* StitchBox.png */,
+				5F051E4A16156BB20033EEC9 /* Winner.png */,
+				5FD0A6FF15C9F34C00B83E89 /* SettingsTopBar.png */,
+				5F8C942515C4C24F00C92DB1 /* WordBackground.png */,
+				5FA2308315B746D000E2620E /* PopularWordsBtn.png */,
+				5FA2308415B746D000E2620E /* RecentWordsBtn.png */,
+				5F8C942315C4B46700C92DB1 /* FindWordsWithLettersIn.png */,
+				5FB7868515AD03440054A780 /* ComputerDifficulty.png */,
+			);
+			name = Misc;
+			path = Images/Misc;
+			sourceTree = "<group>";
+		};
+		5FEB449015D1EF58003AF774 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				5F27ED76161B508D008DE18B /* Default-568h@2x.png */,
+				5FEB449715D1F0EF003AF774 /* Icon@2x.png */,
+				5FEB449515D1F0AC003AF774 /* Icon.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F92F9E114463046002966C7 /* WordSmith */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F92FA0314463046002966C7 /* Build configuration list for PBXNativeTarget "WordSmith" */;
+			buildPhases = (
+				5F92F9DE14463046002966C7 /* Sources */,
+				5F92F9DF14463046002966C7 /* Frameworks */,
+				5F92F9E014463046002966C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordSmith;
+			productName = WordSmith;
+			productReference = 5F92F9E214463046002966C7 /* Agoro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F92F9D914463046002966C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Codevs, Inc.";
+			};
+			buildConfigurationList = 5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "WordSmith" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5F92F9D714463046002966C7;
+			productRefGroup = 5F92F9E314463046002966C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F92F9E114463046002966C7 /* WordSmith */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F92F9E014463046002966C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F92F9F114463046002966C7 /* InfoPlist.strings in Resources */,
+				5F92F9FA14463046002966C7 /* MainStoryboard.storyboard in Resources */,
+				5F609F38146C78F9004EA083 /* LexicontextAssets.bundle in Resources */,
+				5F609F5F14716A73004EA083 /* FBDialog.bundle in Resources */,
+				5F85DA2C149D94B3007CBD92 /* letterscores.plist in Resources */,
+				5F85DA32149EEBE8007CBD92 /* GameOverViewController.xib in Resources */,
+				5F5EA00215A8A65A00FFED22 /* GameInformation.png in Resources */,
+				5F5EA00415A8A66200FFED22 /* Leaderboard.png in Resources */,
+				5F5EA00715A8A68000FFED22 /* WordsPlayed.png in Resources */,
+				5F5EA00915A8A68900FFED22 /* L2W.png in Resources */,
+				5F5EA00B15A8A69200FFED22 /* RtW.png in Resources */,
+				5F5EA00D15A8A69800FFED22 /* WS.png in Resources */,
+				5F5EA01115A8A6BE00FFED22 /* Multiplayer.png in Resources */,
+				5F5EA01215A8A6BE00FFED22 /* SinglePlayer.png in Resources */,
+				5F5EA02215AB693A00FFED22 /* bottom.png in Resources */,
+				5F5EA02115AB693000FFED22 /* MainBackground.png in Resources */,
+				5F5EA01315A8A6BE00FFED22 /* Tournament.png in Resources */,
+				5FB7868615AD03440054A780 /* ComputerDifficulty.png in Resources */,
+				5F5EA01515A8A6CE00FFED22 /* button.png in Resources */,
+				5F5EA01C15A8A91400FFED22 /* ChooseModeBottom.png in Resources */,
+				5F5EA01E15A8AA5A00FFED22 /* ChooseMode.png in Resources */,
+				5F5EA02015A8B05400FFED22 /* Letter2WordBG.png in Resources */,
+				5F5EA02615ABA58F00FFED22 /* ZipperMax.png in Resources */,
+				5F5EA02715ABA58F00FFED22 /* ZipperMin.png in Resources */,
+				5F5EA02915ABC7BC00FFED22 /* Slider.png in Resources */,
+				5F5EA03B15AD010F00FFED22 /* AmericanTypewriter.ttc in Resources */,
+				5F5EA03C15AD010F00FFED22 /* BelloPro.otf in Resources */,
+				5F5EA03D15AD010F00FFED22 /* KlavikaRegular-TF.otf in Resources */,
+				5F5EA04515AD010F00FFED22 /* MyriadPro-Regular.otf in Resources */,
+				5FB7868A15AD05370054A780 /* Letter2WordBtn.png in Resources */,
+				5FB7868B15AD05370054A780 /* RevealTheWordBtn.png in Resources */,
+				5FB7868C15AD05370054A780 /* WordSmithBtn.png in Resources */,
+				5FB7868E15AD106B0054A780 /* WordSmithBG.png in Resources */,
+				5FA2308115B0E74100E2620E /* WordsPlayedBG.png in Resources */,
+				5FA2308515B746D000E2620E /* PopularWordsBtn.png in Resources */,
+				5FA2308615B746D000E2620E /* RecentWordsBtn.png in Resources */,
+				5FA2308B15B780B400E2620E /* Round1.png in Resources */,
+				5FA2308C15B780B400E2620E /* Round2.png in Resources */,
+				5FA2308D15B780B400E2620E /* Round3.png in Resources */,
+				5FA2309C15B7C36100E2620E /* Round1Btn.png in Resources */,
+				5FA2309D15B7C36100E2620E /* Round2Btn.png in Resources */,
+				5FA2309E15B7C36100E2620E /* Round3Btn.png in Resources */,
+				5F2B579915BDF13D006E9DF7 /* RevealTheWordBG.png in Resources */,
+				5F2B57B915BF5A11006E9DF7 /* A.png in Resources */,
+				5F2B57BA15BF5A11006E9DF7 /* B.png in Resources */,
+				5F2B57BB15BF5A11006E9DF7 /* C.png in Resources */,
+				5F2B57BC15BF5A11006E9DF7 /* D.png in Resources */,
+				5F2B57BD15BF5A11006E9DF7 /* E.png in Resources */,
+				5F2B57BE15BF5A11006E9DF7 /* F.png in Resources */,
+				5F2B57BF15BF5A11006E9DF7 /* G.png in Resources */,
+				5F2B57C015BF5A11006E9DF7 /* H.png in Resources */,
+				5F2B57C115BF5A11006E9DF7 /* I.png in Resources */,
+				5F2B57C215BF5A11006E9DF7 /* J.png in Resources */,
+				5F2B57C315BF5A11006E9DF7 /* K.png in Resources */,
+				5F2B57C415BF5A11006E9DF7 /* L.png in Resources */,
+				5F2B57C515BF5A11006E9DF7 /* M.png in Resources */,
+				5F2B57C615BF5A11006E9DF7 /* N.png in Resources */,
+				5F2B57C715BF5A11006E9DF7 /* O.png in Resources */,
+				5F2B57C815BF5A11006E9DF7 /* P.png in Resources */,
+				5F2B57C915BF5A11006E9DF7 /* Q.png in Resources */,
+				5F2B57CA15BF5A11006E9DF7 /* R.png in Resources */,
+				5F2B57CB15BF5A11006E9DF7 /* S.png in Resources */,
+				5F2B57CC15BF5A11006E9DF7 /* T.png in Resources */,
+				5F2B57CD15BF5A11006E9DF7 /* U.png in Resources */,
+				5F2B57CE15BF5A11006E9DF7 /* V.png in Resources */,
+				5F2B57CF15BF5A11006E9DF7 /* W.png in Resources */,
+				5F2B57D015BF5A11006E9DF7 /* X.png in Resources */,
+				5F2B57D115BF5A11006E9DF7 /* Y.png in Resources */,
+				5F2B57D215BF5A11006E9DF7 /* Z.png in Resources */,
+				5F2B57DA15BF8683006E9DF7 /* RevealTheWordBottom.png in Resources */,
+				5F2B57DD15BF87BA006E9DF7 /* SkipButton.png in Resources */,
+				5F2B57DE15BF87BA006E9DF7 /* SubmitButton.png in Resources */,
+				5F8C941B15C47DE100C92DB1 /* rules.plist in Resources */,
+				5F8C941D15C47FEC00C92DB1 /* RulesPatch.png in Resources */,
+				5F8C941F15C4A59D00C92DB1 /* SubmitButtonRed.png in Resources */,
+				5F8C942415C4B46700C92DB1 /* FindWordsWithLettersIn.png in Resources */,
+				5F8C942615C4C24F00C92DB1 /* WordBackground.png in Resources */,
+				5F8C942815C6387400C92DB1 /* FacebookButton.png in Resources */,
+				5FD0A6F915C8A69B00B83E89 /* AgoroButton.png in Resources */,
+				5FD0A6FC15C8AAB700B83E89 /* GreenButton.png in Resources */,
+				5FD0A6FE15C9EC8900B83E89 /* ResultBG.png in Resources */,
+				5FD0A70015C9F34C00B83E89 /* SettingsTopBar.png in Resources */,
+				5FEB448915D1E853003AF774 /* Default.png in Resources */,
+				5FEB448D15D1EEE3003AF774 /* Default@2x.png in Resources */,
+				5FEB449615D1F0AC003AF774 /* Icon.png in Resources */,
+				5FEB449815D1F0EF003AF774 /* Icon@2x.png in Resources */,
+				5FB08F9D15F82979005981A0 /* ShareSmall.png in Resources */,
+				5FB08FA31600FF26005981A0 /* TournamentOverViewController.xib in Resources */,
+				5FB08FA516012114005981A0 /* TournamentOverBG.png in Resources */,
+				5FB08FA7160125F7005981A0 /* FBButtonSmall.png in Resources */,
+				5F5D76581610C3AE00BEAD2C /* ViewWords.png in Resources */,
+				5F051E4B16156BB20033EEC9 /* Winner.png in Resources */,
+				5F27ED77161B508D008DE18B /* Default-568h@2x.png in Resources */,
+				5F1811721648735000976C9C /* StitchBox.png in Resources */,
+				5F1811751649ECF700976C9C /* TournamentScoreBoard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F92F9DE14463046002966C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F92F9F314463046002966C7 /* main.m in Sources */,
+				5F92F9F714463046002966C7 /* AppDelegate.m in Sources */,
+				5F92F9FD14463046002966C7 /* MasterViewController.m in Sources */,
+				5F92FA0814463397002966C7 /* GameViewController.m in Sources */,
+				5F609F01144F12FB004EA083 /* GameCenterManager.m in Sources */,
+				5F609F2A146ACF41004EA083 /* ChooseModeViewController.m in Sources */,
+				5F609F31146AD982004EA083 /* ChooseLeaderboardViewController.m in Sources */,
+				5F609F5E14716A73004EA083 /* Facebook.m in Sources */,
+				5F609F6014716A73004EA083 /* FBDialog.m in Sources */,
+				5F609F6114716A73004EA083 /* FBLoginDialog.m in Sources */,
+				5F609F6214716A73004EA083 /* FBRequest.m in Sources */,
+				5F609F6314716A73004EA083 /* NSObject+SBJSON.m in Sources */,
+				5F609F6414716A73004EA083 /* NSString+SBJSON.m in Sources */,
+				5F609F6514716A73004EA083 /* SBJSON.m in Sources */,
+				5F609F6614716A73004EA083 /* SBJsonBase.m in Sources */,
+				5F609F6714716A73004EA083 /* SBJsonParser.m in Sources */,
+				5F609F6814716A73004EA083 /* SBJsonWriter.m in Sources */,
+				5F609F7114717FD8004EA083 /* GuessWordViewController.m in Sources */,
+				5FAEC21315712C5700B86C06 /* Reachability.m in Sources */,
+				5F609F741471801B004EA083 /* WordSmithViewController.m in Sources */,
+				5F609F771473077F004EA083 /* RulesViewController.m in Sources */,
+				5F84CFF0148D49EF00CDFDE0 /* PlayerScoreView.m in Sources */,
+				5F82CC2F148FF188003B6F24 /* PopularWordsViewController.m in Sources */,
+				5FF82FC81497F377003A2DDC /* AIPlayer.m in Sources */,
+				5FF82FCC1499229B003A2DDC /* SettingsViewController.m in Sources */,
+				5F85DA25149D5527007CBD92 /* L2WDisplayView.m in Sources */,
+				5F85DA31149EEBE8007CBD92 /* GameOverViewController.m in Sources */,
+				5F9EBD9A14F89DE2005B0686 /* HintView.m in Sources */,
+				5FAEC21D1578438B00B86C06 /* TournamentManager.m in Sources */,
+				5FA2309615B7A31000E2620E /* NextRoundViewController.m in Sources */,
+				5FA230A115B7C8A200E2620E /* GameTimer.m in Sources */,
+				5FA230A415B7D5F200E2620E /* BaseGameViewController.m in Sources */,
+				5F2B579D15BF56B8006E9DF7 /* TileButton.m in Sources */,
+				5F2B57D515BF783D006E9DF7 /* TileLabel.m in Sources */,
+				5F2B57D815BF80B4006E9DF7 /* CustomTextField.m in Sources */,
+				5F8C942215C4B35700C92DB1 /* WordList.m in Sources */,
+				5FB08FA21600FF26005981A0 /* TournamentOverViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5F92F9EF14463046002966C7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F92F9F014463046002966C7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5F92F9F814463046002966C7 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F92F9F914463046002966C7 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F92FA0114463046002966C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "47989918-8663-4353-B0F0-8AE11DE68998";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F92FA0214463046002966C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Kwesi Buabeng";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "1E4D0B9B-C265-4CD6-AB13-3EB0296F7D5D";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F92FA0414463046002966C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
+				INFOPLIST_FILE = "WordSmith/WordSmith-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WordSmith/Lexicontext\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Agoro;
+				PROVISIONING_PROFILE = "47989918-8663-4353-B0F0-8AE11DE68998";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F92FA0514463046002966C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kwesi Buabeng";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
+				INFOPLIST_FILE = "WordSmith/WordSmith-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WordSmith/Lexicontext\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = Agoro;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FDC9F31A-7608-4840-8313-A81E6AD0C0DE";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "WordSmith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F92FA0114463046002966C7 /* Debug */,
+				5F92FA0214463046002966C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F92FA0314463046002966C7 /* Build configuration list for PBXNativeTarget "WordSmith" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F92FA0414463046002966C7 /* Debug */,
+				5F92FA0514463046002966C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F92F9D914463046002966C7 /* Project object */;
+}
