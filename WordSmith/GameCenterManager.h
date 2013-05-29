@@ -12,17 +12,6 @@ typedef enum {
     kGameStateDone
 } GameState;
 
-//#define TestingTournament 1
-//#define AdsEnabled 1
-
-#define GAMENAME(x) [[NSArray arrayWithObjects: @"",@"Letter 2 Word",@"Word Smith",@"Reveal the Word",nil] objectAtIndex:(x)]
-#define LEADERBOARD(x) [[NSArray arrayWithObjects: @"Letter2Word1",@"WordSmith1",@"RevealTheWord1",nil] objectAtIndex:(x)]
-
-#define kCompID @"CompPlayer001"
-#define kP1ID @"HumanPlayer001"
-
-#define GCM [GameCenterManager sharedInstance]
-
 
 @class GKLeaderboard, GKAchievement, GKPlayer, TournamentManager;
 
@@ -72,7 +61,7 @@ typedef enum {
 - (void) authenticateLocalUser;
 - (void) setGameState:(GameState)state;
 - (void) tryStartGame;
-- (void) mapPlayerIDtoPlayer: (NSString*) playerID;
+//- (void) mapPlayerIDtoPlayer: (NSString*) playerID;
 - (void) givePointsForWord:(NSString *)word toPlayer:(NSUInteger)lastTurn withMultiplier:(float)mult;
 - (void) findMatchWithMinPlayers:(int)minPlayers maxPlayers:(int)maxPlayers
                           invite:(GKInvite *)acceptedInvite
@@ -96,7 +85,7 @@ typedef enum {
 - (void) reportScore: (int64_t) score forCategory: (NSString*) category;
 - (void) reloadHighScoresForCategory: (NSString*) category;
 //Achievements
-- (void) submitAchievement: (NSString*) identifier percentComplete: (double) percentComplete;
-- (void) resetAchievements;
+//- (void) submitAchievement: (NSString*) identifier percentComplete: (double) percentComplete;
+//- (void) resetAchievements;
 
 @end

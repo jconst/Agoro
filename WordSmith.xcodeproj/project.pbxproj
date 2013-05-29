@@ -12,6 +12,145 @@
 		5F1811721648735000976C9C /* StitchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811711648735000976C9C /* StitchBox.png */; };
 		5F1811751649ECF700976C9C /* TournamentScoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811741649ECF700976C9C /* TournamentScoreBoard.png */; };
 		5F27ED77161B508D008DE18B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F27ED76161B508D008DE18B /* Default-568h@2x.png */; };
+		5F289FF217564E7D000CCE85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F214463046002966C7 /* main.m */; };
+		5F289FF317564E7D000CCE85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F614463046002966C7 /* AppDelegate.m */; };
+		5F289FF417564E7D000CCE85 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9FC14463046002966C7 /* MasterViewController.m */; };
+		5F289FF517564E7D000CCE85 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92FA0714463397002966C7 /* GameViewController.m */; };
+		5F289FF617564E7D000CCE85 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F00144F12FB004EA083 /* GameCenterManager.m */; };
+		5F289FF717564E7D000CCE85 /* ChooseModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F29146ACF41004EA083 /* ChooseModeViewController.m */; };
+		5F289FF817564E7D000CCE85 /* ChooseLeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F30146AD982004EA083 /* ChooseLeaderboardViewController.m */; };
+		5F289FF917564E7D000CCE85 /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4314716A73004EA083 /* Facebook.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F289FFA17564E7D000CCE85 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4814716A73004EA083 /* FBDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F289FFB17564E7D000CCE85 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4A14716A73004EA083 /* FBLoginDialog.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F289FFC17564E7D000CCE85 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F4C14716A73004EA083 /* FBRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F289FFD17564E7D000CCE85 /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5014716A73004EA083 /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F289FFE17564E7D000CCE85 /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5214716A73004EA083 /* NSString+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F289FFF17564E7D000CCE85 /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5414716A73004EA083 /* SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F28A00017564E7D000CCE85 /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5614716A73004EA083 /* SBJsonBase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F28A00117564E7D000CCE85 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5814716A73004EA083 /* SBJsonParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F28A00217564E7D000CCE85 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F5A14716A73004EA083 /* SBJsonWriter.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F28A00317564E7D000CCE85 /* GuessWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F7014717FD8004EA083 /* GuessWordViewController.m */; };
+		5F28A00417564E7D000CCE85 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEC21215712C5700B86C06 /* Reachability.m */; };
+		5F28A00517564E7D000CCE85 /* WordSmithViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F731471801B004EA083 /* WordSmithViewController.m */; };
+		5F28A00617564E7D000CCE85 /* RulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F761473077F004EA083 /* RulesViewController.m */; };
+		5F28A00717564E7D000CCE85 /* PlayerScoreView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F84CFEF148D49EF00CDFDE0 /* PlayerScoreView.m */; };
+		5F28A00817564E7D000CCE85 /* PopularWordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F82CC2E148FF188003B6F24 /* PopularWordsViewController.m */; };
+		5F28A00917564E7D000CCE85 /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82FC71497F377003A2DDC /* AIPlayer.m */; };
+		5F28A00A17564E7D000CCE85 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82FCB1499229B003A2DDC /* SettingsViewController.m */; };
+		5F28A00B17564E7D000CCE85 /* L2WDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DA24149D5527007CBD92 /* L2WDisplayView.m */; };
+		5F28A00C17564E7D000CCE85 /* GameOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F85DA2F149EEBE8007CBD92 /* GameOverViewController.m */; };
+		5F28A00D17564E7D000CCE85 /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EBD9914F89DE2005B0686 /* HintView.m */; };
+		5F28A00E17564E7D000CCE85 /* TournamentManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEC21C1578438B00B86C06 /* TournamentManager.m */; };
+		5F28A00F17564E7D000CCE85 /* GameTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA230A015B7C8A100E2620E /* GameTimer.m */; };
+		5F28A01017564E7D000CCE85 /* BaseGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FA230A315B7D5F200E2620E /* BaseGameViewController.m */; };
+		5F28A01117564E7D000CCE85 /* TileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B579C15BF56B8006E9DF7 /* TileButton.m */; };
+		5F28A01217564E7D000CCE85 /* TileLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B57D415BF783D006E9DF7 /* TileLabel.m */; };
+		5F28A01317564E7D000CCE85 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B57D715BF80B3006E9DF7 /* CustomTextField.m */; };
+		5F28A01417564E7D000CCE85 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C942115C4B35700C92DB1 /* WordList.m */; };
+		5F28A01517564E7D000CCE85 /* NextRoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F13476E16C83B1A005F56E6 /* NextRoundViewController.m */; };
+		5F28A01617564E7D000CCE85 /* TournamentOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FB08FA01600FF26005981A0 /* TournamentOverViewController.m */; };
+		5F28A01817564E7D000CCE85 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE3770162CBD0200A194EB /* iAd.framework */; };
+		5F28A01917564E7D000CCE85 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAEC2151571371000B86C06 /* SystemConfiguration.framework */; };
+		5F28A01A17564E7D000CCE85 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F609F03144F1CD1004EA083 /* GameKit.framework */; };
+		5F28A01B17564E7D000CCE85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92F9E614463046002966C7 /* UIKit.framework */; };
+		5F28A01C17564E7D000CCE85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92F9E814463046002966C7 /* Foundation.framework */; };
+		5F28A01D17564E7D000CCE85 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92F9EA14463046002966C7 /* CoreGraphics.framework */; };
+		5F28A01E17564E7D000CCE85 /* libLexicontext.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F609F37146C78F9004EA083 /* libLexicontext.a */; };
+		5F28A02017564E7D000CCE85 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F92F9EF14463046002966C7 /* InfoPlist.strings */; };
+		5F28A02117564E7D000CCE85 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F92F9F814463046002966C7 /* MainStoryboard.storyboard */; };
+		5F28A02217564E7D000CCE85 /* LexicontextAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F609F36146C78F9004EA083 /* LexicontextAssets.bundle */; };
+		5F28A02317564E7D000CCE85 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F609F4614716A73004EA083 /* FBDialog.bundle */; };
+		5F28A02417564E7D000CCE85 /* letterscores.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F85DA2B149D94B3007CBD92 /* letterscores.plist */; };
+		5F28A02517564E7D000CCE85 /* GameOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F85DA30149EEBE8007CBD92 /* GameOverViewController.xib */; };
+		5F28A02617564E7D000CCE85 /* GameInformation.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00115A8A65A00FFED22 /* GameInformation.png */; };
+		5F28A02717564E7D000CCE85 /* Leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00315A8A66200FFED22 /* Leaderboard.png */; };
+		5F28A02817564E7D000CCE85 /* WordsPlayed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00615A8A68000FFED22 /* WordsPlayed.png */; };
+		5F28A02917564E7D000CCE85 /* L2W.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00815A8A68900FFED22 /* L2W.png */; };
+		5F28A02A17564E7D000CCE85 /* RtW.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00A15A8A69200FFED22 /* RtW.png */; };
+		5F28A02B17564E7D000CCE85 /* WS.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00C15A8A69800FFED22 /* WS.png */; };
+		5F28A02C17564E7D000CCE85 /* Multiplayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00E15A8A6BE00FFED22 /* Multiplayer.png */; };
+		5F28A02D17564E7D000CCE85 /* SinglePlayer.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA00F15A8A6BE00FFED22 /* SinglePlayer.png */; };
+		5F28A02E17564E7D000CCE85 /* bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01715A8A6FA00FFED22 /* bottom.png */; };
+		5F28A02F17564E7D000CCE85 /* MainBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01615A8A6FA00FFED22 /* MainBackground.png */; };
+		5F28A03017564E7D000CCE85 /* Tournament.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01015A8A6BE00FFED22 /* Tournament.png */; };
+		5F28A03117564E7D000CCE85 /* ComputerDifficulty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868515AD03440054A780 /* ComputerDifficulty.png */; };
+		5F28A03217564E7D000CCE85 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01415A8A6CE00FFED22 /* button.png */; };
+		5F28A03317564E7D000CCE85 /* ChooseModeBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01B15A8A91400FFED22 /* ChooseModeBottom.png */; };
+		5F28A03417564E7D000CCE85 /* ChooseMode.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01D15A8AA5A00FFED22 /* ChooseMode.png */; };
+		5F28A03517564E7D000CCE85 /* Letter2WordBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA01F15A8B05400FFED22 /* Letter2WordBG.png */; };
+		5F28A03617564E7D000CCE85 /* ZipperMax.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02415ABA58F00FFED22 /* ZipperMax.png */; };
+		5F28A03717564E7D000CCE85 /* ZipperMin.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02515ABA58F00FFED22 /* ZipperMin.png */; };
+		5F28A03817564E7D000CCE85 /* Slider.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02815ABC7BC00FFED22 /* Slider.png */; };
+		5F28A03917564E7D000CCE85 /* AmericanTypewriter.ttc in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02B15AD010F00FFED22 /* AmericanTypewriter.ttc */; };
+		5F28A03A17564E7D000CCE85 /* BelloPro.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02C15AD010F00FFED22 /* BelloPro.otf */; };
+		5F28A03B17564E7D000CCE85 /* KlavikaRegular-TF.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA02D15AD010F00FFED22 /* KlavikaRegular-TF.otf */; };
+		5F28A03C17564E7D000CCE85 /* MyriadPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5F5EA03615AD010F00FFED22 /* MyriadPro-Regular.otf */; };
+		5F28A03D17564E7D000CCE85 /* Letter2WordBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868715AD05370054A780 /* Letter2WordBtn.png */; };
+		5F28A03E17564E7D000CCE85 /* RevealTheWordBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868815AD05370054A780 /* RevealTheWordBtn.png */; };
+		5F28A03F17564E7D000CCE85 /* WordSmithBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868915AD05370054A780 /* WordSmithBtn.png */; };
+		5F28A04017564E7D000CCE85 /* WordSmithBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868D15AD106B0054A780 /* WordSmithBG.png */; };
+		5F28A04117564E7D000CCE85 /* WordsPlayedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308015B0E74100E2620E /* WordsPlayedBG.png */; };
+		5F28A04217564E7D000CCE85 /* PopularWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308315B746D000E2620E /* PopularWordsBtn.png */; };
+		5F28A04317564E7D000CCE85 /* RecentWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308415B746D000E2620E /* RecentWordsBtn.png */; };
+		5F28A04417564E7D000CCE85 /* Round1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308815B780B400E2620E /* Round1.png */; };
+		5F28A04517564E7D000CCE85 /* Round2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308915B780B400E2620E /* Round2.png */; };
+		5F28A04617564E7D000CCE85 /* Round3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308A15B780B400E2620E /* Round3.png */; };
+		5F28A04717564E7D000CCE85 /* Round1Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309915B7C36100E2620E /* Round1Btn.png */; };
+		5F28A04817564E7D000CCE85 /* Round2Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309A15B7C36100E2620E /* Round2Btn.png */; };
+		5F28A04917564E7D000CCE85 /* Round3Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309B15B7C36100E2620E /* Round3Btn.png */; };
+		5F28A04A17564E7D000CCE85 /* RevealTheWordBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */; };
+		5F28A04B17564E7D000CCE85 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B579F15BF5A11006E9DF7 /* A.png */; };
+		5F28A04C17564E7D000CCE85 /* B.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A015BF5A11006E9DF7 /* B.png */; };
+		5F28A04D17564E7D000CCE85 /* C.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A115BF5A11006E9DF7 /* C.png */; };
+		5F28A04E17564E7D000CCE85 /* D.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A215BF5A11006E9DF7 /* D.png */; };
+		5F28A04F17564E7D000CCE85 /* E.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A315BF5A11006E9DF7 /* E.png */; };
+		5F28A05017564E7D000CCE85 /* F.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A415BF5A11006E9DF7 /* F.png */; };
+		5F28A05117564E7D000CCE85 /* G.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A515BF5A11006E9DF7 /* G.png */; };
+		5F28A05217564E7D000CCE85 /* H.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A615BF5A11006E9DF7 /* H.png */; };
+		5F28A05317564E7D000CCE85 /* I.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A715BF5A11006E9DF7 /* I.png */; };
+		5F28A05417564E7D000CCE85 /* J.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A815BF5A11006E9DF7 /* J.png */; };
+		5F28A05517564E7D000CCE85 /* K.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57A915BF5A11006E9DF7 /* K.png */; };
+		5F28A05617564E7D000CCE85 /* L.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AA15BF5A11006E9DF7 /* L.png */; };
+		5F28A05717564E7D000CCE85 /* M.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AB15BF5A11006E9DF7 /* M.png */; };
+		5F28A05817564E7D000CCE85 /* N.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AC15BF5A11006E9DF7 /* N.png */; };
+		5F28A05917564E7D000CCE85 /* O.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AD15BF5A11006E9DF7 /* O.png */; };
+		5F28A05A17564E7D000CCE85 /* P.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AE15BF5A11006E9DF7 /* P.png */; };
+		5F28A05B17564E7D000CCE85 /* Q.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57AF15BF5A11006E9DF7 /* Q.png */; };
+		5F28A05C17564E7D000CCE85 /* R.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B015BF5A11006E9DF7 /* R.png */; };
+		5F28A05D17564E7D000CCE85 /* S.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B115BF5A11006E9DF7 /* S.png */; };
+		5F28A05E17564E7D000CCE85 /* T.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B215BF5A11006E9DF7 /* T.png */; };
+		5F28A05F17564E7D000CCE85 /* U.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B315BF5A11006E9DF7 /* U.png */; };
+		5F28A06017564E7D000CCE85 /* V.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B415BF5A11006E9DF7 /* V.png */; };
+		5F28A06117564E7D000CCE85 /* W.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B515BF5A11006E9DF7 /* W.png */; };
+		5F28A06217564E7D000CCE85 /* X.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B615BF5A11006E9DF7 /* X.png */; };
+		5F28A06317564E7D000CCE85 /* Y.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B715BF5A11006E9DF7 /* Y.png */; };
+		5F28A06417564E7D000CCE85 /* Z.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57B815BF5A11006E9DF7 /* Z.png */; };
+		5F28A06517564E7D000CCE85 /* RevealTheWordBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57D915BF8683006E9DF7 /* RevealTheWordBottom.png */; };
+		5F28A06617564E7D000CCE85 /* SkipButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57DB15BF87BA006E9DF7 /* SkipButton.png */; };
+		5F28A06717564E7D000CCE85 /* SubmitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B57DC15BF87BA006E9DF7 /* SubmitButton.png */; };
+		5F28A06817564E7D000CCE85 /* rules.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C941A15C47DE100C92DB1 /* rules.plist */; };
+		5F28A06917564E7D000CCE85 /* RulesPatch.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C941C15C47FEC00C92DB1 /* RulesPatch.png */; };
+		5F28A06A17564E7D000CCE85 /* SubmitButtonRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C941E15C4A59D00C92DB1 /* SubmitButtonRed.png */; };
+		5F28A06B17564E7D000CCE85 /* FindWordsWithLettersIn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C942315C4B46700C92DB1 /* FindWordsWithLettersIn.png */; };
+		5F28A06C17564E7D000CCE85 /* WordBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C942515C4C24F00C92DB1 /* WordBackground.png */; };
+		5F28A06D17564E7D000CCE85 /* FacebookButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F8C942715C6387400C92DB1 /* FacebookButton.png */; };
+		5F28A06E17564E7D000CCE85 /* AgoroButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6F815C8A69B00B83E89 /* AgoroButton.png */; };
+		5F28A06F17564E7D000CCE85 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FB15C8AAB700B83E89 /* GreenButton.png */; };
+		5F28A07017564E7D000CCE85 /* ResultBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FD15C9EC8900B83E89 /* ResultBG.png */; };
+		5F28A07117564E7D000CCE85 /* SettingsTopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FF15C9F34C00B83E89 /* SettingsTopBar.png */; };
+		5F28A07217564E7D000CCE85 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB448815D1E853003AF774 /* Default.png */; };
+		5F28A07317564E7D000CCE85 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB448C15D1EEE3003AF774 /* Default@2x.png */; };
+		5F28A07417564E7D000CCE85 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449515D1F0AC003AF774 /* Icon.png */; };
+		5F28A07517564E7D000CCE85 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449715D1F0EF003AF774 /* Icon@2x.png */; };
+		5F28A07617564E7D000CCE85 /* ShareSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08F9C15F82979005981A0 /* ShareSmall.png */; };
+		5F28A07717564E7D000CCE85 /* TournamentOverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA11600FF26005981A0 /* TournamentOverViewController.xib */; };
+		5F28A07817564E7D000CCE85 /* TournamentOverBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA416012114005981A0 /* TournamentOverBG.png */; };
+		5F28A07917564E7D000CCE85 /* FBButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA6160125F7005981A0 /* FBButtonSmall.png */; };
+		5F28A07A17564E7D000CCE85 /* ViewWords.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D76571610C3AE00BEAD2C /* ViewWords.png */; };
+		5F28A07B17564E7D000CCE85 /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F051E4A16156BB20033EEC9 /* Winner.png */; };
+		5F28A07C17564E7D000CCE85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F27ED76161B508D008DE18B /* Default-568h@2x.png */; };
+		5F28A07D17564E7D000CCE85 /* StitchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811711648735000976C9C /* StitchBox.png */; };
+		5F28A07E17564E7D000CCE85 /* TournamentScoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811741649ECF700976C9C /* TournamentScoreBoard.png */; };
 		5F2B579915BDF13D006E9DF7 /* RevealTheWordBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */; };
 		5F2B579D15BF56B8006E9DF7 /* TileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B579C15BF56B8006E9DF7 /* TileButton.m */; };
 		5F2B57B915BF5A11006E9DF7 /* A.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B579F15BF5A11006E9DF7 /* A.png */; };
@@ -155,6 +294,8 @@
 		5F1811711648735000976C9C /* StitchBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StitchBox.png; sourceTree = "<group>"; };
 		5F1811741649ECF700976C9C /* TournamentScoreBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TournamentScoreBoard.png; sourceTree = "<group>"; };
 		5F27ED76161B508D008DE18B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		5F28A08217564E7D000CCE85 /* Agoro Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agoro Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F28A08317564E7E000CCE85 /* AgoroFree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AgoroFree-Info.plist"; path = "/Users/josephconstan/Code/WordSmith/AgoroFree-Info.plist"; sourceTree = "<absolute>"; };
 		5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RevealTheWordBG.png; path = Images/Backgrounds/RevealTheWordBG.png; sourceTree = "<group>"; };
 		5F2B579B15BF56B8006E9DF7 /* TileButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileButton.h; sourceTree = "<group>"; };
 		5F2B579C15BF56B8006E9DF7 /* TileButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileButton.m; sourceTree = "<group>"; };
@@ -336,6 +477,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5F28A01717564E7D000CCE85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F28A01817564E7D000CCE85 /* iAd.framework in Frameworks */,
+				5F28A01917564E7D000CCE85 /* SystemConfiguration.framework in Frameworks */,
+				5F28A01A17564E7D000CCE85 /* GameKit.framework in Frameworks */,
+				5F28A01B17564E7D000CCE85 /* UIKit.framework in Frameworks */,
+				5F28A01C17564E7D000CCE85 /* Foundation.framework in Frameworks */,
+				5F28A01D17564E7D000CCE85 /* CoreGraphics.framework in Frameworks */,
+				5F28A01E17564E7D000CCE85 /* libLexicontext.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F92F9DF14463046002966C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -665,6 +820,7 @@
 			isa = PBXGroup;
 			children = (
 				5F92F9E214463046002966C7 /* Agoro.app */,
+				5F28A08217564E7D000CCE85 /* Agoro Free.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -700,6 +856,7 @@
 			isa = PBXGroup;
 			children = (
 				5F92F9EE14463046002966C7 /* WordSmith-Info.plist */,
+				5F28A08317564E7E000CCE85 /* AgoroFree-Info.plist */,
 				5F92F9EF14463046002966C7 /* InfoPlist.strings */,
 				5F92F9F214463046002966C7 /* main.m */,
 				5F92F9F414463046002966C7 /* WordSmith-Prefix.pch */,
@@ -770,6 +927,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5F289FF017564E7D000CCE85 /* Agoro Free */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F28A07F17564E7D000CCE85 /* Build configuration list for PBXNativeTarget "Agoro Free" */;
+			buildPhases = (
+				5F289FF117564E7D000CCE85 /* Sources */,
+				5F28A01717564E7D000CCE85 /* Frameworks */,
+				5F28A01F17564E7D000CCE85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agoro Free";
+			productName = WordSmith;
+			productReference = 5F28A08217564E7D000CCE85 /* Agoro Free.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5F92F9E114463046002966C7 /* WordSmith */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F92FA0314463046002966C7 /* Build configuration list for PBXNativeTarget "WordSmith" */;
@@ -793,7 +967,7 @@
 		5F92F9D914463046002966C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Codevs, Inc.";
 			};
 			buildConfigurationList = 5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "WordSmith" */;
@@ -809,11 +983,114 @@
 			projectRoot = "";
 			targets = (
 				5F92F9E114463046002966C7 /* WordSmith */,
+				5F289FF017564E7D000CCE85 /* Agoro Free */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5F28A01F17564E7D000CCE85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F28A02017564E7D000CCE85 /* InfoPlist.strings in Resources */,
+				5F28A02117564E7D000CCE85 /* MainStoryboard.storyboard in Resources */,
+				5F28A02217564E7D000CCE85 /* LexicontextAssets.bundle in Resources */,
+				5F28A02317564E7D000CCE85 /* FBDialog.bundle in Resources */,
+				5F28A02417564E7D000CCE85 /* letterscores.plist in Resources */,
+				5F28A02517564E7D000CCE85 /* GameOverViewController.xib in Resources */,
+				5F28A02617564E7D000CCE85 /* GameInformation.png in Resources */,
+				5F28A02717564E7D000CCE85 /* Leaderboard.png in Resources */,
+				5F28A02817564E7D000CCE85 /* WordsPlayed.png in Resources */,
+				5F28A02917564E7D000CCE85 /* L2W.png in Resources */,
+				5F28A02A17564E7D000CCE85 /* RtW.png in Resources */,
+				5F28A02B17564E7D000CCE85 /* WS.png in Resources */,
+				5F28A02C17564E7D000CCE85 /* Multiplayer.png in Resources */,
+				5F28A02D17564E7D000CCE85 /* SinglePlayer.png in Resources */,
+				5F28A02E17564E7D000CCE85 /* bottom.png in Resources */,
+				5F28A02F17564E7D000CCE85 /* MainBackground.png in Resources */,
+				5F28A03017564E7D000CCE85 /* Tournament.png in Resources */,
+				5F28A03117564E7D000CCE85 /* ComputerDifficulty.png in Resources */,
+				5F28A03217564E7D000CCE85 /* button.png in Resources */,
+				5F28A03317564E7D000CCE85 /* ChooseModeBottom.png in Resources */,
+				5F28A03417564E7D000CCE85 /* ChooseMode.png in Resources */,
+				5F28A03517564E7D000CCE85 /* Letter2WordBG.png in Resources */,
+				5F28A03617564E7D000CCE85 /* ZipperMax.png in Resources */,
+				5F28A03717564E7D000CCE85 /* ZipperMin.png in Resources */,
+				5F28A03817564E7D000CCE85 /* Slider.png in Resources */,
+				5F28A03917564E7D000CCE85 /* AmericanTypewriter.ttc in Resources */,
+				5F28A03A17564E7D000CCE85 /* BelloPro.otf in Resources */,
+				5F28A03B17564E7D000CCE85 /* KlavikaRegular-TF.otf in Resources */,
+				5F28A03C17564E7D000CCE85 /* MyriadPro-Regular.otf in Resources */,
+				5F28A03D17564E7D000CCE85 /* Letter2WordBtn.png in Resources */,
+				5F28A03E17564E7D000CCE85 /* RevealTheWordBtn.png in Resources */,
+				5F28A03F17564E7D000CCE85 /* WordSmithBtn.png in Resources */,
+				5F28A04017564E7D000CCE85 /* WordSmithBG.png in Resources */,
+				5F28A04117564E7D000CCE85 /* WordsPlayedBG.png in Resources */,
+				5F28A04217564E7D000CCE85 /* PopularWordsBtn.png in Resources */,
+				5F28A04317564E7D000CCE85 /* RecentWordsBtn.png in Resources */,
+				5F28A04417564E7D000CCE85 /* Round1.png in Resources */,
+				5F28A04517564E7D000CCE85 /* Round2.png in Resources */,
+				5F28A04617564E7D000CCE85 /* Round3.png in Resources */,
+				5F28A04717564E7D000CCE85 /* Round1Btn.png in Resources */,
+				5F28A04817564E7D000CCE85 /* Round2Btn.png in Resources */,
+				5F28A04917564E7D000CCE85 /* Round3Btn.png in Resources */,
+				5F28A04A17564E7D000CCE85 /* RevealTheWordBG.png in Resources */,
+				5F28A04B17564E7D000CCE85 /* A.png in Resources */,
+				5F28A04C17564E7D000CCE85 /* B.png in Resources */,
+				5F28A04D17564E7D000CCE85 /* C.png in Resources */,
+				5F28A04E17564E7D000CCE85 /* D.png in Resources */,
+				5F28A04F17564E7D000CCE85 /* E.png in Resources */,
+				5F28A05017564E7D000CCE85 /* F.png in Resources */,
+				5F28A05117564E7D000CCE85 /* G.png in Resources */,
+				5F28A05217564E7D000CCE85 /* H.png in Resources */,
+				5F28A05317564E7D000CCE85 /* I.png in Resources */,
+				5F28A05417564E7D000CCE85 /* J.png in Resources */,
+				5F28A05517564E7D000CCE85 /* K.png in Resources */,
+				5F28A05617564E7D000CCE85 /* L.png in Resources */,
+				5F28A05717564E7D000CCE85 /* M.png in Resources */,
+				5F28A05817564E7D000CCE85 /* N.png in Resources */,
+				5F28A05917564E7D000CCE85 /* O.png in Resources */,
+				5F28A05A17564E7D000CCE85 /* P.png in Resources */,
+				5F28A05B17564E7D000CCE85 /* Q.png in Resources */,
+				5F28A05C17564E7D000CCE85 /* R.png in Resources */,
+				5F28A05D17564E7D000CCE85 /* S.png in Resources */,
+				5F28A05E17564E7D000CCE85 /* T.png in Resources */,
+				5F28A05F17564E7D000CCE85 /* U.png in Resources */,
+				5F28A06017564E7D000CCE85 /* V.png in Resources */,
+				5F28A06117564E7D000CCE85 /* W.png in Resources */,
+				5F28A06217564E7D000CCE85 /* X.png in Resources */,
+				5F28A06317564E7D000CCE85 /* Y.png in Resources */,
+				5F28A06417564E7D000CCE85 /* Z.png in Resources */,
+				5F28A06517564E7D000CCE85 /* RevealTheWordBottom.png in Resources */,
+				5F28A06617564E7D000CCE85 /* SkipButton.png in Resources */,
+				5F28A06717564E7D000CCE85 /* SubmitButton.png in Resources */,
+				5F28A06817564E7D000CCE85 /* rules.plist in Resources */,
+				5F28A06917564E7D000CCE85 /* RulesPatch.png in Resources */,
+				5F28A06A17564E7D000CCE85 /* SubmitButtonRed.png in Resources */,
+				5F28A06B17564E7D000CCE85 /* FindWordsWithLettersIn.png in Resources */,
+				5F28A06C17564E7D000CCE85 /* WordBackground.png in Resources */,
+				5F28A06D17564E7D000CCE85 /* FacebookButton.png in Resources */,
+				5F28A06E17564E7D000CCE85 /* AgoroButton.png in Resources */,
+				5F28A06F17564E7D000CCE85 /* GreenButton.png in Resources */,
+				5F28A07017564E7D000CCE85 /* ResultBG.png in Resources */,
+				5F28A07117564E7D000CCE85 /* SettingsTopBar.png in Resources */,
+				5F28A07217564E7D000CCE85 /* Default.png in Resources */,
+				5F28A07317564E7D000CCE85 /* Default@2x.png in Resources */,
+				5F28A07417564E7D000CCE85 /* Icon.png in Resources */,
+				5F28A07517564E7D000CCE85 /* Icon@2x.png in Resources */,
+				5F28A07617564E7D000CCE85 /* ShareSmall.png in Resources */,
+				5F28A07717564E7D000CCE85 /* TournamentOverViewController.xib in Resources */,
+				5F28A07817564E7D000CCE85 /* TournamentOverBG.png in Resources */,
+				5F28A07917564E7D000CCE85 /* FBButtonSmall.png in Resources */,
+				5F28A07A17564E7D000CCE85 /* ViewWords.png in Resources */,
+				5F28A07B17564E7D000CCE85 /* Winner.png in Resources */,
+				5F28A07C17564E7D000CCE85 /* Default-568h@2x.png in Resources */,
+				5F28A07D17564E7D000CCE85 /* StitchBox.png in Resources */,
+				5F28A07E17564E7D000CCE85 /* TournamentScoreBoard.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F92F9E014463046002966C7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -919,6 +1196,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5F289FF117564E7D000CCE85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F289FF217564E7D000CCE85 /* main.m in Sources */,
+				5F289FF317564E7D000CCE85 /* AppDelegate.m in Sources */,
+				5F289FF417564E7D000CCE85 /* MasterViewController.m in Sources */,
+				5F289FF517564E7D000CCE85 /* GameViewController.m in Sources */,
+				5F289FF617564E7D000CCE85 /* GameCenterManager.m in Sources */,
+				5F289FF717564E7D000CCE85 /* ChooseModeViewController.m in Sources */,
+				5F289FF817564E7D000CCE85 /* ChooseLeaderboardViewController.m in Sources */,
+				5F289FF917564E7D000CCE85 /* Facebook.m in Sources */,
+				5F289FFA17564E7D000CCE85 /* FBDialog.m in Sources */,
+				5F289FFB17564E7D000CCE85 /* FBLoginDialog.m in Sources */,
+				5F289FFC17564E7D000CCE85 /* FBRequest.m in Sources */,
+				5F289FFD17564E7D000CCE85 /* NSObject+SBJSON.m in Sources */,
+				5F289FFE17564E7D000CCE85 /* NSString+SBJSON.m in Sources */,
+				5F289FFF17564E7D000CCE85 /* SBJSON.m in Sources */,
+				5F28A00017564E7D000CCE85 /* SBJsonBase.m in Sources */,
+				5F28A00117564E7D000CCE85 /* SBJsonParser.m in Sources */,
+				5F28A00217564E7D000CCE85 /* SBJsonWriter.m in Sources */,
+				5F28A00317564E7D000CCE85 /* GuessWordViewController.m in Sources */,
+				5F28A00417564E7D000CCE85 /* Reachability.m in Sources */,
+				5F28A00517564E7D000CCE85 /* WordSmithViewController.m in Sources */,
+				5F28A00617564E7D000CCE85 /* RulesViewController.m in Sources */,
+				5F28A00717564E7D000CCE85 /* PlayerScoreView.m in Sources */,
+				5F28A00817564E7D000CCE85 /* PopularWordsViewController.m in Sources */,
+				5F28A00917564E7D000CCE85 /* AIPlayer.m in Sources */,
+				5F28A00A17564E7D000CCE85 /* SettingsViewController.m in Sources */,
+				5F28A00B17564E7D000CCE85 /* L2WDisplayView.m in Sources */,
+				5F28A00C17564E7D000CCE85 /* GameOverViewController.m in Sources */,
+				5F28A00D17564E7D000CCE85 /* HintView.m in Sources */,
+				5F28A00E17564E7D000CCE85 /* TournamentManager.m in Sources */,
+				5F28A00F17564E7D000CCE85 /* GameTimer.m in Sources */,
+				5F28A01017564E7D000CCE85 /* BaseGameViewController.m in Sources */,
+				5F28A01117564E7D000CCE85 /* TileButton.m in Sources */,
+				5F28A01217564E7D000CCE85 /* TileLabel.m in Sources */,
+				5F28A01317564E7D000CCE85 /* CustomTextField.m in Sources */,
+				5F28A01417564E7D000CCE85 /* WordList.m in Sources */,
+				5F28A01517564E7D000CCE85 /* NextRoundViewController.m in Sources */,
+				5F28A01617564E7D000CCE85 /* TournamentOverViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5F92F9DE14463046002966C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -985,14 +1306,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5F28A08017564E7D000CCE85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"TARGET_AGORO_FREE=1",
+					"DEBUG=1",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/AgoroFree-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WordSmith/Lexicontext\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Agoro Free";
+				PROVISIONING_PROFILE = "C0F57520-F215-4C49-B6ED-D41912B2BA5E";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8798B9CC-D2F5-43CA-BBF9-7A95E026CA7C";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5F28A08117564E7D000CCE85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kwesi Buabeng";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_AGORO_FREE=1";
+				INFOPLIST_FILE = "$(SRCROOT)/AgoroFree-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/WordSmith/Lexicontext\"",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Agoro Free";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FDC9F31A-7608-4840-8313-A81E6AD0C0DE";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		5F92FA0114463046002966C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1005,9 +1376,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PROVISIONING_PROFILE = "47989918-8663-4353-B0F0-8AE11DE68998";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1018,6 +1389,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Kwesi Buabeng";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
@@ -1025,6 +1400,7 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
@@ -1038,6 +1414,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
 				INFOPLIST_FILE = "WordSmith/WordSmith-Info.plist";
@@ -1048,6 +1425,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Agoro;
 				PROVISIONING_PROFILE = "47989918-8663-4353-B0F0-8AE11DE68998";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "47989918-8663-4353-B0F0-8AE11DE68998";
 				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1076,6 +1454,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5F28A07F17564E7D000CCE85 /* Build configuration list for PBXNativeTarget "Agoro Free" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F28A08017564E7D000CCE85 /* Debug */,
+				5F28A08117564E7D000CCE85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "WordSmith" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

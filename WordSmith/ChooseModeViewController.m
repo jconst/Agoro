@@ -9,6 +9,7 @@
 #import "ChooseModeViewController.h"
 #import "AppDelegate.h"
 #import "GameCenterManager.h"
+#import <iAd/iAd.h>
 
 @implementation ChooseModeViewController
 
@@ -53,6 +54,7 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationLandscapeRight ||
-            interfaceOrientation == UIInterfaceOrientationLandscapeLeft);}
+            interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+}
 
 @end

@@ -209,6 +209,7 @@ static GameCenterManager *sharedManager = nil;
 
 // A peer-to-peer match has been found
 - (void)matchmakerViewController:(GKMatchmakerViewController *)viewController didFindMatch:(GKMatch *)theMatch {
+  
     gameState = kGameStateWaitingForRandomNumber;
     LOGMETHOD;
     self.match = theMatch;

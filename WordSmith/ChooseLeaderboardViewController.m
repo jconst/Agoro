@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "GameCenterManager.h"
 #import "ChooseLeaderboardViewController.h"
+#import <iAd/iAd.h>
 
 @implementation ChooseLeaderboardViewController
 
