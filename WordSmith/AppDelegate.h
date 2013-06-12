@@ -20,9 +20,11 @@
 
 - (NSDictionary *)popularWords;
 - (NSArray *)recentWords;
-   
 - (void)addPopularWord:(NSString *)word;
-- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
+
 - (void)logInToFacebook;
 - (void)postToFacebookWithMessage:(NSString *)message;
+
+- (void)showAdInView:(UIView *)theView;
+- (void)showAlertWithTitle:(NSString *)title message:(NSString *)message;
 @end

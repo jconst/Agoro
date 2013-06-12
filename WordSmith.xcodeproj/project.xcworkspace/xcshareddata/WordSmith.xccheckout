@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>779B5ED9-BB13-4BA3-9622-F4B947B258EF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WordSmith</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D7C7E9BF-74CE-43C7-B84B-D3B0A059E9B8</key>
+		<string>https://bitbucket.org/TheBizness/agoro.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WordSmith.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D7C7E9BF-74CE-43C7-B84B-D3B0A059E9B8</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/TheBizness/agoro.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D7C7E9BF-74CE-43C7-B84B-D3B0A059E9B8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D7C7E9BF-74CE-43C7-B84B-D3B0A059E9B8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WordSmith</string>
+		</dict>
+	</array>
+</dict>
+</plist>

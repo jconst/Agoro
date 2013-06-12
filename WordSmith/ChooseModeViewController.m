@@ -39,15 +39,7 @@
     
     [super viewDidLoad];
     
-#ifdef AdsEnabled
-    
-    ADBannerView *adView = [[ADBannerView alloc] init];
-    adView.delegate = APPDELEGATE;
-    adView.frame = CGRectMake(0, (self.view.frame.origin.y + self.view.frame.size.height) - adView.frame.size.height,
-                              adView.frame.size.width, adView.frame.size.height);
-    [self.view addSubview:adView];
-    
-#endif
+    [APPDELEGATE showAdInView:self.view];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

@@ -113,13 +113,31 @@
     [facebook dialog:@"stream.publish" andParams:params andDelegate:self];
 }
 
-#pragma mark - ADBannerViewDelegate
+#pragma mark - iAds
+
+- (void)showAdInView:(UIView *)theView {
+#ifdef AdsEnabled
+    
+    ADBannerView *adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    adView.delegate = self;
+    adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierLandscape];
+    adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierLandscape;
+    
+    CGRect adFrame = adView.frame;
+    adFrame.origin.y = theView.frame.size.height - adView.frame.size.height;
+    adView.autoresizingMask = UIViewAutoresizingFlexibleTopMargin;
+    adView.frame = adFrame;
+    [theView addSubview:adView];
+    
+#endif
+}
 
 - (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
     
     LOGMETHOD;
     NSLog(@"error: %@", error);
-    banner.hidden = YES;
+    [banner removeFromSuperview];
+    banner.delegate = nil;
 }
 
 #pragma mark - App Lifecycle

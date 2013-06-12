@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4457.6" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3682.6"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
         <scene sceneID="11">
             <objects>
                 <navigationController modalTransitionStyle="flipHorizontal" id="3" sceneMemberID="viewController">
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
                         <autoresizingMask key="autoresizingMask"/>
@@ -135,6 +137,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Agoro" id="PMF-w5-fYx">
                         <barButtonItem key="rightBarButtonItem" title="Settings" id="MsE-lq-cYy">
                             <connections>
@@ -155,7 +158,7 @@
             <objects>
                 <viewController storyboardIdentifier="l2wView" id="a1t-p9-zaV" customClass="GameViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rvF-lG-Twz">
-                        <rect key="frame" x="0.0" y="20" width="480" height="248"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="268"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Letter2WordBG.png" id="mmI-6h-2ai">
@@ -182,7 +185,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" text="➤" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KeW-sb-q20">
-                                <rect key="frame" x="324" y="24.5" width="15" height="21"/>
+                                <rect key="frame" x="324" y="25" width="15" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -192,8 +195,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Letter 2 Word" id="rH6-DW-wLR"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
                         <outlet property="countdownLabel" destination="C0q-2K-UF9" id="eZP-hv-Sse"/>
                         <outlet property="prefixLabel" destination="Tie-rg-ER3" id="oQJ-5G-NKr"/>
@@ -270,6 +274,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Type of Game" id="Nfq-Ri-BMG"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -327,6 +332,7 @@
                         <color key="backgroundColor" red="0.56078431370000004" green="0.35686274509999999" blue="0.53725490200000003" alpha="1" colorSpace="deviceRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Words Played" id="0SO-SF-TbI"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -372,6 +378,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" id="Ydb-a4-Aar"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -449,6 +456,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Word Smith" id="tUZ-aG-7lQ"/>
                     <connections>
                         <outlet property="countdownLabel" destination="ZV2-ry-fH2" id="TCE-9E-wkN"/>
@@ -526,6 +534,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Type of Game" id="Frf-39-NMY"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -554,7 +563,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="uQj-R0-QsM">
-                                <rect key="frame" x="183" y="107" width="279" height="23"/>
+                                <rect key="frame" x="183" y="104" width="279" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="Reveal the Word:" lineBreakMode="tailTruncation" minimumFontSize="10" id="6I5-Kk-Ikp">
@@ -565,7 +574,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="GrW-QP-z7w">
-                                <rect key="frame" x="183" y="192" width="279" height="23"/>
+                                <rect key="frame" x="183" y="189" width="279" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="Word Smith:" lineBreakMode="tailTruncation" minimumFontSize="10" id="otI-kh-es0">
@@ -576,7 +585,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="xSz-0R-q2Q">
-                                <rect key="frame" x="183" y="150" width="279" height="23"/>
+                                <rect key="frame" x="183" y="147" width="279" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ChooseModeBottom.png" id="j7O-fY-tnp">
@@ -610,6 +619,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <connections>
                         <outlet property="l2wSlider" destination="uQj-R0-QsM" id="gth-Oy-Zuu"/>
                         <outlet property="rtwSlider" destination="GrW-QP-z7w" id="cd5-Ty-ufD"/>
@@ -700,6 +710,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Reveal the Word" id="B3R-R7-4CF"/>
                     <connections>
                         <outlet property="countdownLabel" destination="wR7-Q9-TnZ" id="qUQ-X0-6ZP"/>
@@ -779,6 +790,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Type of Game" id="FSS-zl-8lH"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -861,6 +873,7 @@
                         <color key="backgroundColor" red="0.5607843137254902" green="0.35686274509803922" blue="0.53725490196078429" alpha="1" colorSpace="deviceRGB"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Rules" id="0FB-eT-Rk5"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -937,6 +950,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <navigationItem key="navigationItem" title="Choose Leaderboard" id="96W-UF-jxb"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -947,39 +961,39 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ChooseMode.png" width="960" height="470"/>
-        <image name="ChooseModeBottom.png" width="960" height="120"/>
-        <image name="ComputerDifficulty.png" width="309" height="45"/>
-        <image name="FindWordsWithLettersIn.png" width="529" height="28"/>
-        <image name="GameInformation.png" width="285" height="70"/>
-        <image name="L2W.png" width="272" height="253"/>
-        <image name="Leaderboard.png" width="256" height="70"/>
-        <image name="Letter2WordBG.png" width="960" height="574"/>
-        <image name="Letter2WordBtn.png" width="521" height="119"/>
-        <image name="MainBackground.png" width="960" height="640"/>
-        <image name="Multiplayer.png" width="521" height="119"/>
-        <image name="PopularWordsBtn.png" width="288" height="72"/>
-        <image name="RecentWordsBtn.png" width="288" height="72"/>
-        <image name="RevealTheWordBG.png" width="960" height="574"/>
-        <image name="RevealTheWordBottom.png" width="960" height="200"/>
-        <image name="RevealTheWordBtn.png" width="521" height="119"/>
-        <image name="Round1.png" width="960" height="574"/>
-        <image name="Round1Btn.png" width="348" height="105"/>
-        <image name="RtW.png" width="259" height="259"/>
-        <image name="RulesPatch.png" width="896" height="386"/>
-        <image name="SettingsTopBar.png" width="960" height="67"/>
-        <image name="SinglePlayer.png" width="521" height="119"/>
-        <image name="SkipButton.png" width="147" height="67"/>
-        <image name="SubmitButton.png" width="143" height="76"/>
-        <image name="SubmitButtonRed.png" width="141" height="74"/>
-        <image name="Tournament.png" width="521" height="119"/>
-        <image name="WS.png" width="267" height="267"/>
-        <image name="WordSmithBG.png" width="960" height="576"/>
-        <image name="WordSmithBtn.png" width="521" height="119"/>
-        <image name="WordsPlayed.png" width="248" height="70"/>
-        <image name="WordsPlayedBG.png" width="960" height="640"/>
-        <image name="bottom.png" width="960" height="170"/>
-        <image name="button.png" width="171" height="47"/>
+        <image name="ChooseMode.png" width="212" height="103.80368041992188"/>
+        <image name="ChooseModeBottom.png" width="212" height="26.503067016601562"/>
+        <image name="ComputerDifficulty.png" width="68.245399475097656" height="9.9386501312255859"/>
+        <image name="FindWordsWithLettersIn.png" width="116.83435821533203" height="6.184049129486084"/>
+        <image name="GameInformation.png" width="62.944786071777344" height="15.460123062133789"/>
+        <image name="L2W.png" width="60.073619842529297" height="55.877300262451172"/>
+        <image name="Leaderboard.png" width="56.539878845214844" height="15.460123062133789"/>
+        <image name="Letter2WordBG.png" width="212" height="126.77300262451172"/>
+        <image name="Letter2WordBtn.png" width="115.06748199462891" height="26.282209396362305"/>
+        <image name="MainBackground.png" width="212" height="141.34968566894531"/>
+        <image name="Multiplayer.png" width="115.06748199462891" height="26.282209396362305"/>
+        <image name="PopularWordsBtn.png" width="63.60736083984375" height="15.901840209960938"/>
+        <image name="RecentWordsBtn.png" width="63.60736083984375" height="15.901840209960938"/>
+        <image name="RevealTheWordBG.png" width="212" height="126.77300262451172"/>
+        <image name="RevealTheWordBottom.png" width="212" height="44.171779632568359"/>
+        <image name="RevealTheWordBtn.png" width="115.06748199462891" height="26.282209396362305"/>
+        <image name="Round1.png" width="212" height="126.77300262451172"/>
+        <image name="Round1Btn.png" width="76.858894348144531" height="23.190183639526367"/>
+        <image name="RtW.png" width="57.20245361328125" height="57.20245361328125"/>
+        <image name="RulesPatch.png" width="197.88957214355469" height="85.251533508300781"/>
+        <image name="SettingsTopBar.png" width="212" height="14.79754638671875"/>
+        <image name="SinglePlayer.png" width="115.06748199462891" height="26.282209396362305"/>
+        <image name="SkipButton.png" width="32.466259002685547" height="14.79754638671875"/>
+        <image name="SubmitButton.png" width="31.582822799682617" height="16.785276412963867"/>
+        <image name="SubmitButtonRed.png" width="31.141103744506836" height="16.343557357788086"/>
+        <image name="Tournament.png" width="115.06748199462891" height="26.282209396362305"/>
+        <image name="WS.png" width="59" height="59"/>
+        <image name="WordSmithBG.png" width="212" height="127.2147216796875"/>
+        <image name="WordSmithBtn.png" width="115.06748199462891" height="26.282209396362305"/>
+        <image name="WordsPlayed.png" width="54.773006439208984" height="15.460123062133789"/>
+        <image name="WordsPlayedBG.png" width="212" height="141.34968566894531"/>
+        <image name="bottom.png" width="212" height="37.546012878417969"/>
+        <image name="button.png" width="37.766872406005859" height="10.380368232727051"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

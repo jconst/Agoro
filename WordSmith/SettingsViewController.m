@@ -66,17 +66,8 @@
         [rtwSlider setValue:0.55 animated:NO];
         [wsSlider setValue:0.55 animated:NO];
     }
-    NSLog(@"before");
 
-#ifdef AdsEnabled
-    NSLog(@"after");
-    ADBannerView *adView = [[ADBannerView alloc] init];
-    adView.delegate = APPDELEGATE;
-    adView.frame = CGRectMake(0, (self.view.frame.origin.y + self.view.frame.size.height) - adView.frame.size.height,
-                              adView.frame.size.width, adView.frame.size.height);
-    [self.view addSubview:adView];
-    
-#endif
+    [APPDELEGATE showAdInView:self.view];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
