@@ -973,6 +973,9 @@
 					5F289FF017564E7D000CCE85 = {
 						DevelopmentTeam = S673LZ7F7V;
 					};
+					5F92F9E114463046002966C7 = {
+						DevelopmentTeam = 78CY729S9Z;
+					};
 				};
 			};
 			buildConfigurationList = 5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "WordSmith" */;
@@ -1431,7 +1434,7 @@
 		5F92FA0414463046002966C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
@@ -1452,7 +1455,7 @@
 		5F92FA0514463046002966C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kwesi Buabeng";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";

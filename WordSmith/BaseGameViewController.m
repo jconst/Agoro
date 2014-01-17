@@ -31,8 +31,8 @@
     [as showFromBarButtonItem:[self.navigationItem leftBarButtonItem] animated:YES];
 }
 
-- (void)endGame {
-    
+- (void)endGame
+{
     GCM.gameState = kGameStateDone;
     [gameTimer end];
     

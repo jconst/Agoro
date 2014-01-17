@@ -38,7 +38,8 @@ static GameCenterManager *sharedManager = nil;
 	return self;
 }
 
-+ (GameCenterManager *) sharedInstance {
++ (GameCenterManager *) sharedInstance 
+{
     if (!sharedManager) {
         sharedManager = [[GameCenterManager alloc] init];
     }
@@ -65,13 +66,13 @@ static GameCenterManager *sharedManager = nil;
 - (void) callDelegateOnMainThread: (SEL) selector withArg: (id) arg error: (NSError*) err
 {
 	dispatch_async(dispatch_get_main_queue(), ^(void)
-                   {
-                       [self callDelegate: selector withArg: arg error: err];
-                   });
+    {
+        [self callDelegate: selector withArg: arg error: err];
+    });
 }
 
-- (void)setGameState:(GameState)state {
-    
+- (void)setGameState:(GameState)state 
+{  
     gameState = state;
     if (gameState == kGameStateWaitingForMatch) {
         NSLog(@"Waiting for match");
@@ -91,7 +92,8 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-- (BOOL) isConnectedToInternet {
+- (BOOL) isConnectedToInternet 
+{
     Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
 	NetworkStatus internetStatus = [r currentReachabilityStatus];
     
@@ -119,8 +121,8 @@ static GameCenterManager *sharedManager = nil;
 		[[GKLocalPlayer localPlayer] authenticateWithCompletionHandler:nil];
 }
 
-- (void)authenticationChanged {
-    
+- (void)authenticationChanged 
+{
     if ([GKLocalPlayer localPlayer].isAuthenticated && !userAuthenticated) {
         userAuthenticated = TRUE;
         
@@ -135,7 +137,8 @@ static GameCenterManager *sharedManager = nil;
 
 #pragma mark - Matchmaking
 
-- (void)setInviteHandler {
+- (void)setInviteHandler 
+{
     [GKMatchmaker sharedMatchmaker].inviteHandler = ^(GKInvite *acceptedInvite, NSArray *playersToInvite) {
         // Insert game-specific code here to clean up any game in progress:
         if (gameState != kGameStateWaitingForMatch && gameState != kGameStateDone) {
@@ -167,8 +170,8 @@ static GameCenterManager *sharedManager = nil;
                          invite:(GKInvite *)acceptedInvite
                 playersToInvite:(NSArray *)playersToInvite
                  viewController:(UIViewController *)viewController
-                       delegate:(id<GameCenterManagerDelegate>)theDelegate {
-    
+                       delegate:(id<GameCenterManagerDelegate>)theDelegate 
+{  
     if (!gameCenterAvailable) return;
     LOGMETHOD;
     
@@ -208,8 +211,8 @@ static GameCenterManager *sharedManager = nil;
 #pragma mark GKMatchmakerViewControllerDelegate
 
 // A peer-to-peer match has been found
-- (void)matchmakerViewController:(GKMatchmakerViewController *)viewController didFindMatch:(GKMatch *)theMatch {
-  
+- (void)matchmakerViewController:(GKMatchmakerViewController *)viewController didFindMatch:(GKMatch *)theMatch
+{
     gameState = kGameStateWaitingForRandomNumber;
     LOGMETHOD;
     self.match = theMatch;
@@ -226,14 +229,16 @@ static GameCenterManager *sharedManager = nil;
 }
 
 // The user has cancelled matchmaking
-- (void)matchmakerViewControllerWasCancelled:(GKMatchmakerViewController *)viewController {
+- (void)matchmakerViewControllerWasCancelled:(GKMatchmakerViewController *)viewController 
+{
     LOGMETHOD;
     [presentingViewController dismissModalViewControllerAnimated:YES];
     [presentingViewController.navigationController popToRootViewControllerAnimated:NO];
 }
 
 // Matchmaking has failed with an error
-- (void)matchmakerViewController:(GKMatchmakerViewController *)viewController didFailWithError:(NSError *)error {
+- (void)matchmakerViewController:(GKMatchmakerViewController *)viewController didFailWithError:(NSError *)error 
+{
     LOGMETHOD;
     [presentingViewController dismissModalViewControllerAnimated:YES];
     NSLog(@"Error finding match: %@\nMatch request: %d", error.localizedDescription, viewController.matchRequest.minPlayers);
@@ -243,8 +248,8 @@ static GameCenterManager *sharedManager = nil;
 
 #pragma mark Single Player
 
-- (void)setupSinglePlayerGame {
-    
+- (void)setupSinglePlayerGame 
+{  
     GCM.inTournament = NO;
     
     // Populate players dict
@@ -277,7 +282,8 @@ static GameCenterManager *sharedManager = nil;
 #pragma mark Multiplayer
 
 //Only called for mult/tourn matches. Called AFTER received game type data from inviter (if applicable)
-- (void)beginSetup {
+- (void)beginSetup 
+{
     LOGMETHOD;
     
     [presentingViewController dismissModalViewControllerAnimated:YES];  //Get rid of matchmaker view
@@ -320,7 +326,8 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-- (void)setupTournament {
+- (void)setupTournament 
+{
     LOGMETHOD;
     //Load "playersDict" with the players in the match
     [self lookupPlayers];
@@ -330,7 +337,8 @@ static GameCenterManager *sharedManager = nil;
 }
 
 //called AFTER finding match and BEFORE sending/receiving random numbers
-- (void)setupMultiplayerGame {
+- (void)setupMultiplayerGame 
+{
     LOGMETHOD;
     if (!inTournament) {    //Not in tournament:
         //Load "playersDict" with the players in the match
@@ -344,8 +352,8 @@ static GameCenterManager *sharedManager = nil;
     [self sendRandomNumber];
 }
 
-- (void)receivedRandomNumber:(uint32_t)randomNumber fromPlayer:(NSString *)playerID {
-    
+- (void)receivedRandomNumber:(uint32_t)randomNumber fromPlayer:(NSString *)playerID 
+{  
     NSLog(@"Received random number: %u, ours %u", randomNumber, ourRandom);
     
     [randomNumbers setObject:[NSNumber numberWithUnsignedInt:randomNumber] forKey:playerID];
@@ -359,7 +367,8 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-- (void)lookupPlayers {
+- (void)lookupPlayers 
+{
     LOGMETHOD;
     [GKPlayer loadPlayersForIdentifiers:match.playerIDs withCompletionHandler:^(NSArray *players, NSError *error) {
         if (error != nil) {
@@ -382,7 +391,8 @@ static GameCenterManager *sharedManager = nil;
 }
 
 //Called after all random numbers are received AND all player information has been looked up, whichever comes last
-- (void)initializePlayers {
+- (void)initializePlayers 
+{
     LOGMETHOD;
     //Organize lists of players using some kind of insertion sort abomination
     playerOrder = [[NSMutableArray alloc] initWithCapacity:numberOfPlayers];
@@ -425,7 +435,8 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-- (void)tryStartGame {
+- (void)tryStartGame 
+{
     LOGMETHOD;
     NSLog(@"num of Players: %d", numberOfPlayers);
     NSLog(@"num of begin msgs: %d", numberOfBeginMessagesReceived);
@@ -446,7 +457,8 @@ static GameCenterManager *sharedManager = nil;
 
 #pragma mark Messages
 
-- (void)sendData:(NSData *)data {
+- (void)sendData:(NSData *)data 
+{
     NSError *error;
     BOOL success = [self.match sendDataToAllPlayers:data withDataMode:GKMatchSendDataReliable error:&error];
     if (!success) {
@@ -455,7 +467,8 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-- (void)sendRandomNumber {
+- (void)sendRandomNumber 
+{
     LOGMETHOD;
     MessageRandomNumber message;
     message.message.messageType = kMessageTypeRandomNumber;
@@ -464,16 +477,16 @@ static GameCenterManager *sharedManager = nil;
     [self sendData:data];
 }
 
-- (void)sendGameBegin {
-    
+- (void)sendGameBegin 
+{  
     MessageGameBegin message;
     message.message.messageType = kMessageTypeGameBegin;
     NSData *data = [NSData dataWithBytes:&message length:sizeof(MessageGameBegin)];    
     [self sendData:data];
 }
 
-- (void)sendMoveWithLetter:(NSString *)letter {
-    
+- (void)sendMoveWithLetter:(NSString *)letter 
+{  
     MessageMove message;
     message.message.messageType = kMessageTypeMove;
     message.letter = [letter characterAtIndex:0];
@@ -481,8 +494,8 @@ static GameCenterManager *sharedManager = nil;
     [self sendData:data];
 }
 
-- (void)sendScore:(NSUInteger)score {
-    
+- (void)sendScore:(NSUInteger)score 
+{  
     MessageScore message;
     message.message.messageType = kMessageTypeScore;
     message.score = score;
@@ -490,29 +503,31 @@ static GameCenterManager *sharedManager = nil;
     [self sendData:data];
 }
 
-- (void) sendGameTypeData {
+- (void) sendGameTypeData 
+{
     int type = (inTournament) ? 4 : gType;
     NSString *message = [NSString stringWithFormat:@"gtp%d", type];
     NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
     [self sendData:data];
 }
 
-- (void) sendWord:(NSString *)word {
-    
+- (void) sendWord:(NSString *)word 
+{  
     NSString *message = [NSString stringWithFormat:@"wsw%@", word];
     NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];    
     [self sendData:data];
 }
 
-- (void)sendGameOver {
-    
+- (void)sendGameOver 
+{  
     MessageGameOver message;
     message.message.messageType = kMessageTypeGameOver;
     NSData *data = [NSData dataWithBytes:&message length:sizeof(MessageGameOver)];    
     [self sendData:data];
 }
 
-- (void)sendDisconnect {
+- (void)sendDisconnect 
+{
     MessageGameOver message;
     message.message.messageType = kMessageTypeGameOver;
     message.disconnect = YES;
@@ -523,8 +538,8 @@ static GameCenterManager *sharedManager = nil;
 #pragma mark GKMatchDelegate
 
 // The match received data sent from the player.
-- (void)match:(GKMatch *)theMatch didReceiveData:(NSData *)data fromPlayer:(NSString *)playerID {
-    
+- (void)match:(GKMatch *)theMatch didReceiveData:(NSData *)data fromPlayer:(NSString *)playerID 
+{  
     if (gType != l2w && [[[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] substringToIndex:3] isEqualToString:@"wsw"]) {
         
         NSString *word = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] substringFromIndex:3];
@@ -583,8 +598,10 @@ static GameCenterManager *sharedManager = nil;
 }
 
 // The player state changed (eg. connected or disconnected)
-- (void)match:(GKMatch *)theMatch player:(NSString *)playerID didChangeState:(GKPlayerConnectionState)state {
-    if (match != theMatch) return;
+- (void)match:(GKMatch *)theMatch player:(NSString *)playerID didChangeState:(GKPlayerConnectionState)state 
+{
+    if (match != theMatch)
+        return;
     
     switch (state) {
         case GKPlayerStateConnected:
@@ -625,8 +642,8 @@ static GameCenterManager *sharedManager = nil;
 }
 
 // The match was unable to be established with any players due to an error.
-- (void)match:(GKMatch *)theMatch didFailWithError:(NSError *)error {
-    
+- (void)match:(GKMatch *)theMatch didFailWithError:(NSError *)error 
+{  
     if (match != theMatch) return;
     
     NSLog(@"Match failed with error: %@", error.localizedDescription);
@@ -636,8 +653,8 @@ static GameCenterManager *sharedManager = nil;
 
 #pragma mark - Score Management
 
-- (void)givePointsForWord:(NSString *)word toPlayer:(NSUInteger)playerNumber withMultiplier:(float)mult {
-    
+- (void)givePointsForWord:(NSString *)word toPlayer:(NSUInteger)playerNumber withMultiplier:(float)mult 
+{  
     NSDictionary *letterScores = [[NSDictionary alloc] initWithContentsOfFile:
                                   [[NSBundle mainBundle] pathForResource:@"letterscores" ofType:@"plist"]];
     NSInteger currentScore = [[scores objectForKey:[playerOrder objectAtIndex:playerNumber]] integerValue];
@@ -656,7 +673,8 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-- (void)resetScores {
+- (void)resetScores 
+{
     for (NSString *playerID in playerOrder) {
         [scores setObject:[NSNumber numberWithInteger:0] forKey:playerID];
     }
@@ -686,7 +704,8 @@ static GameCenterManager *sharedManager = nil;
 	 }];
 }
 
-- (void) scoreReported: (NSError*) error {
+- (void) scoreReported: (NSError*) error 
+{
     if (!error) {
         //[APPDELEGATE showAlertWithTitle:@"Score Uploaded" message:nil];
     } else {

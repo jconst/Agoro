@@ -24,7 +24,8 @@
 
 @synthesize countdownLabel, prefixLabel, turn, psv, dv, turnArrow;
 
-- (void)turnChanged {
+- (void)turnChanged
+{
     NSArray *pids = [[GameCenterManager sharedInstance] playerOrder];
     
     if (turn == [pids count]) {
@@ -41,8 +42,8 @@
     }
 }
 
-- (void)gameStarted {
-    
+- (void)gameStarted
+{
     [UIView animateWithDuration:0.5 animations:^{
         psv.alpha = 1;
         dv.alpha = 1;
@@ -56,7 +57,8 @@
 
 #pragma mark - GameCenterManagerDelegate
 
-- (void)matchStarted {      
+- (void)matchStarted
+{
     psv.alpha = 0;
     
     dv = [[L2WDisplayView alloc] initWithFrame:l2wDisplayFrame];

@@ -103,6 +103,8 @@
     // Configure the cell...
     
     cell.textLabel.font = [UIFont fontWithName:@"MyriadPro-Regular" size:10.0];
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
     
     if (tableView == popularTable)
         cell.textLabel.text = [popWords objectAtIndex:[indexPath row]];
