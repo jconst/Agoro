@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Definitions.h"
 
-@interface NextRoundViewController : UIViewController
+@interface NextRoundViewController : UIViewController <GameCenterManagerDelegate>
 
 @property (strong, nonatomic) IBOutlet UIImageView *bgView;
 @property (strong, nonatomic) IBOutlet UIButton *playButton;

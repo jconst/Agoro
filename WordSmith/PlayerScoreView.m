@@ -56,7 +56,7 @@
             else
                 alias = @"Player 1";
         } else {
-            NSString *alias = [[players objectForKey:pid] alias] ?: [NSString stringWithFormat:@"Player %d", i];
+            alias = [[players objectForKey:pid] alias] ?: [NSString stringWithFormat:@"Player %d", i];
         }
         
         NSNumber *score = [scores objectForKey:pid] ? [scores objectForKey:pid] : 

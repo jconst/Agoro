@@ -154,7 +154,7 @@
     NSUInteger index = nextRoundLabel.text.length-1;
     NSInteger counter = [nextRoundLabel.text substringFromIndex:index].integerValue;
     if (counter > 0) counter--;
-    nextRoundLabel.text = [NSString stringWithFormat:@"%@%d", [nextRoundLabel.text substringToIndex:index], counter];
+    nextRoundLabel.text = [NSString stringWithFormat:@"%@%ld", [nextRoundLabel.text substringToIndex:index], (long)counter];
     
     //Countdown finished:
     if (counter == 0) {
@@ -174,8 +174,8 @@
         playerName = [[GKLocalPlayer localPlayer] alias];
     }
     [APPDELEGATE postToFacebookWithMessage:
-     [NSString stringWithFormat:@"%@ scored %d points at %@ in Agoro Word Game! Can you beat it?",
-      playerName, myScore, GAMENAME(GCM.gType)]];
+     [NSString stringWithFormat:@"%@ scored %ld points at %@ in Agoro Word Game! Can you beat it?",
+      playerName, (long)myScore, GAMENAME(GCM.gType)]];
 }
 
 - (void)viewWordsPressed:(UIButton *)sender {

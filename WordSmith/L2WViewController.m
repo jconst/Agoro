@@ -6,7 +6,7 @@
 //  Copyright (c) 2011 Codevs, Inc. All rights reserved.
 //
 
-#import "GameViewController.h"
+#import "L2WViewController.h"
 #import "GameCenterManager.h"
 #import "MessageDefs.h"
 #import "AppDelegate.h"
@@ -20,7 +20,7 @@
 
 #define l2wDisplayFrame CGRectMake(15, 20, 300, 50)
 
-@implementation GameViewController
+@implementation L2WViewController
 
 @synthesize countdownLabel, prefixLabel, turn, psv, dv, turnArrow;
 

@@ -72,8 +72,8 @@
         playerName = [[GKLocalPlayer localPlayer] alias];
     }
     [APPDELEGATE postToFacebookWithMessage:
-     [NSString stringWithFormat:@"%@ scored %d points in Tournament Mode on Agoro Word Game! Can you beat it?",
-      playerName, ourTotal]];
+     [NSString stringWithFormat:@"%@ scored %ld points in Tournament Mode on Agoro Word Game! Can you beat it?",
+      playerName, (long)ourTotal]];
 }
 
 - (void)makeDetailsHidden:(BOOL)shouldHide {
@@ -93,7 +93,7 @@
 - (void)displayWinWithScore:(NSInteger)score {
     [self makeDetailsHidden:YES];
     
-    winScoreLabel.text = [NSString stringWithFormat:@"%d", score];
+    winScoreLabel.text = [NSString stringWithFormat:@"%ld", (long)score];
 }
 
 - (void)displayScores:(NSArray *)scoreArray withTotal:(NSInteger)total {
@@ -113,7 +113,7 @@
     }
     UILabel *totalScoreLabel = (UILabel *)[self.view viewWithTag:13];
     
-    totalScoreLabel.text = [NSString stringWithFormat:@"%d", total];
+    totalScoreLabel.text = [NSString stringWithFormat:@"%ld", (long)total];
 }
 
 - (void)viewWillAppear:(BOOL)animated{

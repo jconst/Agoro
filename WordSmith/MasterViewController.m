@@ -22,7 +22,7 @@
         SettingsViewController *svc = (SettingsViewController *)dvc;
         svc.mvc = self;
     } else if (sender.tag > 0) {
-        GCM.gType = sender.tag;
+        GCM.gType = (GameType)sender.tag;
     }
 }
 

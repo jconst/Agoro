@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Definitions.h"
-#import "GameViewController.h"
+#import "L2WViewController.h"
 #import "WordSmithViewController.h"
 #import "GuessWordViewController.h"
 #import "NextRoundViewController.h"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0500"
+   LastUpgradeVersion = "0510"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,17 +14,17 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F92F9E114463046002966C7"
-               BuildableName = "Agoro.app"
-               BlueprintName = "WordSmith"
-               ReferencedContainer = "container:WordSmith.xcodeproj">
+               BlueprintIdentifier = "5F289FF017564E7D000CCE85"
+               BuildableName = "Agoro Free.app"
+               BlueprintName = "Agoro Free"
+               ReferencedContainer = "container:Agoro.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F92F9E114463046002966C7"
-            BuildableName = "Agoro.app"
-            BlueprintName = "WordSmith"
-            ReferencedContainer = "container:WordSmith.xcodeproj">
+            BlueprintIdentifier = "5F289FF017564E7D000CCE85"
+            BuildableName = "Agoro Free.app"
+            BlueprintName = "Agoro Free"
+            ReferencedContainer = "container:Agoro.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -51,10 +51,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F92F9E114463046002966C7"
-            BuildableName = "Agoro.app"
-            BlueprintName = "WordSmith"
-            ReferencedContainer = "container:WordSmith.xcodeproj">
+            BlueprintIdentifier = "5F289FF017564E7D000CCE85"
+            BuildableName = "Agoro Free.app"
+            BlueprintName = "Agoro Free"
+            ReferencedContainer = "container:Agoro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -69,10 +69,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F92F9E114463046002966C7"
-            BuildableName = "Agoro.app"
-            BlueprintName = "WordSmith"
-            ReferencedContainer = "container:WordSmith.xcodeproj">
+            BlueprintIdentifier = "5F289FF017564E7D000CCE85"
+            BuildableName = "Agoro Free.app"
+            BlueprintName = "Agoro Free"
+            ReferencedContainer = "container:Agoro.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

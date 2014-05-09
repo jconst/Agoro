@@ -7,7 +7,7 @@
 //
 
 #import "L2WDisplayView.h"
-#import "GameViewController.h"
+#import "L2WViewController.h"
 #import "Lexicontext.h"
 #import "GameCenterManager.h"
 #import "PlayerScoreView.h"

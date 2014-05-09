@@ -11,9 +11,8 @@
 
 @class L2WDisplayView, AIPlayer, GameTimer, PlayerScoreView;
 
-@interface GameViewController : BaseGameViewController
-{    
-}
+@interface L2WViewController : BaseGameViewController
+
 @property (strong, nonatomic) IBOutlet UILabel *countdownLabel;
 @property (strong, nonatomic) IBOutlet UILabel *prefixLabel;
 @property (strong, nonatomic) IBOutlet PlayerScoreView *psv;

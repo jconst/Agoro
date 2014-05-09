@@ -15,7 +15,7 @@
 		5F289FF217564E7D000CCE85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F214463046002966C7 /* main.m */; };
 		5F289FF317564E7D000CCE85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F614463046002966C7 /* AppDelegate.m */; };
 		5F289FF417564E7D000CCE85 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9FC14463046002966C7 /* MasterViewController.m */; };
-		5F289FF517564E7D000CCE85 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92FA0714463397002966C7 /* GameViewController.m */; };
+		5F289FF517564E7D000CCE85 /* L2WViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92FA0714463397002966C7 /* L2WViewController.m */; };
 		5F289FF617564E7D000CCE85 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F00144F12FB004EA083 /* GameCenterManager.m */; };
 		5F289FF717564E7D000CCE85 /* ChooseModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F29146ACF41004EA083 /* ChooseModeViewController.m */; };
 		5F289FF817564E7D000CCE85 /* ChooseLeaderboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F609F30146AD982004EA083 /* ChooseLeaderboardViewController.m */; };
@@ -248,7 +248,7 @@
 		5F92F9F714463046002966C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F614463046002966C7 /* AppDelegate.m */; };
 		5F92F9FA14463046002966C7 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F92F9F814463046002966C7 /* MainStoryboard.storyboard */; };
 		5F92F9FD14463046002966C7 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9FC14463046002966C7 /* MasterViewController.m */; };
-		5F92FA0814463397002966C7 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92FA0714463397002966C7 /* GameViewController.m */; };
+		5F92FA0814463397002966C7 /* L2WViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92FA0714463397002966C7 /* L2WViewController.m */; };
 		5F9EBD9A14F89DE2005B0686 /* HintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EBD9914F89DE2005B0686 /* HintView.m */; };
 		5FA2308115B0E74100E2620E /* WordsPlayedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308015B0E74100E2620E /* WordsPlayedBG.png */; };
 		5FA2308515B746D000E2620E /* PopularWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308315B746D000E2620E /* PopularWordsBtn.png */; };
@@ -419,17 +419,17 @@
 		5F92F9E614463046002966C7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5F92F9E814463046002966C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5F92F9EA14463046002966C7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		5F92F9EE14463046002966C7 /* WordSmith-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordSmith-Info.plist"; sourceTree = "<group>"; };
+		5F92F9EE14463046002966C7 /* Agoro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Agoro-Info.plist"; sourceTree = "<group>"; };
 		5F92F9F014463046002966C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5F92F9F214463046002966C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5F92F9F414463046002966C7 /* WordSmith-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordSmith-Prefix.pch"; sourceTree = "<group>"; };
+		5F92F9F414463046002966C7 /* Agoro-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Agoro-Prefix.pch"; sourceTree = "<group>"; };
 		5F92F9F514463046002966C7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5F92F9F614463046002966C7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5F92F9F914463046002966C7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5F92F9FB14463046002966C7 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		5F92F9FC14463046002966C7 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		5F92FA0614463397002966C7 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		5F92FA0714463397002966C7 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		5F92FA0614463397002966C7 /* L2WViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L2WViewController.h; sourceTree = "<group>"; };
+		5F92FA0714463397002966C7 /* L2WViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L2WViewController.m; sourceTree = "<group>"; };
 		5F9EBD9814F89DE2005B0686 /* HintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HintView.h; sourceTree = "<group>"; };
 		5F9EBD9914F89DE2005B0686 /* HintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HintView.m; sourceTree = "<group>"; };
 		5FA2308015B0E74100E2620E /* WordsPlayedBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordsPlayedBG.png; path = Images/Backgrounds/WordsPlayedBG.png; sourceTree = "<group>"; };
@@ -692,8 +692,8 @@
 			children = (
 				5FA230A215B7D5F200E2620E /* BaseGameViewController.h */,
 				5FA230A315B7D5F200E2620E /* BaseGameViewController.m */,
-				5F92FA0614463397002966C7 /* GameViewController.h */,
-				5F92FA0714463397002966C7 /* GameViewController.m */,
+				5F92FA0614463397002966C7 /* L2WViewController.h */,
+				5F92FA0714463397002966C7 /* L2WViewController.m */,
 				5F609F721471801B004EA083 /* WordSmithViewController.h */,
 				5F609F731471801B004EA083 /* WordSmithViewController.m */,
 				5F609F6F14717FD8004EA083 /* GuessWordViewController.h */,
@@ -806,7 +806,7 @@
 		5F92F9D714463046002966C7 = {
 			isa = PBXGroup;
 			children = (
-				5F92F9EC14463046002966C7 /* WordSmith */,
+				5F92F9EC14463046002966C7 /* Agoro */,
 				5F609F3A146C790B004EA083 /* Lexicontext */,
 				5FAEC21015712C5700B86C06 /* Reachability */,
 				5F609F3E14716A72004EA083 /* facebook */,
@@ -838,7 +838,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5F92F9EC14463046002966C7 /* WordSmith */ = {
+		5F92F9EC14463046002966C7 /* Agoro */ = {
 			isa = PBXGroup;
 			children = (
 				5F8B86D314DB41C7004AA30B /* Management */,
@@ -849,17 +849,18 @@
 				5F8B86D214DB4120004AA30B /* Other Classes */,
 				5F8B86D414DB4203004AA30B /* Resources */,
 			);
+			name = Agoro;
 			path = WordSmith;
 			sourceTree = "<group>";
 		};
 		5F92F9ED14463046002966C7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				5F92F9EE14463046002966C7 /* WordSmith-Info.plist */,
+				5F92F9EE14463046002966C7 /* Agoro-Info.plist */,
 				5F28A08317564E7E000CCE85 /* AgoroFree-Info.plist */,
 				5F92F9EF14463046002966C7 /* InfoPlist.strings */,
 				5F92F9F214463046002966C7 /* main.m */,
-				5F92F9F414463046002966C7 /* WordSmith-Prefix.pch */,
+				5F92F9F414463046002966C7 /* Agoro-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			path = WordSmith;
@@ -944,9 +945,9 @@
 			productReference = 5F28A08217564E7D000CCE85 /* Agoro Free.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5F92F9E114463046002966C7 /* WordSmith */ = {
+		5F92F9E114463046002966C7 /* Agoro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F92FA0314463046002966C7 /* Build configuration list for PBXNativeTarget "WordSmith" */;
+			buildConfigurationList = 5F92FA0314463046002966C7 /* Build configuration list for PBXNativeTarget "Agoro" */;
 			buildPhases = (
 				5F92F9DE14463046002966C7 /* Sources */,
 				5F92F9DF14463046002966C7 /* Frameworks */,
@@ -956,7 +957,7 @@
 			);
 			dependencies = (
 			);
-			name = WordSmith;
+			name = Agoro;
 			productName = WordSmith;
 			productReference = 5F92F9E214463046002966C7 /* Agoro.app */;
 			productType = "com.apple.product-type.application";
@@ -967,7 +968,7 @@
 		5F92F9D914463046002966C7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Codevs, Inc.";
 				TargetAttributes = {
 					5F289FF017564E7D000CCE85 = {
@@ -978,7 +979,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "WordSmith" */;
+			buildConfigurationList = 5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "Agoro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -990,7 +991,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F92F9E114463046002966C7 /* WordSmith */,
+				5F92F9E114463046002966C7 /* Agoro */,
 				5F289FF017564E7D000CCE85 /* Agoro Free */,
 			);
 		};
@@ -1211,7 +1212,7 @@
 				5F289FF217564E7D000CCE85 /* main.m in Sources */,
 				5F289FF317564E7D000CCE85 /* AppDelegate.m in Sources */,
 				5F289FF417564E7D000CCE85 /* MasterViewController.m in Sources */,
-				5F289FF517564E7D000CCE85 /* GameViewController.m in Sources */,
+				5F289FF517564E7D000CCE85 /* L2WViewController.m in Sources */,
 				5F289FF617564E7D000CCE85 /* GameCenterManager.m in Sources */,
 				5F289FF717564E7D000CCE85 /* ChooseModeViewController.m in Sources */,
 				5F289FF817564E7D000CCE85 /* ChooseLeaderboardViewController.m in Sources */,
@@ -1255,7 +1256,7 @@
 				5F92F9F314463046002966C7 /* main.m in Sources */,
 				5F92F9F714463046002966C7 /* AppDelegate.m in Sources */,
 				5F92F9FD14463046002966C7 /* MasterViewController.m in Sources */,
-				5F92FA0814463397002966C7 /* GameViewController.m in Sources */,
+				5F92FA0814463397002966C7 /* L2WViewController.m in Sources */,
 				5F609F01144F12FB004EA083 /* GameCenterManager.m in Sources */,
 				5F609F2A146ACF41004EA083 /* ChooseModeViewController.m in Sources */,
 				5F609F31146AD982004EA083 /* ChooseLeaderboardViewController.m in Sources */,
@@ -1325,6 +1326,7 @@
 					"TARGET_AGORO_FREE=1",
 					"DEBUG=1",
 				);
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/AgoroFree-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1345,6 +1347,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "TARGET_AGORO_FREE=1";
+				GCC_THUMB_SUPPORT = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/AgoroFree-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1362,10 +1365,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -1384,7 +1383,9 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1401,10 +1402,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = (
-					armv6,
-					armv7,
-				);
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
@@ -1416,7 +1413,9 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1434,20 +1433,26 @@
 		5F92FA0414463046002966C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Kwesi Buabeng (LP72N56DLF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
-				INFOPLIST_FILE = "WordSmith/WordSmith-Info.plist";
+				GCC_PREFIX_HEADER = "WordSmith/Agoro-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "WordSmith/Agoro-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/WordSmith/Lexicontext\"",
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = Agoro;
-				PROVISIONING_PROFILE = "47989918-8663-4353-B0F0-8AE11DE68998";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "47989918-8663-4353-B0F0-8AE11DE68998";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4D203165-31D6-450C-B8BF-96A338C874E5";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1455,19 +1460,26 @@
 		5F92FA0514463046002966C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Kwesi Buabeng";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "WordSmith/WordSmith-Prefix.pch";
-				INFOPLIST_FILE = "WordSmith/WordSmith-Info.plist";
+				GCC_PREFIX_HEADER = "WordSmith/Agoro-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "WordSmith/Agoro-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/WordSmith/Lexicontext\"",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = Agoro;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "FDC9F31A-7608-4840-8313-A81E6AD0C0DE";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1484,7 +1496,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "WordSmith" */ = {
+		5F92F9DC14463046002966C7 /* Build configuration list for PBXProject "Agoro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F92FA0114463046002966C7 /* Debug */,
@@ -1493,7 +1505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F92FA0314463046002966C7 /* Build configuration list for PBXNativeTarget "WordSmith" */ = {
+		5F92FA0314463046002966C7 /* Build configuration list for PBXNativeTarget "Agoro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F92FA0414463046002966C7 /* Debug */,

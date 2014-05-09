@@ -31,8 +31,8 @@
 
 #pragma mark - Game Center Manager
 
-#define GAMENAME(x) [[NSArray arrayWithObjects: @"",@"Letter 2 Word",@"Word Smith",@"Reveal the Word",nil] objectAtIndex:(x)]
-#define LEADERBOARD(x) [[NSArray arrayWithObjects: @"Letter2Word1",@"WordSmith1",@"RevealTheWord1",nil] objectAtIndex:(x)]
+#define GAMENAME(X) [[NSArray arrayWithObjects: @"",@"Letter 2 Word",@"Word Smith",@"Reveal the Word",nil] objectAtIndex:X]
+#define LEADERBOARD(X) [[NSArray arrayWithObjects: @"Letter2Word1",@"WordSmith1",@"RevealTheWord1",nil] objectAtIndex:X]
 
 #define kCompID @"CompPlayer001"
 #define kP1ID @"HumanPlayer001"

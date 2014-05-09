@@ -48,29 +48,6 @@ static GameCenterManager *sharedManager = nil;
 
 #pragma mark - Game Center Management
 
-
-- (void) callDelegate: (SEL) selector withArg: (id) arg error: (NSError*) err
-{
-	assert([NSThread isMainThread]);
-	if([delegate respondsToSelector: selector])
-	{
-		if(arg != NULL)
-			[delegate performSelector: selector withObject: arg withObject: err];
-		else
-			[delegate performSelector: selector withObject: err];
-	}
-	else
-		NSLog(@"Missed Method");
-}
-
-- (void) callDelegateOnMainThread: (SEL) selector withArg: (id) arg error: (NSError*) err
-{
-	dispatch_async(dispatch_get_main_queue(), ^(void)
-    {
-        [self callDelegate: selector withArg: arg error: err];
-    });
-}
-
 - (void)setGameState:(GameState)state 
 {  
     gameState = state;
@@ -241,7 +218,7 @@ static GameCenterManager *sharedManager = nil;
 {
     LOGMETHOD;
     [presentingViewController dismissModalViewControllerAnimated:YES];
-    NSLog(@"Error finding match: %@\nMatch request: %d", error.localizedDescription, viewController.matchRequest.minPlayers);
+    NSLog(@"Error finding match: %@\nMatch request: %lu", error.localizedDescription, (unsigned long)viewController.matchRequest.minPlayers);
 }
 
 #pragma mark - Game Setup
@@ -303,7 +280,7 @@ static GameCenterManager *sharedManager = nil;
         } else {
             switch (gType) {
                 case l2w: {
-                    GameViewController *l2wVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"l2wView"];
+                    L2WViewController *l2wVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"l2wView"];
                     [presentingViewController.navigationController pushViewController:l2wVC animated:YES];
                     self.delegate = l2wVC;
                     break;
@@ -438,8 +415,8 @@ static GameCenterManager *sharedManager = nil;
 - (void)tryStartGame 
 {
     LOGMETHOD;
-    NSLog(@"num of Players: %d", numberOfPlayers);
-    NSLog(@"num of begin msgs: %d", numberOfBeginMessagesReceived);
+    NSLog(@"num of Players: %lu", (unsigned long)numberOfPlayers);
+    NSLog(@"num of begin msgs: %lu", (unsigned long)numberOfBeginMessagesReceived);
     
     if (numberOfBeginMessagesReceived >= numberOfPlayers - 1 &&
         gameState == kGameStateWaitingForStart &&
@@ -538,7 +515,7 @@ static GameCenterManager *sharedManager = nil;
 #pragma mark GKMatchDelegate
 
 // The match received data sent from the player.
-- (void)match:(GKMatch *)theMatch didReceiveData:(NSData *)data fromPlayer:(NSString *)playerID 
+- (void)match:(GKMatch *)theMatch didReceiveData:(NSData *)data fromPlayer:(NSString *)playerID
 {  
     if (gType != l2w && [[[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] substringToIndex:3] isEqualToString:@"wsw"]) {
         
@@ -579,7 +556,7 @@ static GameCenterManager *sharedManager = nil;
             MessageMove *messageMove = (MessageMove *) [data bytes];
             unichar letter = messageMove->letter;
             NSString *letterString = [NSString stringWithFormat:@"%C", letter];
-            [[(GameViewController *)delegate dv] letterAdded:letterString];
+            [[(L2WViewController *)delegate dv] letterAdded:letterString];
         }
     } else if (message->messageType == kMessageTypeScore) {
         
@@ -689,7 +666,7 @@ static GameCenterManager *sharedManager = nil;
 	
 	[leaderBoard loadScoresWithCompletionHandler:  ^(NSArray *scores, NSError *error)
 	{
-		[self callDelegateOnMainThread: @selector(reloadScoresComplete:error:) withArg: leaderBoard error: error];
+        [delegate reloadScoresComplete:leaderBoard error:error];
 	}];
 }
 

@@ -14,7 +14,7 @@ typedef enum {
     complete
 } prefixStat;
 
-@class GameViewController;
+@class L2WViewController;
 
 @interface L2WDisplayView : UIView <UIKeyInput> {
     
@@ -23,7 +23,7 @@ typedef enum {
     NSArray *pids;
 }
 
-@property (nonatomic, weak) GameViewController *delegate;
+@property (nonatomic, weak) L2WViewController *delegate;
 @property (strong, nonatomic) NSString *prefix;
 @property (nonatomic) BOOL turnUsed;    //used to make sure the same player doesn't go twice in a row
 

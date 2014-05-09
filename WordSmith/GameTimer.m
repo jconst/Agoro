@@ -25,7 +25,7 @@
         delegate = newDelegate;
         countdownState = 3;
         timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
-        gameDuration = 180;
+        gameDuration = 120;
 #ifdef TestingTournament
         gameDuration = 10;
 #endif
@@ -44,12 +44,12 @@
     if (countdownState > 0) {
         if (!label)
             label = delegate.countdownLabel;
-        label.text = [NSString stringWithFormat:@"%d", countdownState];
+        label.text = [NSString stringWithFormat:@"%ld", (long)countdownState];
     } else if (countdownState == 0) {
         label.text = @"Go!";
         [delegate gameStarted];
     } else {
-        delegate.title = [NSString stringWithFormat:@"Time Remaining: %d", gameDuration+countdownState];
+        delegate.title = [NSString stringWithFormat:@"Time Remaining: %u", gameDuration+countdownState];
         if (countdownState == -1)
             label.hidden = YES;        
     }

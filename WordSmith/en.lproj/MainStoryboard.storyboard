@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="3">
     <dependencies>
         <deployment defaultVersion="1280" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -147,15 +147,16 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZl-Zz-puG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="581" y="90"/>
         </scene>
-        <!--Game View Controller - Letter 2 Word-->
+        <!--View Controller - Letter 2 Word-->
         <scene sceneID="1QB-4S-GzQ">
             <objects>
-                <viewController storyboardIdentifier="l2wView" id="a1t-p9-zaV" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="l2wView" id="a1t-p9-zaV" customClass="L2WViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rvF-lG-Twz">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="268"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -275,6 +276,7 @@
                     <navigationItem key="navigationItem" title="Type of Game" id="Nfq-Ri-BMG"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6b-jc-FY6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -301,7 +303,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EUx-68-L1J">
-                                <rect key="frame" x="20" y="46.999996736164924" width="212" height="124"/>
+                                <rect key="frame" x="20" y="46.999999593997238" width="212" height="124"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -310,7 +312,7 @@
                                 </connections>
                             </tableView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IF7-xz-pQy">
-                                <rect key="frame" x="247.99999937021502" y="46.999996736164924" width="212" height="124"/>
+                                <rect key="frame" x="247.99999937021502" y="46.999999593997252" width="212" height="124"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -332,6 +334,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                     <connections>
                         <outlet property="popularTable" destination="EUx-68-L1J" id="Rba-qy-xXp"/>
                         <outlet property="recentTable" destination="IF7-xz-pQy" id="tVH-2c-VXc"/>
@@ -377,6 +380,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                     <connections>
                         <outlet property="bgView" destination="Wzn-AA-3Gb" id="kW7-uX-UmF"/>
                         <outlet property="playButton" destination="guw-5B-wpm" id="nzc-FY-aPa"/>
@@ -530,6 +534,7 @@
                     <navigationItem key="navigationItem" title="Type of Game" id="Frf-39-NMY"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DzD-Hs-TzS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -540,44 +545,44 @@
             <objects>
                 <viewController id="pOY-OH-jkp" customClass="SettingsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ftA-ro-Odg">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="268"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ChooseMode.png" id="PcG-uk-oUn">
-                                <rect key="frame" x="0.0" y="44" width="480" height="256"/>
+                                <rect key="frame" x="0.0" y="8" width="480" height="256"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="Letter 2 Word:" lineBreakMode="tailTruncation" minimumFontSize="10" id="fgl-Ju-LX7">
-                                <rect key="frame" x="20" y="108" width="132" height="21"/>
+                                <rect key="frame" x="20" y="89" width="132" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="uQj-R0-QsM">
-                                <rect key="frame" x="183" y="104" width="279" height="29"/>
+                                <rect key="frame" x="183" y="85" width="279" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="Reveal the Word:" lineBreakMode="tailTruncation" minimumFontSize="10" id="6I5-Kk-Ikp">
-                                <rect key="frame" x="20" y="189" width="157" height="27"/>
+                                <rect key="frame" x="20" y="155" width="157" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="GrW-QP-z7w">
-                                <rect key="frame" x="183" y="189" width="279" height="29"/>
+                                <rect key="frame" x="183" y="155" width="279" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" text="Word Smith:" lineBreakMode="tailTruncation" minimumFontSize="10" id="otI-kh-es0">
-                                <rect key="frame" x="20" y="150" width="132" height="21"/>
+                                <rect key="frame" x="20" y="123" width="132" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
                                 <color key="textColor" white="0.10000000000000001" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="xSz-0R-q2Q">
-                                <rect key="frame" x="183" y="147" width="279" height="29"/>
+                                <rect key="frame" x="183" y="120" width="279" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ChooseModeBottom.png" id="j7O-fY-tnp">
@@ -585,7 +590,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="ComputerDifficulty.png" id="8KX-Vg-gei">
-                                <rect key="frame" x="135" y="57" width="210" height="29"/>
+                                <rect key="frame" x="135" y="46" width="210" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="SettingsTopBar.png" id="0QD-Cn-q89">
@@ -593,7 +598,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LSt-a6-0wZ">
-                                <rect key="frame" x="396" y="8" width="72" height="30"/>
+                                <rect key="frame" x="396" y="6" width="72" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                 <state key="normal" title="Done" backgroundImage="button.png">
@@ -783,6 +788,7 @@
                     <navigationItem key="navigationItem" title="Type of Game" id="FSS-zl-8lH"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR7-6V-Ldz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -865,6 +871,7 @@
                     <navigationItem key="navigationItem" title="Rules" id="0FB-eT-Rk5"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                     <connections>
                         <outlet property="textView" destination="cip-FU-N7w" id="qA4-Aj-v2c"/>
                     </connections>
@@ -941,6 +948,7 @@
                     <navigationItem key="navigationItem" title="Choose Leaderboard" id="96W-UF-jxb"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="480" height="268"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YfA-HS-Loj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
