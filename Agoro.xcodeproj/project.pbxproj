@@ -11,7 +11,6 @@
 		5F051E4B16156BB20033EEC9 /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F051E4A16156BB20033EEC9 /* Winner.png */; };
 		5F1811721648735000976C9C /* StitchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811711648735000976C9C /* StitchBox.png */; };
 		5F1811751649ECF700976C9C /* TournamentScoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811741649ECF700976C9C /* TournamentScoreBoard.png */; };
-		5F27ED77161B508D008DE18B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F27ED76161B508D008DE18B /* Default-568h@2x.png */; };
 		5F289FF217564E7D000CCE85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F214463046002966C7 /* main.m */; };
 		5F289FF317564E7D000CCE85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9F614463046002966C7 /* AppDelegate.m */; };
 		5F289FF417564E7D000CCE85 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F92F9FC14463046002966C7 /* MasterViewController.m */; };
@@ -36,7 +35,6 @@
 		5F28A01217564E7D000CCE85 /* TileLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B57D415BF783D006E9DF7 /* TileLabel.m */; };
 		5F28A01317564E7D000CCE85 /* CustomTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2B57D715BF80B3006E9DF7 /* CustomTextField.m */; };
 		5F28A01417564E7D000CCE85 /* WordList.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8C942115C4B35700C92DB1 /* WordList.m */; };
-		5F28A01817564E7D000CCE85 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE3770162CBD0200A194EB /* iAd.framework */; };
 		5F28A01917564E7D000CCE85 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAEC2151571371000B86C06 /* SystemConfiguration.framework */; };
 		5F28A01A17564E7D000CCE85 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F609F03144F1CD1004EA083 /* GameKit.framework */; };
 		5F28A01B17564E7D000CCE85 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F92F9E614463046002966C7 /* UIKit.framework */; };
@@ -78,9 +76,6 @@
 		5F28A04117564E7D000CCE85 /* WordsPlayedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308015B0E74100E2620E /* WordsPlayedBG.png */; };
 		5F28A04217564E7D000CCE85 /* PopularWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308315B746D000E2620E /* PopularWordsBtn.png */; };
 		5F28A04317564E7D000CCE85 /* RecentWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308415B746D000E2620E /* RecentWordsBtn.png */; };
-		5F28A04417564E7D000CCE85 /* Round1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308815B780B400E2620E /* Round1.png */; };
-		5F28A04517564E7D000CCE85 /* Round2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308915B780B400E2620E /* Round2.png */; };
-		5F28A04617564E7D000CCE85 /* Round3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308A15B780B400E2620E /* Round3.png */; };
 		5F28A04717564E7D000CCE85 /* Round1Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309915B7C36100E2620E /* Round1Btn.png */; };
 		5F28A04817564E7D000CCE85 /* Round2Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309A15B7C36100E2620E /* Round2Btn.png */; };
 		5F28A04917564E7D000CCE85 /* Round3Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309B15B7C36100E2620E /* Round3Btn.png */; };
@@ -129,11 +124,9 @@
 		5F28A07417564E7D000CCE85 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449515D1F0AC003AF774 /* Icon.png */; };
 		5F28A07517564E7D000CCE85 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449715D1F0EF003AF774 /* Icon@2x.png */; };
 		5F28A07617564E7D000CCE85 /* ShareSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08F9C15F82979005981A0 /* ShareSmall.png */; };
-		5F28A07817564E7D000CCE85 /* TournamentOverBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA416012114005981A0 /* TournamentOverBG.png */; };
 		5F28A07917564E7D000CCE85 /* FBButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA6160125F7005981A0 /* FBButtonSmall.png */; };
 		5F28A07A17564E7D000CCE85 /* ViewWords.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F5D76571610C3AE00BEAD2C /* ViewWords.png */; };
 		5F28A07B17564E7D000CCE85 /* Winner.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F051E4A16156BB20033EEC9 /* Winner.png */; };
-		5F28A07C17564E7D000CCE85 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F27ED76161B508D008DE18B /* Default-568h@2x.png */; };
 		5F28A07D17564E7D000CCE85 /* StitchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811711648735000976C9C /* StitchBox.png */; };
 		5F28A07E17564E7D000CCE85 /* TournamentScoreBoard.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F1811741649ECF700976C9C /* TournamentScoreBoard.png */; };
 		5F2B579915BDF13D006E9DF7 /* RevealTheWordBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */; };
@@ -227,9 +220,6 @@
 		5FA2308115B0E74100E2620E /* WordsPlayedBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308015B0E74100E2620E /* WordsPlayedBG.png */; };
 		5FA2308515B746D000E2620E /* PopularWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308315B746D000E2620E /* PopularWordsBtn.png */; };
 		5FA2308615B746D000E2620E /* RecentWordsBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308415B746D000E2620E /* RecentWordsBtn.png */; };
-		5FA2308B15B780B400E2620E /* Round1.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308815B780B400E2620E /* Round1.png */; };
-		5FA2308C15B780B400E2620E /* Round2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308915B780B400E2620E /* Round2.png */; };
-		5FA2308D15B780B400E2620E /* Round3.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2308A15B780B400E2620E /* Round3.png */; };
 		5FA2309C15B7C36100E2620E /* Round1Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309915B7C36100E2620E /* Round1Btn.png */; };
 		5FA2309D15B7C36100E2620E /* Round2Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309A15B7C36100E2620E /* Round2Btn.png */; };
 		5FA2309E15B7C36100E2620E /* Round3Btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FA2309B15B7C36100E2620E /* Round3Btn.png */; };
@@ -238,13 +228,24 @@
 		5FAEC21315712C5700B86C06 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAEC21215712C5700B86C06 /* Reachability.m */; };
 		5FAEC2161571371000B86C06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FAEC2151571371000B86C06 /* SystemConfiguration.framework */; };
 		5FB08F9D15F82979005981A0 /* ShareSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08F9C15F82979005981A0 /* ShareSmall.png */; };
-		5FB08FA516012114005981A0 /* TournamentOverBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA416012114005981A0 /* TournamentOverBG.png */; };
 		5FB08FA7160125F7005981A0 /* FBButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB08FA6160125F7005981A0 /* FBButtonSmall.png */; };
 		5FB7868615AD03440054A780 /* ComputerDifficulty.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868515AD03440054A780 /* ComputerDifficulty.png */; };
 		5FB7868A15AD05370054A780 /* Letter2WordBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868715AD05370054A780 /* Letter2WordBtn.png */; };
 		5FB7868B15AD05370054A780 /* RevealTheWordBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868815AD05370054A780 /* RevealTheWordBtn.png */; };
 		5FB7868C15AD05370054A780 /* WordSmithBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868915AD05370054A780 /* WordSmithBtn.png */; };
 		5FB7868E15AD106B0054A780 /* WordSmithBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FB7868D15AD106B0054A780 /* WordSmithBG.png */; };
+		5FCC9321191DEAAA007E6EBD /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC9317191DEAAA007E6EBD /* Icon-40.png */; };
+		5FCC9322191DEAAA007E6EBD /* Icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC9318191DEAAA007E6EBD /* Icon-40@2x.png */; };
+		5FCC9323191DEAAA007E6EBD /* Icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC9319191DEAAA007E6EBD /* Icon-60.png */; };
+		5FCC9324191DEAAA007E6EBD /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC931A191DEAAA007E6EBD /* Icon-60@2x.png */; };
+		5FCC9325191DEAAA007E6EBD /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC931B191DEAAA007E6EBD /* Icon-76.png */; };
+		5FCC9326191DEAAA007E6EBD /* Icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC931C191DEAAA007E6EBD /* Icon-76@2x.png */; };
+		5FCC9327191DEAAA007E6EBD /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC931D191DEAAA007E6EBD /* Icon-Small-50.png */; };
+		5FCC9328191DEAAA007E6EBD /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC931E191DEAAA007E6EBD /* Icon-Small-50@2x.png */; };
+		5FCC9329191DEAAA007E6EBD /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC931F191DEAAA007E6EBD /* Icon-Small.png */; };
+		5FCC932A191DEAAA007E6EBD /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC9320191DEAAA007E6EBD /* Icon-Small@2x.png */; };
+		5FCC932C191DEC60007E6EBD /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC932B191DEC60007E6EBD /* Default~iphone.png */; };
+		5FCC932E191DECE5007E6EBD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FCC932D191DECE5007E6EBD /* Default-568h@2x.png */; };
 		5FD0A6F915C8A69B00B83E89 /* AgoroButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6F815C8A69B00B83E89 /* AgoroButton.png */; };
 		5FD0A6FC15C8AAB700B83E89 /* GreenButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FB15C8AAB700B83E89 /* GreenButton.png */; };
 		5FD0A6FE15C9EC8900B83E89 /* ResultBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FD0A6FD15C9EC8900B83E89 /* ResultBG.png */; };
@@ -253,7 +254,6 @@
 		5FEB448D15D1EEE3003AF774 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB448C15D1EEE3003AF774 /* Default@2x.png */; };
 		5FEB449615D1F0AC003AF774 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449515D1F0AC003AF774 /* Icon.png */; };
 		5FEB449815D1F0EF003AF774 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FEB449715D1F0EF003AF774 /* Icon@2x.png */; };
-		5FEE3771162CBD0200A194EB /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE3770162CBD0200A194EB /* iAd.framework */; };
 		5FF82FC81497F377003A2DDC /* AIPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82FC71497F377003A2DDC /* AIPlayer.m */; };
 		5FF82FCC1499229B003A2DDC /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FF82FCB1499229B003A2DDC /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
@@ -263,7 +263,6 @@
 		5F051E4A16156BB20033EEC9 /* Winner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Winner.png; sourceTree = "<group>"; };
 		5F1811711648735000976C9C /* StitchBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StitchBox.png; sourceTree = "<group>"; };
 		5F1811741649ECF700976C9C /* TournamentScoreBoard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TournamentScoreBoard.png; sourceTree = "<group>"; };
-		5F27ED76161B508D008DE18B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		5F28A08217564E7D000CCE85 /* Agoro Free.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Agoro Free.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F28A08317564E7E000CCE85 /* AgoroFree-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AgoroFree-Info.plist"; path = "/Users/josephconstan/Code/WordSmith/AgoroFree-Info.plist"; sourceTree = "<absolute>"; };
 		5F2B579815BDF13D006E9DF7 /* RevealTheWordBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RevealTheWordBG.png; path = Images/Backgrounds/RevealTheWordBG.png; sourceTree = "<group>"; };
@@ -381,9 +380,6 @@
 		5FA2308015B0E74100E2620E /* WordsPlayedBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordsPlayedBG.png; path = Images/Backgrounds/WordsPlayedBG.png; sourceTree = "<group>"; };
 		5FA2308315B746D000E2620E /* PopularWordsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = PopularWordsBtn.png; path = ../Buttons/PopularWordsBtn.png; sourceTree = "<group>"; };
 		5FA2308415B746D000E2620E /* RecentWordsBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RecentWordsBtn.png; path = ../Buttons/RecentWordsBtn.png; sourceTree = "<group>"; };
-		5FA2308815B780B400E2620E /* Round1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round1.png; sourceTree = "<group>"; };
-		5FA2308915B780B400E2620E /* Round2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round2.png; sourceTree = "<group>"; };
-		5FA2308A15B780B400E2620E /* Round3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round3.png; sourceTree = "<group>"; };
 		5FA2309915B7C36100E2620E /* Round1Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round1Btn.png; sourceTree = "<group>"; };
 		5FA2309A15B7C36100E2620E /* Round2Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round2Btn.png; sourceTree = "<group>"; };
 		5FA2309B15B7C36100E2620E /* Round3Btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Round3Btn.png; sourceTree = "<group>"; };
@@ -395,13 +391,24 @@
 		5FAEC21215712C5700B86C06 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		5FAEC2151571371000B86C06 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5FB08F9C15F82979005981A0 /* ShareSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ShareSmall.png; path = Images/Buttons/ShareSmall.png; sourceTree = "<group>"; };
-		5FB08FA416012114005981A0 /* TournamentOverBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TournamentOverBG.png; path = Images/Backgrounds/TournamentOverBG.png; sourceTree = "<group>"; };
 		5FB08FA6160125F7005981A0 /* FBButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FBButtonSmall.png; path = Images/Buttons/FBButtonSmall.png; sourceTree = "<group>"; };
 		5FB7868515AD03440054A780 /* ComputerDifficulty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ComputerDifficulty.png; sourceTree = "<group>"; };
 		5FB7868715AD05370054A780 /* Letter2WordBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Letter2WordBtn.png; path = Images/Buttons/Letter2WordBtn.png; sourceTree = "<group>"; };
 		5FB7868815AD05370054A780 /* RevealTheWordBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = RevealTheWordBtn.png; path = Images/Buttons/RevealTheWordBtn.png; sourceTree = "<group>"; };
 		5FB7868915AD05370054A780 /* WordSmithBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordSmithBtn.png; path = Images/Buttons/WordSmithBtn.png; sourceTree = "<group>"; };
 		5FB7868D15AD106B0054A780 /* WordSmithBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WordSmithBG.png; path = Images/Backgrounds/WordSmithBG.png; sourceTree = "<group>"; };
+		5FCC9317191DEAAA007E6EBD /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40.png"; path = "Images/Icons/Icon-40.png"; sourceTree = "<group>"; };
+		5FCC9318191DEAAA007E6EBD /* Icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-40@2x.png"; path = "Images/Icons/Icon-40@2x.png"; sourceTree = "<group>"; };
+		5FCC9319191DEAAA007E6EBD /* Icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60.png"; path = "Images/Icons/Icon-60.png"; sourceTree = "<group>"; };
+		5FCC931A191DEAAA007E6EBD /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-60@2x.png"; path = "Images/Icons/Icon-60@2x.png"; sourceTree = "<group>"; };
+		5FCC931B191DEAAA007E6EBD /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "Images/Icons/Icon-76.png"; sourceTree = "<group>"; };
+		5FCC931C191DEAAA007E6EBD /* Icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76@2x.png"; path = "Images/Icons/Icon-76@2x.png"; sourceTree = "<group>"; };
+		5FCC931D191DEAAA007E6EBD /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "Images/Icons/Icon-Small-50.png"; sourceTree = "<group>"; };
+		5FCC931E191DEAAA007E6EBD /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "Images/Icons/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		5FCC931F191DEAAA007E6EBD /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "Images/Icons/Icon-Small.png"; sourceTree = "<group>"; };
+		5FCC9320191DEAAA007E6EBD /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "Images/Icons/Icon-Small@2x.png"; sourceTree = "<group>"; };
+		5FCC932B191DEC60007E6EBD /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default~iphone.png"; path = "Images/Backgrounds/Default~iphone.png"; sourceTree = "<group>"; };
+		5FCC932D191DECE5007E6EBD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5FD0A6F815C8A69B00B83E89 /* AgoroButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AgoroButton.png; path = Images/Buttons/AgoroButton.png; sourceTree = "<group>"; };
 		5FD0A6FB15C8AAB700B83E89 /* GreenButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GreenButton.png; path = Images/Buttons/GreenButton.png; sourceTree = "<group>"; };
 		5FD0A6FD15C9EC8900B83E89 /* ResultBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ResultBG.png; path = Images/Backgrounds/ResultBG.png; sourceTree = "<group>"; };
@@ -410,7 +417,6 @@
 		5FEB448C15D1EEE3003AF774 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Images/Backgrounds/Default@2x.png"; sourceTree = "<group>"; };
 		5FEB449515D1F0AC003AF774 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../Icon.png; sourceTree = "<group>"; };
 		5FEB449715D1F0EF003AF774 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../Icon@2x.png"; sourceTree = "<group>"; };
-		5FEE3770162CBD0200A194EB /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		5FF82FC61497F377003A2DDC /* AIPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIPlayer.h; sourceTree = "<group>"; };
 		5FF82FC71497F377003A2DDC /* AIPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIPlayer.m; sourceTree = "<group>"; };
 		5FF82FCA1499229B003A2DDC /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
@@ -423,7 +429,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F28A01817564E7D000CCE85 /* iAd.framework in Frameworks */,
 				5F28A01917564E7D000CCE85 /* SystemConfiguration.framework in Frameworks */,
 				5F28A01A17564E7D000CCE85 /* GameKit.framework in Frameworks */,
 				5F28A01B17564E7D000CCE85 /* UIKit.framework in Frameworks */,
@@ -437,7 +442,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FEE3771162CBD0200A194EB /* iAd.framework in Frameworks */,
 				5FAEC2161571371000B86C06 /* SystemConfiguration.framework in Frameworks */,
 				5F609F05144F1CF4004EA083 /* GameKit.framework in Frameworks */,
 				5F92F9E714463046002966C7 /* UIKit.framework in Frameworks */,
@@ -518,9 +522,9 @@
 		5F5EA01A15A8A70600FFED22 /* Backgrounds */ = {
 			isa = PBXGroup;
 			children = (
-				5FA2308715B780B400E2620E /* Tournament */,
 				5F5EA01615A8A6FA00FFED22 /* MainBackground.png */,
 				5FEB448815D1E853003AF774 /* Default.png */,
+				5FCC932B191DEC60007E6EBD /* Default~iphone.png */,
 				5FEB448C15D1EEE3003AF774 /* Default@2x.png */,
 				5FA2308015B0E74100E2620E /* WordsPlayedBG.png */,
 				5FD0A6FD15C9EC8900B83E89 /* ResultBG.png */,
@@ -530,7 +534,6 @@
 				5FB7868D15AD106B0054A780 /* WordSmithBG.png */,
 				5F5EA01715A8A6FA00FFED22 /* bottom.png */,
 				5F5EA01F15A8B05400FFED22 /* Letter2WordBG.png */,
-				5FB08FA416012114005981A0 /* TournamentOverBG.png */,
 				5F5EA01D15A8AA5A00FFED22 /* ChooseMode.png */,
 				5F5EA01B15A8A91400FFED22 /* ChooseModeBottom.png */,
 			);
@@ -702,6 +705,7 @@
 		5F92F9D714463046002966C7 = {
 			isa = PBXGroup;
 			children = (
+				5FCC932D191DECE5007E6EBD /* Default-568h@2x.png */,
 				5F92F9EC14463046002966C7 /* Agoro */,
 				5F609F3A146C790B004EA083 /* Lexicontext */,
 				5FAEC21015712C5700B86C06 /* Reachability */,
@@ -724,7 +728,6 @@
 		5F92F9E514463046002966C7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5FEE3770162CBD0200A194EB /* iAd.framework */,
 				5FAEC2151571371000B86C06 /* SystemConfiguration.framework */,
 				5F609F03144F1CD1004EA083 /* GameKit.framework */,
 				5F92F9E614463046002966C7 /* UIKit.framework */,
@@ -761,17 +764,6 @@
 			);
 			name = "Supporting Files";
 			path = WordSmith;
-			sourceTree = "<group>";
-		};
-		5FA2308715B780B400E2620E /* Tournament */ = {
-			isa = PBXGroup;
-			children = (
-				5FA2308815B780B400E2620E /* Round1.png */,
-				5FA2308915B780B400E2620E /* Round2.png */,
-				5FA2308A15B780B400E2620E /* Round3.png */,
-			);
-			name = Tournament;
-			path = Images/Backgrounds/Tournament;
 			sourceTree = "<group>";
 		};
 		5FA2309815B7C36100E2620E /* Tournament */ = {
@@ -815,7 +807,16 @@
 		5FEB449015D1EF58003AF774 /* Icons */ = {
 			isa = PBXGroup;
 			children = (
-				5F27ED76161B508D008DE18B /* Default-568h@2x.png */,
+				5FCC9317191DEAAA007E6EBD /* Icon-40.png */,
+				5FCC9318191DEAAA007E6EBD /* Icon-40@2x.png */,
+				5FCC9319191DEAAA007E6EBD /* Icon-60.png */,
+				5FCC931A191DEAAA007E6EBD /* Icon-60@2x.png */,
+				5FCC931B191DEAAA007E6EBD /* Icon-76.png */,
+				5FCC931C191DEAAA007E6EBD /* Icon-76@2x.png */,
+				5FCC931D191DEAAA007E6EBD /* Icon-Small-50.png */,
+				5FCC931E191DEAAA007E6EBD /* Icon-Small-50@2x.png */,
+				5FCC931F191DEAAA007E6EBD /* Icon-Small.png */,
+				5FCC9320191DEAAA007E6EBD /* Icon-Small@2x.png */,
 				5FEB449715D1F0EF003AF774 /* Icon@2x.png */,
 				5FEB449515D1F0AC003AF774 /* Icon.png */,
 			);
@@ -936,9 +937,6 @@
 				5F28A04117564E7D000CCE85 /* WordsPlayedBG.png in Resources */,
 				5F28A04217564E7D000CCE85 /* PopularWordsBtn.png in Resources */,
 				5F28A04317564E7D000CCE85 /* RecentWordsBtn.png in Resources */,
-				5F28A04417564E7D000CCE85 /* Round1.png in Resources */,
-				5F28A04517564E7D000CCE85 /* Round2.png in Resources */,
-				5F28A04617564E7D000CCE85 /* Round3.png in Resources */,
 				5F28A04717564E7D000CCE85 /* Round1Btn.png in Resources */,
 				5F28A04817564E7D000CCE85 /* Round2Btn.png in Resources */,
 				5F28A04917564E7D000CCE85 /* Round3Btn.png in Resources */,
@@ -987,11 +985,9 @@
 				5F28A07417564E7D000CCE85 /* Icon.png in Resources */,
 				5F28A07517564E7D000CCE85 /* Icon@2x.png in Resources */,
 				5F28A07617564E7D000CCE85 /* ShareSmall.png in Resources */,
-				5F28A07817564E7D000CCE85 /* TournamentOverBG.png in Resources */,
 				5F28A07917564E7D000CCE85 /* FBButtonSmall.png in Resources */,
 				5F28A07A17564E7D000CCE85 /* ViewWords.png in Resources */,
 				5F28A07B17564E7D000CCE85 /* Winner.png in Resources */,
-				5F28A07C17564E7D000CCE85 /* Default-568h@2x.png in Resources */,
 				5F28A07D17564E7D000CCE85 /* StitchBox.png in Resources */,
 				5F28A07E17564E7D000CCE85 /* TournamentScoreBoard.png in Resources */,
 			);
@@ -1004,12 +1000,14 @@
 				5F92F9F114463046002966C7 /* InfoPlist.strings in Resources */,
 				5F92F9FA14463046002966C7 /* MainStoryboard.storyboard in Resources */,
 				5F609F38146C78F9004EA083 /* LexicontextAssets.bundle in Resources */,
+				5FCC9324191DEAAA007E6EBD /* Icon-60@2x.png in Resources */,
 				5F85DA2C149D94B3007CBD92 /* letterscores.plist in Resources */,
 				5F85DA32149EEBE8007CBD92 /* GameOverViewController.xib in Resources */,
 				5F5EA00215A8A65A00FFED22 /* GameInformation.png in Resources */,
 				5F5EA00415A8A66200FFED22 /* Leaderboard.png in Resources */,
 				5F5EA00715A8A68000FFED22 /* WordsPlayed.png in Resources */,
 				5F5EA00915A8A68900FFED22 /* L2W.png in Resources */,
+				5FCC932C191DEC60007E6EBD /* Default~iphone.png in Resources */,
 				5F5EA00B15A8A69200FFED22 /* RtW.png in Resources */,
 				5F5EA00D15A8A69800FFED22 /* WS.png in Resources */,
 				5F5EA01115A8A6BE00FFED22 /* Multiplayer.png in Resources */,
@@ -1017,6 +1015,7 @@
 				5F5EA02215AB693A00FFED22 /* bottom.png in Resources */,
 				5F5EA02115AB693000FFED22 /* MainBackground.png in Resources */,
 				5F5EA01315A8A6BE00FFED22 /* Tournament.png in Resources */,
+				5FCC9327191DEAAA007E6EBD /* Icon-Small-50.png in Resources */,
 				5FB7868615AD03440054A780 /* ComputerDifficulty.png in Resources */,
 				5F5EA01515A8A6CE00FFED22 /* button.png in Resources */,
 				5F5EA01C15A8A91400FFED22 /* ChooseModeBottom.png in Resources */,
@@ -1027,6 +1026,7 @@
 				5F5EA02915ABC7BC00FFED22 /* Slider.png in Resources */,
 				5F5EA03B15AD010F00FFED22 /* AmericanTypewriter.ttc in Resources */,
 				5F5EA03C15AD010F00FFED22 /* BelloPro.otf in Resources */,
+				5FCC9323191DEAAA007E6EBD /* Icon-60.png in Resources */,
 				5F5EA03D15AD010F00FFED22 /* KlavikaRegular-TF.otf in Resources */,
 				5F5EA04515AD010F00FFED22 /* MyriadPro-Regular.otf in Resources */,
 				5FB7868A15AD05370054A780 /* Letter2WordBtn.png in Resources */,
@@ -1036,14 +1036,13 @@
 				5FA2308115B0E74100E2620E /* WordsPlayedBG.png in Resources */,
 				5FA2308515B746D000E2620E /* PopularWordsBtn.png in Resources */,
 				5FA2308615B746D000E2620E /* RecentWordsBtn.png in Resources */,
-				5FA2308B15B780B400E2620E /* Round1.png in Resources */,
-				5FA2308C15B780B400E2620E /* Round2.png in Resources */,
-				5FA2308D15B780B400E2620E /* Round3.png in Resources */,
 				5FA2309C15B7C36100E2620E /* Round1Btn.png in Resources */,
 				5FA2309D15B7C36100E2620E /* Round2Btn.png in Resources */,
 				5FA2309E15B7C36100E2620E /* Round3Btn.png in Resources */,
+				5FCC9329191DEAAA007E6EBD /* Icon-Small.png in Resources */,
 				5F2B579915BDF13D006E9DF7 /* RevealTheWordBG.png in Resources */,
 				5F2B57B915BF5A11006E9DF7 /* A.png in Resources */,
+				5FCC9325191DEAAA007E6EBD /* Icon-76.png in Resources */,
 				5F2B57BA15BF5A11006E9DF7 /* B.png in Resources */,
 				5F2B57BB15BF5A11006E9DF7 /* C.png in Resources */,
 				5F2B57BC15BF5A11006E9DF7 /* D.png in Resources */,
@@ -1055,6 +1054,7 @@
 				5F2B57C215BF5A11006E9DF7 /* J.png in Resources */,
 				5F2B57C315BF5A11006E9DF7 /* K.png in Resources */,
 				5F2B57C415BF5A11006E9DF7 /* L.png in Resources */,
+				5FCC9322191DEAAA007E6EBD /* Icon-40@2x.png in Resources */,
 				5F2B57C515BF5A11006E9DF7 /* M.png in Resources */,
 				5F2B57C615BF5A11006E9DF7 /* N.png in Resources */,
 				5F2B57C715BF5A11006E9DF7 /* O.png in Resources */,
@@ -1062,13 +1062,17 @@
 				5F2B57C915BF5A11006E9DF7 /* Q.png in Resources */,
 				5F2B57CA15BF5A11006E9DF7 /* R.png in Resources */,
 				5F2B57CB15BF5A11006E9DF7 /* S.png in Resources */,
+				5FCC932A191DEAAA007E6EBD /* Icon-Small@2x.png in Resources */,
 				5F2B57CC15BF5A11006E9DF7 /* T.png in Resources */,
 				5F2B57CD15BF5A11006E9DF7 /* U.png in Resources */,
+				5FCC9328191DEAAA007E6EBD /* Icon-Small-50@2x.png in Resources */,
 				5F2B57CE15BF5A11006E9DF7 /* V.png in Resources */,
 				5F2B57CF15BF5A11006E9DF7 /* W.png in Resources */,
 				5F2B57D015BF5A11006E9DF7 /* X.png in Resources */,
 				5F2B57D115BF5A11006E9DF7 /* Y.png in Resources */,
+				5FCC932E191DECE5007E6EBD /* Default-568h@2x.png in Resources */,
 				5F2B57D215BF5A11006E9DF7 /* Z.png in Resources */,
+				5FCC9321191DEAAA007E6EBD /* Icon-40.png in Resources */,
 				5F2B57DA15BF8683006E9DF7 /* RevealTheWordBottom.png in Resources */,
 				5F2B57DD15BF87BA006E9DF7 /* SkipButton.png in Resources */,
 				5F2B57DE15BF87BA006E9DF7 /* SubmitButton.png in Resources */,
@@ -1078,6 +1082,7 @@
 				5F8C942415C4B46700C92DB1 /* FindWordsWithLettersIn.png in Resources */,
 				5F8C942615C4C24F00C92DB1 /* WordBackground.png in Resources */,
 				5F8C942815C6387400C92DB1 /* FacebookButton.png in Resources */,
+				5FCC9326191DEAAA007E6EBD /* Icon-76@2x.png in Resources */,
 				5FD0A6F915C8A69B00B83E89 /* AgoroButton.png in Resources */,
 				5FD0A6FC15C8AAB700B83E89 /* GreenButton.png in Resources */,
 				5FD0A6FE15C9EC8900B83E89 /* ResultBG.png in Resources */,
@@ -1087,11 +1092,9 @@
 				5FEB449615D1F0AC003AF774 /* Icon.png in Resources */,
 				5FEB449815D1F0EF003AF774 /* Icon@2x.png in Resources */,
 				5FB08F9D15F82979005981A0 /* ShareSmall.png in Resources */,
-				5FB08FA516012114005981A0 /* TournamentOverBG.png in Resources */,
 				5FB08FA7160125F7005981A0 /* FBButtonSmall.png in Resources */,
 				5F5D76581610C3AE00BEAD2C /* ViewWords.png in Resources */,
 				5F051E4B16156BB20033EEC9 /* Winner.png in Resources */,
-				5F27ED77161B508D008DE18B /* Default-568h@2x.png in Resources */,
 				5F1811721648735000976C9C /* StitchBox.png in Resources */,
 				5F1811751649ECF700976C9C /* TournamentScoreBoard.png in Resources */,
 			);

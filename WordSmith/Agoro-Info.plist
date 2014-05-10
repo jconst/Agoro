@@ -20,6 +20,9 @@
 		<dict>
 			<key>CFBundleIconFiles</key>
 			<array>
+				<string>Icon-40</string>
+				<string>Icon-Small</string>
+				<string>Icon-60</string>
 				<string>Default@2x.png</string>
 				<string>Icon.png</string>
 				<string>Icon@2x.png</string>
@@ -57,6 +60,8 @@
 	<true/>
 	<key>UIInterfaceOrientation</key>
 	<string>UIInterfaceOrientationLandscapeLeft</string>
+	<key>UILaunchImageFile</key>
+	<string>Default</string>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
 	<key>UIPrerenderedIcon</key>

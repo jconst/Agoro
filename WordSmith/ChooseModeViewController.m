@@ -9,7 +9,6 @@
 #import "ChooseModeViewController.h"
 #import "AppDelegate.h"
 #import "GameCenterManager.h"
-#import <iAd/iAd.h>
 
 @implementation ChooseModeViewController
 

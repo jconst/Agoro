@@ -67,14 +67,6 @@
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error {
-    
-    LOGMETHOD;
-    NSLog(@"error: %@", error);
-    [banner removeFromSuperview];
-    banner.delegate = nil;
-}
-
 #pragma mark - App Lifecycle
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

@@ -10,7 +10,6 @@
 #import "MasterViewController.h"
 #import "GameCenterManager.h"
 #import "AppDelegate.h"
-#import <iAd/iAd.h>
 
 @implementation SettingsViewController
 
