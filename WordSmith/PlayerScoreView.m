@@ -53,10 +53,11 @@
         } else if ([pid isEqualToString:kP1ID]) {
             if ([GKLocalPlayer localPlayer])
                 alias = [[GKLocalPlayer localPlayer] alias];
-            else
-                alias = @"Player 1";
         } else {
             alias = [[players objectForKey:pid] alias] ?: [NSString stringWithFormat:@"Player %d", i];
+        }
+        if (!alias) {
+            alias = [NSString stringWithFormat:@"Player %d", i];
         }
         
         NSNumber *score = [scores objectForKey:pid] ? [scores objectForKey:pid] : 

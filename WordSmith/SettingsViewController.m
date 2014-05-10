@@ -30,10 +30,6 @@
     [mvc dismissModalViewControllerAnimated:YES];
 }
 
-- (IBAction)fbLoginPressed:(id)sender {
-    [APPDELEGATE logInToFacebook];
-}
-
 #pragma mark - View lifecycle
 - (void)viewDidLoad
 {
@@ -41,33 +37,21 @@
         
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     
-    [l2wSlider setMinimumValue:0.1];
-    [rtwSlider setMinimumValue:0.1];
-    [wsSlider setMinimumValue:0.1];
-    
-    [l2wSlider setMinimumTrackImage:[UIImage imageNamed:@"ZipperMin.png"] forState:UIControlStateNormal];
-    [l2wSlider setMaximumTrackImage:[UIImage imageNamed:@"ZipperMax.png"] forState:UIControlStateNormal];
-    [l2wSlider setThumbImage:[UIImage imageNamed:@"Slider.png"] forState:UIControlStateNormal];
-    
-    [rtwSlider setMinimumTrackImage:[UIImage imageNamed:@"ZipperMin.png"] forState:UIControlStateNormal];
-    [rtwSlider setMaximumTrackImage:[UIImage imageNamed:@"ZipperMax.png"] forState:UIControlStateNormal];
-    [rtwSlider setThumbImage:[UIImage imageNamed:@"Slider.png"] forState:UIControlStateNormal];
-    
-    [wsSlider setMinimumTrackImage:[UIImage imageNamed:@"ZipperMin.png"] forState:UIControlStateNormal];
-    [wsSlider setMaximumTrackImage:[UIImage imageNamed:@"ZipperMax.png"] forState:UIControlStateNormal];
-    [wsSlider setThumbImage:[UIImage imageNamed:@"Slider.png"] forState:UIControlStateNormal];
-    
-    if ([defaults floatForKey:kL2WDifficulty]) {
-        [l2wSlider setValue:[defaults floatForKey:kL2WDifficulty] animated:NO];
-        [rtwSlider setValue:[defaults floatForKey:kRTWDifficulty] animated:NO];
-        [wsSlider setValue:[defaults floatForKey:kWSDifficulty] animated:NO];
-    } else {
-        [l2wSlider setValue:0.55 animated:NO];
-        [rtwSlider setValue:0.55 animated:NO];
-        [wsSlider setValue:0.55 animated:NO];
-    }
-
-    [APPDELEGATE showAdInView:self.view];
+    [@[l2wSlider, rtwSlider, wsSlider] enumerateObjectsUsingBlock:^(UISlider *slider, NSUInteger i, BOOL *stop) {
+        [slider setMinimumValue:0.1];
+        [slider setMinimumTrackImage:[[UIImage imageNamed:@"ZipperMin.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)
+                                                                                           resizingMode:UIImageResizingModeTile]
+                            forState:UIControlStateNormal];
+        [slider setMaximumTrackImage:[UIImage imageNamed:@"ZipperMax.png"] forState:UIControlStateNormal];
+        [slider setThumbImage:[UIImage imageNamed:@"Slider.png"] forState:UIControlStateNormal];
+        
+        if ([defaults floatForKey:DifficultyForGame(i)]) {
+            double val = [defaults floatForKey:DifficultyForGame(i)];
+            [slider setValue:val animated:NO];
+        } else {
+            [l2wSlider setValue:0.55 animated:NO];
+        }
+    }];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -75,10 +59,10 @@
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 
-    [defaults setFloat:[l2wSlider value] forKey:kL2WDifficulty];
-    [defaults setFloat:[rtwSlider value] forKey:kRTWDifficulty];
-    [defaults setFloat:[wsSlider value] forKey:kWSDifficulty];
-    
+    [@[l2wSlider, rtwSlider, wsSlider] enumerateObjectsUsingBlock:^(UISlider *slider, NSUInteger i, BOOL *stop) {
+        [defaults setFloat:[slider value]
+                    forKey:DifficultyForGame(i)];
+    }];
     [defaults synchronize];
 }
 

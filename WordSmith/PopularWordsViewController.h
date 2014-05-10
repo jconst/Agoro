@@ -19,6 +19,4 @@
 @property (strong, nonatomic) IBOutlet UITableView *recentTable;
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
 
-- (IBAction)fbPressed;
-
 @end

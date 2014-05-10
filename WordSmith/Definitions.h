@@ -13,15 +13,12 @@
 
 #pragma mark - App Delegate
 
-//#define TestingTournament 1
+typedef NS_ENUM(NSInteger, GameResult) {
+    LOSS,
+    TIE,
+    WIN
+};
 
-#ifdef TARGET_AGORO_FREE
-
-#define AdsEnabled 1
-
-#endif
-
-#define kFBAppID @"181955628559810"
 #define kAppStoreLink @"http://itunes.apple.com/us/app/agoro-word-game/id549026849?ls=1&mt=8"
 #define kAppIconLink @"http://img684.imageshack.us/img684/1453/agoroiconlarge.png"
 

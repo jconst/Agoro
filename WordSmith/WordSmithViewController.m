@@ -13,7 +13,6 @@
 #import "PlayerScoreView.h"
 #import "AIPlayer.h"
 #import "GameTimer.h"
-#import "TournamentManager.h"
 #import "Lexicontext.h"
 #import "TileButton.h"
 #import "TileLabel.h"

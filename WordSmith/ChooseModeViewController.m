@@ -23,23 +23,11 @@
         if (![GCM isConnectedToInternet]) {
             GCM.delegate = nil;
             [APPDELEGATE showAlertWithTitle:@"No Internet Connection"
-                                    message:@"An internet connection is required to play multiplayer/tournament games."];
+                                    message:@"An internet connection is required to play multiplayer games."];
             //[[[segue sourceViewController] navigationController] popToRootViewControllerAnimated:YES];
-        }
-        else if (sender.tag == 3) {
-            //tournament game
-            GCM.inTournament = YES;
-            GCM.gType = l2w;
         }
         [GCM findMatchWithMinPlayers:2 maxPlayers:4 invite:nil playersToInvite:nil viewController:self delegate:[segue destinationViewController]];
     }
-}
-
-- (void) viewDidLoad {
-    
-    [super viewDidLoad];
-    
-    [APPDELEGATE showAdInView:self.view];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

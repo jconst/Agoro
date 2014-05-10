@@ -14,6 +14,7 @@
 #define kL2WDifficulty @"l2wDifficulty"
 #define kWSDifficulty @"wsDifficulty"
 #define kRTWDifficulty @"rtwDifficulty"
+#define DifficultyForGame(X) @[kL2WDifficulty, kWSDifficulty, kRTWDifficulty][X]
 #define kGameDuration @"gameDuration"
 
 @interface SettingsViewController : UIViewController

@@ -16,9 +16,8 @@
 #import "AIPlayer.h"
 #import "GameOverViewController.h"
 #import "GameTimer.h"
-#import "TournamentManager.h"
 
-#define l2wDisplayFrame CGRectMake(15, 20, 300, 50)
+#define l2wDisplayFrame CGRectMake(15, 100, 300, 50)
 
 @implementation L2WViewController
 

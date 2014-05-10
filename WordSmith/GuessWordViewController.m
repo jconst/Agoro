@@ -15,7 +15,6 @@
 #import "AIPlayer.h"
 #import "PlayerScoreView.h"
 #import "GameTimer.h"
-#import "TournamentManager.h"
 #import "TileLabel.h"
 #import "CustomTextField.h"
 

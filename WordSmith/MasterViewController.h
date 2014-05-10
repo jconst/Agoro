@@ -7,9 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Definitions.h"
 
-@interface MasterViewController : UIViewController <GameCenterManagerDelegate> {
-}
 
+@interface MasterViewController : UIViewController <GameCenterManagerDelegate>
 @end

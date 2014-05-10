@@ -10,7 +10,6 @@
 #import "AIPlayer.h"
 #import "GameTimer.h"
 #import "GameOverViewController.h"
-#import "TournamentManager.h"
 #import "GameCenterManager.h"
 #import "AppDelegate.h"
 
@@ -102,8 +101,6 @@
             //end game with game center
             if (!singlePlayer) {
                 [GCM sendDisconnect];
-                if (GCM.inTournament)
-                    [GCM.tournamentManager endTournament];
             }
             [self endGame];            
             break;

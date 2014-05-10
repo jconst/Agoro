@@ -36,8 +36,6 @@
         [APPDELEGATE showAlertWithTitle:@"Game Center Required"
                                 message:@"You must have game center functionality to view leaderboards."];
 	}
-    
-    [APPDELEGATE showAdInView:self.view];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

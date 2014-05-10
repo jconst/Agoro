@@ -26,9 +26,6 @@
         countdownState = 3;
         timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
         gameDuration = 120;
-#ifdef TestingTournament
-        gameDuration = 10;
-#endif
     }
     return self;
 }

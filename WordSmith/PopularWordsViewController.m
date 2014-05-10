@@ -13,27 +13,6 @@
 
 @synthesize popWords, recentWords, popularTable, recentTable, webView;
 
-#pragma mark - Facebook
-
-- (IBAction)fbPressed {
-    
-    NSString *name;
-    
-    if ([GCM isConnectedToInternet] && [GCM isGameCenterAvailable])
-        name = [[GKLocalPlayer localPlayer] alias];
-    else
-        name = @"I";
-    
-    NSMutableString *message = [NSMutableString stringWithFormat:@"%@ played these words most often in Agoro Word Game for iOS: ", name];
-    
-    for (int i = 0; i < popWords.count && i < 10; i++) {
-        NSString *separator = (i == 9) ? @". Download Agoro now in the App Store." : @", ";
-        [message appendString:[popWords objectAtIndex:i]];
-        [message appendString:separator];
-    }
-    [APPDELEGATE postToFacebookWithMessage:message];
-}
-
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
@@ -65,8 +44,6 @@
             [popWords addObject:key];
         }
     }
-    
-    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Share" style:UIBarButtonItemStyleBordered target:self action:@selector(fbPressed)];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

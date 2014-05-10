@@ -1,0 +1,10 @@
+PODS:
+  - DOSingleton (0.0.2)
+
+DEPENDENCIES:
+  - DOSingleton
+
+SPEC CHECKSUMS:
+  DOSingleton: fa1f4c47eb0f3e2c5475d9726f719e9309ee9e97
+
+COCOAPODS: 0.32.1

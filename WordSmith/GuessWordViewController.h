@@ -11,7 +11,7 @@
 
 @class AIPlayer, PlayerScoreView, GameTimer, HintView, TileLabel, CustomTextField;
 
-@interface GuessWordViewController : BaseGameViewController
+@interface GuessWordViewController : BaseGameViewController <GameCenterManagerDelegate>
 {
     NSUInteger wordQueueCounter;
     

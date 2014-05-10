@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TournamentManager.h"
 
 @interface GameOverViewController : UIViewController {
     NSInteger myScore;
@@ -18,15 +17,11 @@
 @property (assign, nonatomic) UIViewController *delegate;
 
 @property (strong, nonatomic) IBOutlet UIButton *agoroButton;
-@property (strong, nonatomic) IBOutlet UIButton *fbButton;
-@property (strong, nonatomic) IBOutlet UILabel *nextRoundLabel;
 
-- (void)decreaseNextRoundCounter;
 - (void)displayScores;
 - (GameResult)determineResult;
 - (void)viewWordsPressed:(UIButton *)sender;
 - (IBAction)submitScore;
 - (IBAction)returnPressed;
-- (IBAction)FBButtonPressed:(id)sender;
 
 @end

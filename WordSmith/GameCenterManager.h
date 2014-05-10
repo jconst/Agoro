@@ -1,27 +1,25 @@
 #import <Foundation/Foundation.h>
 #import <GameKit/GameKit.h>
-#import "Definitions.h"
+#import "DOSingleton.h"
+
 
 typedef enum {
     kGameStateWaitingForMatch = 0,
     kGameStateWaitingForRandomNumber,
     kGameStateReceivedRandoms,
-    kGameStateWaitingToPressPlay,
     kGameStateWaitingForStart,
     kGameStateActive,
     kGameStateDone
 } GameState;
 
 
-@class GKLeaderboard, GKAchievement, GKPlayer, TournamentManager;
+@class GKLeaderboard, GKPlayer;
 
-@interface GameCenterManager : NSObject <GKMatchmakerViewControllerDelegate, GKMatchDelegate> 
+@interface GameCenterManager : DOSingleton <GKMatchmakerViewControllerDelegate, GKMatchDelegate>
 {
     BOOL matchStarted;
     BOOL wasInvited;
     
-	NSMutableDictionary* earnedAchievementCache;
-	__weak id <GameCenterManagerDelegate, NSObject> delegate;
     BOOL userAuthenticated;
     NSUInteger numberOfBeginMessagesReceived;
 }
@@ -30,8 +28,6 @@ typedef enum {
 @property (retain) UIViewController *presentingViewController;
 @property (retain) GKMatch *match;
 
-//This property must be atomic to ensure that the cache is always in a viable state...
-@property (strong) NSMutableDictionary* earnedAchievementCache;
 @property (nonatomic) BOOL gameCenterAvailable;
 
 //Game Data
@@ -39,29 +35,24 @@ typedef enum {
 @property (strong, nonatomic) NSMutableDictionary *playersDict;   //dictionary of GKPlayer objects with player IDs as keys
 @property (strong, nonatomic) NSMutableDictionary *scores;        //dictionary of scores with player IDs as keys
 @property (strong, nonatomic) NSMutableDictionary *randomNumbers; //dictionary of random numbers with player IDs as keys
-@property (strong, nonatomic) TournamentManager *tournamentManager;
 
 @property (assign, nonatomic) GameState gameState;
 @property (assign, nonatomic) GameType  gType;
 @property (assign, nonatomic) NSUInteger numberOfPlayers;
 @property (assign, nonatomic) NSUInteger ourPlayerNumber;
 @property (assign, nonatomic) uint32_t ourRandom;   
-@property (assign, nonatomic) BOOL inTournament;
 
 
-+ (GameCenterManager *)sharedInstance;
 - (BOOL) isConnectedToInternet;
 - (BOOL) isGameCenterAvailable;
 
 //Game Setup
 - (void) setupSinglePlayerGame;
 - (void) setupMultiplayerGame;
-- (void) setupTournament;
-- (void)setInviteHandler;
+- (void) setInviteHandler;
 - (void) authenticateLocalUser;
 - (void) setGameState:(GameState)state;
 - (void) tryStartGame;
-//- (void) mapPlayerIDtoPlayer: (NSString*) playerID;
 - (void) givePointsForWord:(NSString *)word toPlayer:(NSUInteger)lastTurn withMultiplier:(float)mult;
 - (void) findMatchWithMinPlayers:(int)minPlayers maxPlayers:(int)maxPlayers
                           invite:(GKInvite *)acceptedInvite
@@ -84,8 +75,5 @@ typedef enum {
 - (void) scoreReported: (NSError*) error;
 - (void) reportScore: (int64_t) score forCategory: (NSString*) category;
 - (void) reloadHighScoresForCategory: (NSString*) category;
-//Achievements
-//- (void) submitAchievement: (NSString*) identifier percentComplete: (double) percentComplete;
-//- (void) resetAchievements;
 
 @end

@@ -3,16 +3,16 @@
 #import "AppDelegate.h"
 #import "MessageDefs.h"
 #import "Reachability.h"
-#import "TournamentManager.h"
 #import "L2WDisplayView.h"
+#import "L2WViewController.h"
+#import "WordSmithViewController.h"
+#import "GuessWordViewController.h"
 #import "Lexicontext.h"
 
 @implementation GameCenterManager
 
-//@synthesize ALL THE THINGS
-@synthesize earnedAchievementCache, gameCenterAvailable, delegate, presentingViewController, match, playersDict, 
-playerOrder, scores, gameState, ourPlayerNumber, ourRandom, gType, numberOfPlayers, randomNumbers,
-tournamentManager, inTournament;
+@synthesize gameCenterAvailable, delegate, presentingViewController, match, playersDict,
+playerOrder, scores, gameState, ourPlayerNumber, ourRandom, gType, numberOfPlayers, randomNumbers;
 
 static GameCenterManager *sharedManager = nil;
 
@@ -23,7 +23,6 @@ static GameCenterManager *sharedManager = nil;
 	self = [super init];
 	if(self!= NULL)
 	{
-		earnedAchievementCache= NULL;
         gameCenterAvailable = [self isGameCenterAvailable];
         if (gameCenterAvailable) {
             NSNotificationCenter *nc = 
@@ -38,14 +37,6 @@ static GameCenterManager *sharedManager = nil;
 	return self;
 }
 
-+ (GameCenterManager *) sharedInstance 
-{
-    if (!sharedManager) {
-        sharedManager = [[GameCenterManager alloc] init];
-    }
-    return sharedManager;
-}
-
 #pragma mark - Game Center Management
 
 - (void)setGameState:(GameState)state 
@@ -57,8 +48,6 @@ static GameCenterManager *sharedManager = nil;
         NSLog(@"Waiting for rand #s");
     } else if (gameState == kGameStateReceivedRandoms) {
         NSLog(@"Received all rand #s, waiting for players to initialize");
-    } else if (gameState == kGameStateWaitingToPressPlay) {
-        NSLog(@"Next round of tournament, waiting for user to press play");
     } else if (gameState == kGameStateWaitingForStart) {
         NSLog(@"Initialized players, waiting for start");
     } else if (gameState == kGameStateActive) {
@@ -69,7 +58,7 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-- (BOOL) isConnectedToInternet 
+- (BOOL)isConnectedToInternet
 {
     Reachability *r = [Reachability reachabilityWithHostName:@"www.google.com"];
 	NetworkStatus internetStatus = [r currentReachabilityStatus];
@@ -77,7 +66,7 @@ static GameCenterManager *sharedManager = nil;
     return ((internetStatus == ReachableViaWiFi) || (internetStatus == ReachableViaWWAN));
 }
 
-- (BOOL) isGameCenterAvailable
+- (BOOL)isGameCenterAvailable
 {
 	// check for presence of GKLocalPlayer API
 	Class gcClass = (NSClassFromString(@"GKLocalPlayer"));
@@ -90,7 +79,7 @@ static GameCenterManager *sharedManager = nil;
 	return (gcClass && osVersionSupported);
 }
 
-- (void) authenticateLocalUser
+- (void)authenticateLocalUser
 {
     if (!gameCenterAvailable) return;
     
@@ -119,8 +108,6 @@ static GameCenterManager *sharedManager = nil;
     [GKMatchmaker sharedMatchmaker].inviteHandler = ^(GKInvite *acceptedInvite, NSArray *playersToInvite) {
         // Insert game-specific code here to clean up any game in progress:
         if (gameState != kGameStateWaitingForMatch && gameState != kGameStateDone) {
-            if(inTournament)
-                [tournamentManager endTournament];
             if (delegate && [delegate respondsToSelector:@selector(matchEnded)])
                 [delegate matchEnded];
         }
@@ -134,11 +121,7 @@ static GameCenterManager *sharedManager = nil;
             
             [self findMatchWithMinPlayers:2 maxPlayers:4 invite:acceptedInvite playersToInvite:nil viewController:topVC delegate:nil];
         } else {
-            NSLog(@"!acceptedInvite");
-            //No game mode set, default to tournament:
-            inTournament = YES;
-            gType = l2w;
-            [self findMatchWithMinPlayers:2 maxPlayers:4 invite:nil playersToInvite:playersToInvite viewController:topVC delegate:nil];
+            NSLog(@"Invite wasn't accepted");
         }
     };
 }
@@ -172,7 +155,7 @@ static GameCenterManager *sharedManager = nil;
         request.minPlayers = minPlayers;
         request.maxPlayers = maxPlayers;
         request.playersToInvite = playersToInvite;
-        request.playerGroup = (inTournament) ? 4 : gType;      //ensures L2W players don't get matched with WS players, etc.
+        request.playerGroup = gType;      //ensures L2W players don't get matched with WS players, etc.
         if ([request respondsToSelector:@selector(setDefaultNumberOfPlayers:)])
             request.defaultNumberOfPlayers = 2;
         
@@ -226,9 +209,7 @@ static GameCenterManager *sharedManager = nil;
 #pragma mark Single Player
 
 - (void)setupSinglePlayerGame 
-{  
-    GCM.inTournament = NO;
-    
+{
     // Populate players dict
     self.playersDict = [[NSMutableDictionary alloc] initWithCapacity:2];
     self.playerOrder = [[NSMutableArray alloc] initWithCapacity:2];
@@ -258,69 +239,46 @@ static GameCenterManager *sharedManager = nil;
 
 #pragma mark Multiplayer
 
-//Only called for mult/tourn matches. Called AFTER received game type data from inviter (if applicable)
+//Only called for multiplayer matches. Called AFTER received game type data from inviter (if applicable)
 - (void)beginSetup 
 {
     LOGMETHOD;
     
     [presentingViewController dismissModalViewControllerAnimated:YES];  //Get rid of matchmaker view
     
-    if (inTournament) {
-        [self setupTournament];
-    } else {
-        [self setupMultiplayerGame];
-    }
+    [self setupMultiplayerGame];
     
     if (wasInvited) {
-        if (inTournament) {
-            NSLog(@"beginSetup inTournament");
-            NextRoundViewController *nrVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"NextRoundView"];
-            [presentingViewController.navigationController pushViewController:nrVC animated:YES];
-            self.delegate = nrVC;
-        } else {
-            switch (gType) {
-                case l2w: {
-                    L2WViewController *l2wVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"l2wView"];
-                    [presentingViewController.navigationController pushViewController:l2wVC animated:YES];
-                    self.delegate = l2wVC;
-                    break;
-                } case ws: {
-                    WordSmithViewController *wsVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"wsView"];
-                    [presentingViewController.navigationController pushViewController:wsVC animated:YES];
-                    self.delegate = wsVC;
-                    break;
-                } case rtw: {
-                    GuessWordViewController *rtwVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"rtwView"];
-                    [presentingViewController.navigationController pushViewController:rtwVC animated:YES];
-                    self.delegate = rtwVC;
-                    break;
-                } default: {
-                    NSLog(@"gType unknown");
-                    break;
-                }
+        switch (gType) {
+            case l2w: {
+                L2WViewController *l2wVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"l2wView"];
+                [presentingViewController.navigationController pushViewController:l2wVC animated:YES];
+                self.delegate = l2wVC;
+                break;
+            } case ws: {
+                WordSmithViewController *wsVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"wsView"];
+                [presentingViewController.navigationController pushViewController:wsVC animated:YES];
+                self.delegate = wsVC;
+                break;
+            } case rtw: {
+                GuessWordViewController *rtwVC = [presentingViewController.storyboard instantiateViewControllerWithIdentifier:@"rtwView"];
+                [presentingViewController.navigationController pushViewController:rtwVC animated:YES];
+                self.delegate = rtwVC;
+                break;
+            } default: {
+                NSLog(@"gType unknown");
+                break;
             }
         }
     }
-}
-
-- (void)setupTournament 
-{
-    LOGMETHOD;
-    //Load "playersDict" with the players in the match
-    [self lookupPlayers];
-    
-    tournamentManager = [[TournamentManager alloc] init];
-    [tournamentManager startTournament];
 }
 
 //called AFTER finding match and BEFORE sending/receiving random numbers
 - (void)setupMultiplayerGame 
 {
     LOGMETHOD;
-    if (!inTournament) {    //Not in tournament:
-        //Load "playersDict" with the players in the match
-        [self lookupPlayers];
-    }
+    //Load "playersDict" with the players in the match
+    [self lookupPlayers];
 
     scores = [[NSMutableDictionary alloc] initWithCapacity:4];
     numberOfBeginMessagesReceived = 0;
@@ -406,10 +364,8 @@ static GameCenterManager *sharedManager = nil;
     //Let other players know we're ready to start:
     gameState = kGameStateWaitingForStart;
     
-    if (!inTournament) {
-        [self sendGameBegin];
-        [self tryStartGame];
-    }
+    [self sendGameBegin];
+    [self tryStartGame];
 }
 
 - (void)tryStartGame 
@@ -482,8 +438,7 @@ static GameCenterManager *sharedManager = nil;
 
 - (void) sendGameTypeData 
 {
-    int type = (inTournament) ? 4 : gType;
-    NSString *message = [NSString stringWithFormat:@"gtp%d", type];
+    NSString *message = [NSString stringWithFormat:@"gtp%d", gType];
     NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
     [self sendData:data];
 }
@@ -528,11 +483,7 @@ static GameCenterManager *sharedManager = nil;
     } else if (gType == UNKNOWN && [[[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] substringToIndex:3] isEqualToString:@"gtp"]) {
         NSString *typeStr = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] substringFromIndex:3];
         int typeInt = [typeStr intValue];
-        if (typeInt == 4) {
-            inTournament = YES;
-            gType = l2w;
-        } else
-            gType = (GameType)typeInt;
+        gType = (GameType)typeInt;
         [self beginSetup];
     }
     
@@ -566,10 +517,6 @@ static GameCenterManager *sharedManager = nil;
             [(GuessWordViewController *)delegate receivedScoreUpdate:score fromPlayer:playerID];
         }
     } else if (message->messageType == kMessageTypeGameOver) {
-        
-        if (inTournament && ((MessageGameOver *)message)->disconnect == YES) {
-            [tournamentManager endTournament];
-        }
         [delegate matchEnded];
     }
 }
@@ -602,7 +549,6 @@ static GameCenterManager *sharedManager = nil;
             // a player just disconnected.
             NSLog(@"Player disconnected!");
             matchStarted = NO;
-            inTournament = NO;
             [delegate matchEnded];
             break;
     }
@@ -638,9 +584,8 @@ static GameCenterManager *sharedManager = nil;
     NSInteger wordScore = 0;
     for (int i = 0; i < word.length; i++) {
         unichar letter = [word characterAtIndex:i];
-        NSString *key = [NSString stringWithFormat:@"%C", letter];
-        
-        wordScore += [[letterScores objectForKey:key] unsignedIntegerValue];
+        NSString *key  = [NSString stringWithFormat:@"%C", letter];
+        wordScore      += [[letterScores objectForKey:key] unsignedIntegerValue];
     }
     [scores setObject:[NSNumber numberWithInteger:(int)(mult*(currentScore+wordScore))] 
                      forKey:[playerOrder objectAtIndex:playerNumber]];
@@ -690,94 +635,4 @@ static GameCenterManager *sharedManager = nil;
     }
 }
 
-/*#pragma mark Achievements
-
-//None of this is being used yet but it will be useful in the future
-
-- (void) submitAchievement: (NSString*) identifier percentComplete: (double) percentComplete
-{
-	//GameCenter check for duplicate achievements when the achievement is submitted, but if you only want to report 
-	// new achievements to the user, then you need to check if it's been earned 
-	// before you submit.  Otherwise you'll end up with a race condition between loadAchievementsWithCompletionHandler
-	// and reportAchievementWithCompletionHandler.  To avoid this, we fetch the current achievement list once,
-	// then cache it and keep it updated with any new achievements.
-	if(self.earnedAchievementCache == NULL)
-	{
-		[GKAchievement loadAchievementsWithCompletionHandler: ^(NSArray *theScores, NSError *error)
-		{
-			if(error == NULL)
-			{
-				NSMutableDictionary* tempCache= [NSMutableDictionary dictionaryWithCapacity: [theScores count]];
-				for (GKAchievement* score in theScores)
-				{
-					[tempCache setObject: score forKey: score.identifier];
-				}
-				self.earnedAchievementCache= tempCache;
-				[self submitAchievement: identifier percentComplete: percentComplete];
-			}
-			else
-			{
-				//Something broke loading the achievement list.  Error out, and we'll try again the next time achievements submit.
-				[self callDelegateOnMainThread: @selector(achievementSubmitted:error:) withArg: NULL error: error];
-			}
-
-		}];
-	}
-	else
-	{
-		 //Search the list for the ID we're using...
-		GKAchievement* achievement= [self.earnedAchievementCache objectForKey: identifier];
-		if(achievement != NULL)
-		{
-			if((achievement.percentComplete >= 100.0) || (achievement.percentComplete >= percentComplete))
-			{
-				//Achievement has already been earned so we're done.
-				achievement= NULL;
-			}
-			achievement.percentComplete= percentComplete;
-		}
-		else
-		{
-			achievement= [[GKAchievement alloc] initWithIdentifier: identifier];
-			achievement.percentComplete= percentComplete;
-			//Add achievement to achievement cache...
-			[self.earnedAchievementCache setObject: achievement forKey: achievement.identifier];
-		}
-		if(achievement!= NULL)
-		{
-			//Submit the Achievement...
-			[achievement reportAchievementWithCompletionHandler: ^(NSError *error)
-			{
-				 [self callDelegateOnMainThread: @selector(achievementSubmitted:error:) withArg: achievement error: error];
-			}];
-		}
-	}
-}
-
-- (void) resetAchievements
-{
-	self.earnedAchievementCache= NULL;
-	[GKAchievement resetAchievementsWithCompletionHandler: ^(NSError *error) 
-	{
-		 [self callDelegateOnMainThread: @selector(achievementResetResult:) withArg: NULL error: error];
-	}];
-}
-
-- (void) mapPlayerIDtoPlayer: (NSString*) playerID
-{
-	[GKPlayer loadPlayersForIdentifiers: [NSArray arrayWithObject: playerID] withCompletionHandler:^(NSArray *playerArray, NSError *error)
-	{
-		GKPlayer* player= NULL;
-		for (GKPlayer* tempPlayer in playerArray)
-		{
-			if([tempPlayer.playerID isEqualToString: playerID])
-			{
-				player= tempPlayer;
-				break;
-			}
-		}
-		[self callDelegateOnMainThread: @selector(mappedPlayerIDToPlayer:error:) withArg: player error: error];
-	}];
-	
-}*/
 @end

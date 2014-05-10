@@ -11,7 +11,7 @@
 
 @class AIPlayer, GameTimer, CustomTextField, TileLabel, WordList;
 
-@interface WordSmithViewController : BaseGameViewController 
+@interface WordSmithViewController : BaseGameViewController <GameCenterManagerDelegate>
 
 //this array contains up to 4 different arrays, which in turn contain 
 //each anagram found so far by each respective player:
