@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E9E666A8-0AB2-49A4-B9B4-C1645BACB468</string>
+	<string>056FEB93-87B6-40B5-9CDF-7A56E454982B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Agoro</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DAC8682C-B1CA-4672-8C57-30E5CD5B4650</key>
-		<string>https://bitbucket.org/TheBizness/agoro.git</string>
+		<key>EAA8B244-0399-464B-ABF4-708B42FAAB83</key>
+		<string>ssh://github.com/jconst/Agoro.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Agoro.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DAC8682C-B1CA-4672-8C57-30E5CD5B4650</key>
+		<key>EAA8B244-0399-464B-ABF4-708B42FAAB83</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/TheBizness/agoro.git</string>
+	<string>ssh://github.com/jconst/Agoro.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DAC8682C-B1CA-4672-8C57-30E5CD5B4650</string>
+	<string>EAA8B244-0399-464B-ABF4-708B42FAAB83</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DAC8682C-B1CA-4672-8C57-30E5CD5B4650</string>
+			<string>EAA8B244-0399-464B-ABF4-708B42FAAB83</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Agoro</string>
 		</dict>

@@ -33,7 +33,8 @@
 }
 
 - (void)insertText:(NSString *)newText {
-    self.text = [NSString stringWithFormat:@"%@%@", self.text, newText];
+    
+    self.text = [self.text stringByAppendingString:newText] ?: newText;
 }
 
 - (BOOL)becomeFirstResponder {

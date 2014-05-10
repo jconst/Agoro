@@ -39,8 +39,7 @@
     
     [@[l2wSlider, rtwSlider, wsSlider] enumerateObjectsUsingBlock:^(UISlider *slider, NSUInteger i, BOOL *stop) {
         [slider setMinimumValue:0.1];
-        [slider setMinimumTrackImage:[[UIImage imageNamed:@"ZipperMin.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)
-                                                                                           resizingMode:UIImageResizingModeTile]
+        [slider setMinimumTrackImage:[[UIImage imageNamed:@"ZipperMin.png"] resizableImageWithCapInsets:UIEdgeInsetsMake(0, 0, 0, 0)]
                             forState:UIControlStateNormal];
         [slider setMaximumTrackImage:[UIImage imageNamed:@"ZipperMax.png"] forState:UIControlStateNormal];
         [slider setThumbImage:[UIImage imageNamed:@"Slider.png"] forState:UIControlStateNormal];

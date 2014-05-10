@@ -164,7 +164,9 @@ static GameCenterManager *sharedManager = nil;
     mmvc.matchmakerDelegate = self;
     
     NSLog(@"about to present");
-    [presentingViewController presentViewController:mmvc animated:YES completion:nil];
+    [presentingViewController presentViewController:mmvc animated:YES completion:^{
+        NSLog(@"completed presenting");
+    }];
     NSLog(@"made call to present");
 }
 

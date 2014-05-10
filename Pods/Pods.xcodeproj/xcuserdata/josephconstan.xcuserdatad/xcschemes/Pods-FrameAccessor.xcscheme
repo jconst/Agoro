@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5F289FF017564E7D000CCE85"
-               BuildableName = "Agoro Free.app"
-               BlueprintName = "Agoro Free"
-               ReferencedContainer = "container:Agoro.xcodeproj">
+               BlueprintIdentifier = "0B2AC2DFB914448D8A51FE82"
+               BuildableName = "libPods-FrameAccessor.a"
+               BlueprintName = "Pods-FrameAccessor"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -29,15 +29,6 @@
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F289FF017564E7D000CCE85"
-            BuildableName = "Agoro Free.app"
-            BlueprintName = "Agoro Free"
-            ReferencedContainer = "container:Agoro.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -48,15 +39,6 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F289FF017564E7D000CCE85"
-            BuildableName = "Agoro Free.app"
-            BlueprintName = "Agoro Free"
-            ReferencedContainer = "container:Agoro.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -66,15 +48,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5F289FF017564E7D000CCE85"
-            BuildableName = "Agoro Free.app"
-            BlueprintName = "Agoro Free"
-            ReferencedContainer = "container:Agoro.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
